@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="th" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IQ Option Automated Trading Bot</title>
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            darkbg: '#0f172a',
+            cardbg: '#1e293b',
+            cardborder: '#334155',
+            accent: '#3b82f6',
+            success: '#10b981',
+            danger: '#ef4444',
+            warning: '#f59e0b'
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar { width: 6px; height: 6px; }
+    ::-webkit-scrollbar-track { background: #0f172a; }
+    ::-webkit-scrollbar-thumb { background: #334155; border-radius: 4px; }
+    ::-webkit-scrollbar-thumb:hover { background: #475569; }
+    .pulse-green { animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite; }
+    @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: .4; } }
+  </style>
+</head>
+<body class="bg-darkbg text-slate-100 min-h-screen font-sans antialiased flex flex-col">
+
+  <!-- TOP NAVIGATION BAR -->
+  <header class="border-b border-cardborder bg-cardbg/80 backdrop-blur sticky top-0 z-50 px-6 py-3.5 flex items-center justify-between">
+    <div class="flex items-center space-x-3">
+      <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-blue-600 to-indigo-500 flex items-center justify-center shadow-lg shadow-blue-500/20">
+        <i class="fa-solid fa-robot text-xl text-white"></i>
+      </div>
+      <div>
+        <h1 class="font-bold text-lg leading-tight flex items-center space-x-2">
+          <span>IQ Option Trading Bot</span>
+          <span class="text-xs px-2 py-0.5 rounded-full bg-blue-500/20 text-blue-400 border border-blue-500/30 font-medium">v1.0 Pro</span>
+        </h1>
+        <p class="text-xs text-slate-400">High-Winrate Trend-Pullback & Martingale (5 Steps)</p>
+      </div>
+    </div>
+
+    <!-- Status Indicators & Quick Controls -->
+    <div class="flex items-center space-x-4">
+      <!-- WS Status -->
+      <div id="wsStatusBadge" class="flex items-center space-x-1.5 px-3 py-1 rounded-full bg-slate-800 border border-slate-700 text-xs">
+        <span class="w-2 h-2 rounded-full bg-amber-400 pulse-green"></span>
+        <span id="wsStatusText" class="text-slate-300">Connecting...</span>
+      </div>
+
+      <!-- Account Mode -->
+      <span id="accountModeBadge" class="px-3 py-1 rounded-full bg-purple-500/20 text-purple-300 border border-purple-500/30 text-xs font-semibold">
+        PRACTICE
+      </span>
+
+      <!-- Live Balance -->
+      <div class="bg-slate-900 border border-cardborder px-4 py-1.5 rounded-xl flex items-center space-x-2">
+        <i class="fa-solid fa-wallet text-emerald-400 text-sm"></i>
+        <div>
+          <div class="text-[10px] text-slate-400 uppercase tracking-wider font-semibold">Balance</div>
+          <div id="topBalance" class="text-sm font-bold text-emerald-400">$0.00</div>
+        </div>
+      </div>
+
+      <!-- Start/Stop Button -->
+      <button id="btnToggleBot" onclick="toggleBot()" class="flex items-center space-x-2 px-5 py-2 rounded-xl font-semibold text-sm transition-all shadow-lg bg-emerald-600 hover:bg-emerald-500 text-white shadow-emerald-600/30">
+        <i id="btnToggleIcon" class="fa-solid fa-play"></i>
+        <span id="btnToggleText">START BOT</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- MAIN DASHBOARD CONTENT -->
+  <main class="flex-1 p-6 space-y-6 max-w-7xl mx-auto w-full">
+
+    <!-- METRICS CARDS ROW -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+      
+      <!-- Card 1: Bot State -->
+      <div class="bg-cardbg border border-cardborder rounded-2xl p-4 flex items-center space-x-4 shadow-sm">
+        <div id="botStateIconBg" class="w-12 h-12 rounded-xl bg-slate-800 flex items-center justify-center text-slate-400">
+          <i class="fa-solid fa-power-off text-xl"></i>
+        </div>
+        <div>
+          <div class="text-xs text-slate-400 font-medium">Bot Status</div>
+          <div id="botStateText" class="text-base font-bold text-slate-300">STOPPED</div>
+          <div id="botModeSubtext" class="text-[11px] text-slate-500">Practice Mode</div>
+        </div>
+      </div>
+
+      <!-- Card 2: Session PnL -->
+      <div class="bg-cardbg border border-cardborder rounded-2xl p-4 flex items-center space-x-4 shadow-sm">
+        <div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400">
+          <i class="fa-solid fa-chart-line text-xl"></i>
+        </div>
+        <div>
+          <div class="text-xs text-slate-400 font-medium">Session PnL</div>
+          <div id="sessionPnl" class="text-base font-bold text-emerald-400">$0.00</div>
+          <div id="stopLossTargetSub" class="text-[11px] text-slate-500">Target: +$30 | SL: -$50</div>
+        </div>
+      </div>
+
+      <!-- Card 3: Win Rate & Trades -->
+      <div class="bg-cardbg border border-cardborder rounded-2xl p-4 flex items-center space-x-4 shadow-sm">
+        <div class="w-12 h-12 rounded-xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-blue-400">
+          <i class="fa-solid fa-bullseye text-xl"></i>
+        </div>
+        <div>
+          <div class="text-xs text-slate-400 font-medium">Win Rate</div>
+          <div id="winRateText" class="text-base font-bold text-blue-400">0.0%</div>
+          <div id="tradesCountSub" class="text-[11px] text-slate-500">0 Trades (0W - 0L)</div>
+        </div>
+      </div>
+
+      <!-- Card 4: Martingale Ladder -->
+      <div class="bg-cardbg border border-cardborder rounded-2xl p-4 flex items-center space-x-4 shadow-sm">
+        <div class="w-12 h-12 rounded-xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-400">
+          <i class="fa-solid fa-layer-group text-xl"></i>
+        </div>
+        <div>
+          <div class="text-xs text-slate-400 font-medium">Martingale Step</div>
+          <div id="martingaleStepText" class="text-base font-bold text-amber-400">Step 1 / 5</div>
+          <div id="currentBetSub" class="text-[11px] text-slate-500">Next Bet: $1.00</div>
+        </div>
+      </div>
+
+      <!-- Card 5: Active Asset & Payout -->
+      <div class="bg-cardbg border border-cardborder rounded-2xl p-4 flex items-center space-x-4 shadow-sm">
+        <div class="w-12 h-12 rounded-xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400">
+          <i class="fa-solid fa-coins text-xl"></i>
+        </div>
+        <div>
+          <div class="text-xs text-slate-400 font-medium">Active Pairs</div>
+          <div id="activePairText" class="text-base font-bold text-purple-300">Scanning Top 5...</div>
+          <div id="activePayoutSub" class="text-[11px] text-emerald-400 font-semibold">Payout >= 88% (Top 5)</div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- MAIN TWO-COLUMN SECTION -->
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+
+      <!-- LEFT 2 COLS: Strategy Radar & Live Trades -->
+      <div class="lg:col-span-2 space-y-6">
+
+        <!-- SIGNAL RADAR CARD -->
+        <div class="bg-cardbg border border-cardborder rounded-2xl p-5 shadow-sm space-y-4">
+          <div class="flex items-center justify-between border-b border-cardborder/60 pb-3">
+            <div class="flex items-center space-x-2">
+              <i class="fa-solid fa-satellite-dish text-blue-400"></i>
+              <h2 class="font-bold text-base">Strategy Signal Radar</h2>
+              <span class="text-xs text-slate-400">(EMA 50 Trend + BB Pullback + Fast RSI 7)</span>
+            </div>
+            <div id="signalBadge" class="px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-slate-800 text-slate-400 border border-slate-700">
+              SCANNING
+            </div>
+          </div>
+
+          <!-- Indicator Values Grid -->
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 text-center">
+            <div class="bg-slate-900/60 p-3 rounded-xl border border-cardborder/50">
+              <div class="text-[11px] text-slate-400 font-medium">5M Trend (EMA 50)</div>
+              <div id="indTrend" class="text-sm font-bold text-slate-300 mt-1">NEUTRAL</div>
+            </div>
+            <div class="bg-slate-900/60 p-3 rounded-xl border border-cardborder/50">
+              <div class="text-[11px] text-slate-400 font-medium">Current Close (M1)</div>
+              <div id="indClose" class="text-sm font-bold text-blue-400 mt-1">-</div>
+            </div>
+            <div class="bg-slate-900/60 p-3 rounded-xl border border-cardborder/50">
+              <div class="text-[11px] text-slate-400 font-medium">Bollinger Bands (M1)</div>
+              <div id="indBB" class="text-xs font-semibold text-slate-300 mt-1">U: - | L: -</div>
+            </div>
+            <div class="bg-slate-900/60 p-3 rounded-xl border border-cardborder/50">
+              <div class="text-[11px] text-slate-400 font-medium">Fast RSI (7)</div>
+              <div id="indRSI" class="text-sm font-bold text-amber-400 mt-1">-</div>
+            </div>
+          </div>
+
+          <!-- Signal Reason / Diagnostic -->
+          <div class="bg-slate-900/40 border border-slate-800 px-4 py-2 rounded-xl flex items-center justify-between text-xs text-slate-400">
+            <span><i class="fa-solid fa-circle-info mr-1 text-blue-400"></i> <span id="indReason">Waiting for market data...</span></span>
+            <span class="text-slate-500 text-[10px]">Auto-refreshes every 1s</span>
+          </div>
+        </div>
+
+        <!-- RECENT TRADES TABLE -->
+        <div class="bg-cardbg border border-cardborder rounded-2xl p-5 shadow-sm space-y-4">
+          <div class="flex items-center justify-between border-b border-cardborder/60 pb-3">
+            <div class="flex items-center space-x-2">
+              <i class="fa-solid fa-clock-rotate-left text-emerald-400"></i>
+              <h2 class="font-bold text-base">Live Trade History</h2>
+            </div>
+            <span class="text-xs text-slate-400" id="tradesCountBadge">0 trades in session</span>
+          </div>
+
+          <div class="overflow-x-auto">
+            <table class="w-full text-left text-xs">
+              <thead class="text-slate-400 uppercase tracking-wider bg-slate-900/50 border-b border-cardborder/50">
+                <tr>
+                  <th class="py-2.5 px-3">Time</th>
+                  <th class="py-2.5 px-3">Asset</th>
+                  <th class="py-2.5 px-3">Direction</th>
+                  <th class="py-2.5 px-3">Stake</th>
+                  <th class="py-2.5 px-3">Step</th>
+                  <th class="py-2.5 px-3">Payout</th>
+                  <th class="py-2.5 px-3">Result</th>
+                  <th class="py-2.5 px-3 text-right">Net PnL</th>
+                </tr>
+              </thead>
+              <tbody id="tradeHistoryBody" class="divide-y divide-cardborder/30">
+                <tr>
+                  <td colspan="8" class="text-center py-8 text-slate-500">
+                    <i class="fa-regular fa-folder-open text-2xl mb-2 block"></i>
+                    No trades executed yet. Click START BOT to begin.
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- RIGHT 1 COL: High Payout Scanner & Bot Settings & Logs -->
+      <div class="space-y-6">
+
+        <!-- HIGH PAYOUT ASSETS (>= 88% Top 5) -->
+        <div class="bg-cardbg border border-cardborder rounded-2xl p-5 shadow-sm space-y-3">
+          <div class="flex items-center justify-between border-b border-cardborder/60 pb-2.5">
+            <div class="flex items-center space-x-2">
+              <i class="fa-solid fa-filter text-amber-400"></i>
+              <h2 class="font-bold text-sm">Top 5 Pairs (Payout >= 88%)</h2>
+            </div>
+            <span class="text-[11px] px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-400 font-semibold">Top 5 Focus</span>
+          </div>
+          <div id="highPayoutList" class="space-y-2 max-h-48 overflow-y-auto pr-1">
+            <div class="text-xs text-slate-500 text-center py-3">Scanning top 5 pairs...</div>
+          </div>
+        </div>
+
+        <!-- SETTINGS & CREDENTIALS FORM -->
+        <div class="bg-cardbg border border-cardborder rounded-2xl p-5 shadow-sm space-y-4">
+          <div class="flex items-center justify-between border-b border-cardborder/60 pb-2.5">
+            <div class="flex items-center space-x-2">
+              <i class="fa-solid fa-sliders text-indigo-400"></i>
+              <h2 class="font-bold text-sm">Bot Configuration</h2>
+            </div>
+            <button onclick="saveConfig()" class="text-xs px-3 py-1 bg-blue-600 hover:bg-blue-500 text-white rounded-lg font-medium transition">
+              Save
+            </button>
+          </div>
+
+          <div class="space-y-3 text-xs">
+            <!-- Mode Selection -->
+            <div>
+              <label class="block text-slate-400 mb-1 font-medium">Account Mode</label>
+              <select id="cfgAccountMode" class="w-full bg-slate-900 border border-cardborder rounded-lg px-3 py-2 text-slate-200 focus:outline-none focus:border-blue-500">
+                <option value="PRACTICE">PRACTICE (Demo Account - Recommended)</option>
+                <option value="REAL">REAL (Live Money Account)</option>
+              </select>
+            </div>
+
+            <!-- Base Bet & Martingale -->
+            <div class="grid grid-cols-2 gap-2">
+              <div>
+                <label class="block text-slate-400 mb-1 font-medium">Base Bet ($)</label>
+                <input type="number" id="cfgBaseBet" step="0.5" value="1.0" class="w-full bg-slate-900 border border-cardborder rounded-lg px-3 py-1.5 text-slate-200">
+              </div>
+              <div>
+                <label class="block text-slate-400 mb-1 font-medium">Max Martingale</label>
+                <input type="number" id="cfgMartingaleSteps" min="1" max="10" value="5" class="w-full bg-slate-900 border border-cardborder rounded-lg px-3 py-1.5 text-slate-200">
+              </div>
+            </div>
+
+            <!-- Min Payout & Top Pairs -->
+            <div class="grid grid-cols-2 gap-2">
+              <div>
+                <label class="block text-slate-400 mb-1 font-medium">Min Payout (%)</label>
+                <input type="number" id="cfgMinPayout" min="70" max="99" value="88" class="w-full bg-slate-900 border border-cardborder rounded-lg px-3 py-1.5 text-slate-200">
+              </div>
+              <div>
+                <label class="block text-slate-400 mb-1 font-medium">Top Pairs Count</label>
+                <input type="number" id="cfgTopPairs" min="1" max="20" value="5" class="w-full bg-slate-900 border border-cardborder rounded-lg px-3 py-1.5 text-slate-200">
+              </div>
+            </div>
+
+            <!-- Stop Loss & Take Profit -->
+            <div class="grid grid-cols-2 gap-2">
+              <div>
+                <label class="block text-slate-400 mb-1 font-medium">Daily Stop Loss ($)</label>
+                <input type="number" id="cfgStopLoss" step="5" value="50.0" class="w-full bg-slate-900 border border-cardborder rounded-lg px-3 py-1.5 text-slate-200">
+              </div>
+              <div>
+                <label class="block text-slate-400 mb-1 font-medium">Daily Take Profit ($)</label>
+                <input type="number" id="cfgTakeProfit" step="5" value="30.0" class="w-full bg-slate-900 border border-cardborder rounded-lg px-3 py-1.5 text-slate-200">
+              </div>
+            </div>
+
+            <!-- Strategy Parameters Accordion -->
+            <details class="bg-slate-900/60 p-2.5 rounded-xl border border-cardborder/40">
+              <summary class="cursor-pointer text-slate-400 font-medium flex items-center justify-between">
+                <span><i class="fa-solid fa-chart-simple mr-1.5 text-blue-400"></i> Strategy Sensitivity (RSI 7)</span>
+                <i class="fa-solid fa-chevron-down text-[10px]"></i>
+              </summary>
+              <div class="space-y-2 mt-2 pt-2 border-t border-cardborder/30">
+                <div class="grid grid-cols-3 gap-1.5">
+                  <div>
+                    <label class="block text-[10px] text-slate-400 mb-0.5">RSI Period</label>
+                    <input type="number" id="cfgRsiPeriod" min="2" max="25" value="7" class="w-full bg-slate-900 border border-cardborder rounded-lg px-2 py-1 text-slate-200 text-xs">
+                  </div>
+                  <div>
+                    <label class="block text-[10px] text-slate-400 mb-0.5">Oversold (&lt;=)</label>
+                    <input type="number" id="cfgRsiOversold" min="10" max="45" value="35" class="w-full bg-slate-900 border border-cardborder rounded-lg px-2 py-1 text-slate-200 text-xs">
+                  </div>
+                  <div>
+                    <label class="block text-[10px] text-slate-400 mb-0.5">Overbought (&gt;=)</label>
+                    <input type="number" id="cfgRsiOverbought" min="55" max="90" value="65" class="w-full bg-slate-900 border border-cardborder rounded-lg px-2 py-1 text-slate-200 text-xs">
+                  </div>
+                </div>
+              </div>
+            </details>
+
+            <!-- IQ Option Credentials Accordion -->
+            <details class="bg-slate-900/60 p-2.5 rounded-xl border border-cardborder/40">
+              <summary class="cursor-pointer text-slate-400 font-medium flex items-center justify-between">
+                <span><i class="fa-solid fa-key mr-1.5 text-yellow-400"></i> IQ Option Credentials</span>
+                <i class="fa-solid fa-chevron-down text-[10px]"></i>
+              </summary>
+              <div class="space-y-2 mt-2 pt-2 border-t border-cardborder/30">
+                <input type="email" id="cfgEmail" placeholder="Email" class="w-full bg-slate-900 border border-cardborder rounded-lg px-3 py-1.5 text-slate-200">
+                <input type="password" id="cfgPassword" placeholder="Password" class="w-full bg-slate-900 border border-cardborder rounded-lg px-3 py-1.5 text-slate-200">
+                <button type="button" onclick="connectAccount()" class="w-full py-1.5 bg-indigo-600 hover:bg-indigo-500 text-white rounded-lg font-medium transition text-xs">
+                  Connect / Re-login
+                </button>
+              </div>
+            </details>
+
+            <!-- Telegram Notification Accordion -->
+            <details class="bg-slate-900/60 p-2.5 rounded-xl border border-cardborder/40">
+              <summary class="cursor-pointer text-slate-400 font-medium flex items-center justify-between">
+                <span><i class="fa-brands fa-telegram mr-1.5 text-blue-400"></i> Telegram Alerts</span>
+                <i class="fa-solid fa-chevron-down text-[10px]"></i>
+              </summary>
+              <div class="space-y-2 mt-2 pt-2 border-t border-cardborder/30">
+                <input type="text" id="cfgTgToken" placeholder="Bot Token (from @BotFather)" class="w-full bg-slate-900 border border-cardborder rounded-lg px-3 py-1.5 text-slate-200">
+                <input type="text" id="cfgTgChat" placeholder="Chat ID (from @userinfobot)" class="w-full bg-slate-900 border border-cardborder rounded-lg px-3 py-1.5 text-slate-200">
+                <label class="flex items-center space-x-2 text-slate-300">
+                  <input type="checkbox" id="cfgTgEnabled" checked class="rounded bg-slate-800 border-cardborder text-blue-600">
+                  <span>Enable Telegram Notifications</span>
+                </label>
+              </div>
+            </details>
+          </div>
+        </div>
+
+        <!-- LIVE LOGS TERMINAL -->
+        <div class="bg-cardbg border border-cardborder rounded-2xl p-4 shadow-sm space-y-2">
+          <div class="flex items-center justify-between border-b border-cardborder/60 pb-2">
+            <div class="flex items-center space-x-2">
+              <i class="fa-solid fa-terminal text-slate-400"></i>
+              <h2 class="font-bold text-xs uppercase tracking-wider text-slate-300">Live Console Logs</h2>
+            </div>
+            <button onclick="clearLogs()" class="text-[10px] text-slate-500 hover:text-slate-300">Clear</button>
+          </div>
+          <div id="logsTerminal" class="h-44 bg-slate-950 font-mono text-[11px] p-2.5 rounded-xl overflow-y-auto space-y-1 text-slate-400 border border-slate-800">
+            <div>[System] Initializing dashboard client...</div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+  <!-- JAVASCRIPT LOGIC -->
+  <script>
+    let ws;
+    let isRunning = false;
+
+    function initWebSocket() {
+      const loc = window.location;
+      const wsUri = (loc.protocol === "https:" ? "wss://" : "ws://") + loc.host + "/ws";
+      ws = new WebSocket(wsUri);
+
+      ws.onopen = () => {
+        document.getElementById('wsStatusBadge').className = "flex items-center space-x-1.5 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-xs";
+        document.getElementById('wsStatusText').className = "text-emerald-400 font-medium";
+        document.getElementById('wsStatusText').innerText = "Live";
+      };
+
+      ws.onclose = () => {
+        document.getElementById('wsStatusBadge').className = "flex items-center space-x-1.5 px-3 py-1 rounded-full bg-rose-500/10 border border-rose-500/30 text-xs";
+        document.getElementById('wsStatusText').className = "text-rose-400 font-medium";
+        document.getElementById('wsStatusText').innerText = "Disconnected";
+        setTimeout(initWebSocket, 2000);
+      };
+
+      ws.onmessage = (event) => {
+        const data = JSON.parse(event.data);
+        updateDashboard(data);
+      };
+    }
+
+    function updateDashboard(data) {
+      const st = data.status || {};
+      const risk = st.risk_summary || {};
+      const ind = st.analysis_info || {};
+
+      // Bot Running State
+      isRunning = st.is_running;
+      updateStartStopBtn(isRunning);
+
+      document.getElementById('botStateText').innerText = isRunning ? "RUNNING" : "STOPPED";
+      document.getElementById('botStateText').className = `text-base font-bold ${isRunning ? "text-emerald-400" : "text-slate-400"}`;
+      document.getElementById('botStateIconBg').className = `w-12 h-12 rounded-xl flex items-center justify-center ${isRunning ? "bg-emerald-500/20 text-emerald-400" : "bg-slate-800 text-slate-400"}`;
+      document.getElementById('botModeSubtext').innerText = `${st.mode || 'Demo'} Account`;
+
+      // Mode & Balance
+      document.getElementById('accountModeBadge').innerText = st.mode || 'PRACTICE';
+      document.getElementById('topBalance').innerText = `$${(st.balance || 0).toLocaleString('en-US', {minimumFractionDigits: 2})}`;
+
+      // Session PnL
+      const pnl = risk.session_pnl || 0;
+      const pnlEl = document.getElementById('sessionPnl');
+      pnlEl.innerText = `${pnl >= 0 ? '+' : ''}$${pnl.toFixed(2)}`;
+      pnlEl.className = `text-base font-bold ${pnl >= 0 ? 'text-emerald-400' : 'text-rose-400'}`;
+
+      // Win Rate & Trades
+      document.getElementById('winRateText').innerText = `${risk.win_rate || 0}%`;
+      document.getElementById('tradesCountSub').innerText = `${risk.total_trades || 0} Trades (${risk.wins || 0}W - ${risk.losses || 0}L)`;
+
+      // Martingale
+      document.getElementById('martingaleStepText').innerText = `Step ${risk.current_step || 1} / ${risk.max_steps || 5}`;
+      document.getElementById('currentBetSub').innerText = `Next Bet: $${(risk.current_bet || 1).toFixed(2)}`;
+
+      // Active Pair
+      document.getElementById('activePairText').innerText = st.selected_pair || "Scanning...";
+
+      // Signal Radar
+      const sig = st.last_signal;
+      const sigEl = document.getElementById('signalBadge');
+      if (sig === "CALL") {
+        sigEl.innerText = "BUY CALL 🟢";
+        sigEl.className = "px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-400 border border-emerald-500/40";
+      } else if (sig === "PUT") {
+        sigEl.innerText = "BUY PUT 🔴";
+        sigEl.className = "px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-rose-500/20 text-rose-400 border border-rose-500/40";
+      } else {
+        sigEl.innerText = "SCANNING";
+        sigEl.className = "px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-slate-800 text-slate-400 border border-slate-700";
+      }
+
+      document.getElementById('indTrend').innerText = ind.macro_trend || "NEUTRAL";
+      document.getElementById('indTrend').className = `text-sm font-bold mt-1 ${ind.macro_trend === 'UP' ? 'text-emerald-400' : ind.macro_trend === 'DOWN' ? 'text-rose-400' : 'text-slate-300'}`;
+      document.getElementById('indClose').innerText = ind.m1_close ? ind.m1_close.toFixed(5) : '-';
+      document.getElementById('indBB').innerText = (ind.bb_upper && ind.bb_lower) ? `U: ${ind.bb_upper.toFixed(5)} | L: ${ind.bb_lower.toFixed(5)}` : '-';
+      document.getElementById('indRSI').innerText = ind.rsi ? `${ind.rsi.toFixed(1)}` : '-';
+      document.getElementById('indReason').innerText = ind.reason || "Scanning markets for confluence...";
+
+      // Trades Table
+      renderTrades(data.trades || []);
+
+      // Scanner List
+      renderScanner(data.scanner || []);
+
+      // Logs
+      renderLogs(data.logs || []);
+    }
+
+    function renderTrades(trades) {
+      const tbody = document.getElementById('tradeHistoryBody');
+      document.getElementById('tradesCountBadge').innerText = `${trades.length} trades recorded`;
+      if (!trades || trades.length === 0) {
+        return;
+      }
+
+      tbody.innerHTML = trades.map(t => {
+        const isWin = t.result === 'WIN';
+        const isLoss = t.result === 'LOSS' || t.result === 'LOOSE';
+        const badgeColor = isWin ? 'bg-emerald-500/20 text-emerald-400 border-emerald-500/30' : isLoss ? 'bg-rose-500/20 text-rose-400 border-rose-500/30' : 'bg-slate-700 text-slate-300 border-slate-600';
+        const dirColor = t.direction === 'CALL' ? 'text-emerald-400' : 'text-rose-400';
+        const pnlColor = t.profit > 0 ? 'text-emerald-400 font-bold' : t.profit < 0 ? 'text-rose-400 font-bold' : 'text-slate-400';
+
+        return `
+          <tr class="hover:bg-slate-800/40 transition">
+            <td class="py-2.5 px-3 font-mono text-slate-400">${t.timestamp ? t.timestamp.split(' ')[1] : ''}</td>
+            <td class="py-2.5 px-3 font-semibold text-slate-200">${t.asset}</td>
+            <td class="py-2.5 px-3 font-bold ${dirColor}">${t.direction}</td>
+            <td class="py-2.5 px-3">$${t.amount.toFixed(2)}</td>
+            <td class="py-2.5 px-3 text-slate-400">#${t.step}</td>
+            <td class="py-2.5 px-3 text-emerald-400 font-semibold">${(t.payout * 100).toFixed(0)}%</td>
+            <td class="py-2.5 px-3">
+              <span class="px-2 py-0.5 rounded text-[10px] font-bold border ${badgeColor}">
+                ${t.result}
+              </span>
+            </td>
+            <td class="py-2.5 px-3 text-right ${pnlColor}">
+              ${t.profit >= 0 ? '+' : ''}$${t.profit.toFixed(2)}
+            </td>
+          </tr>
+        `;
+      }).join('');
+    }
+
+    function renderScanner(pairs) {
+      const el = document.getElementById('highPayoutList');
+      if (!pairs || pairs.length === 0) {
+        el.innerHTML = '<div class="text-xs text-slate-500 text-center py-2">No pairs >= 80% currently open</div>';
+        return;
+      }
+      el.innerHTML = pairs.map(p => `
+        <div class="flex items-center justify-between p-2 rounded-xl bg-slate-900/60 border border-cardborder/40 text-xs">
+          <div class="flex items-center space-x-2">
+            <span class="w-2 h-2 rounded-full ${p.is_open ? 'bg-emerald-400' : 'bg-slate-600'}"></span>
+            <span class="font-bold text-slate-200">${p.pair}</span>
+          </div>
+          <div class="flex items-center space-x-2">
+            <span class="text-emerald-400 font-bold">${(p.payout * 100).toFixed(0)}%</span>
+            <span class="text-[10px] px-1.5 py-0.2 rounded bg-slate-800 text-slate-400 uppercase">${p.type}</span>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    function renderLogs(logs) {
+      const term = document.getElementById('logsTerminal');
+      if (!logs || logs.length === 0) return;
+      term.innerHTML = logs.map(l => {
+        const color = l.level === 'ERROR' ? 'text-rose-400' : l.level === 'WARNING' ? 'text-amber-400' : 'text-slate-300';
+        return `<div><span class="text-slate-600">[${l.timestamp}]</span> <span class="${color}">${l.message}</span></div>`;
+      }).join('');
+      term.scrollTop = term.scrollHeight;
+    }
+
+    function updateStartStopBtn(running) {
+      const btn = document.getElementById('btnToggleBot');
+      const icon = document.getElementById('btnToggleIcon');
+      const text = document.getElementById('btnToggleText');
+      if (running) {
+        btn.className = "flex items-center space-x-2 px-5 py-2 rounded-xl font-semibold text-sm transition-all shadow-lg bg-rose-600 hover:bg-rose-500 text-white shadow-rose-600/30";
+        icon.className = "fa-solid fa-stop";
+        text.innerText = "STOP BOT";
+      } else {
+        btn.className = "flex items-center space-x-2 px-5 py-2 rounded-xl font-semibold text-sm transition-all shadow-lg bg-emerald-600 hover:bg-emerald-500 text-white shadow-emerald-600/30";
+        icon.className = "fa-solid fa-play";
+        text.innerText = "START BOT";
+      }
+    }
+
+    async function toggleBot() {
+      const endpoint = isRunning ? "/api/bot/stop" : "/api/bot/start";
+      try {
+        const res = await fetch(endpoint, { method: "POST" });
+        const data = await res.json();
+        console.log(data);
+      } catch (e) {
+        alert("Error toggling bot: " + e);
+      }
+    }
+
+    async function saveConfig() {
+      const payload = {
+        account_mode: document.getElementById('cfgAccountMode').value,
+        base_bet: parseFloat(document.getElementById('cfgBaseBet').value),
+        martingale_steps: parseInt(document.getElementById('cfgMartingaleSteps').value),
+        min_payout: parseFloat(document.getElementById('cfgMinPayout').value),
+        top_pairs_count: parseInt(document.getElementById('cfgTopPairs').value),
+        rsi_period: parseInt(document.getElementById('cfgRsiPeriod').value),
+        rsi_oversold: parseFloat(document.getElementById('cfgRsiOversold').value),
+        rsi_overbought: parseFloat(document.getElementById('cfgRsiOverbought').value),
+        daily_stop_loss: parseFloat(document.getElementById('cfgStopLoss').value),
+        daily_take_profit: parseFloat(document.getElementById('cfgTakeProfit').value),
+        telegram_bot_token: document.getElementById('cfgTgToken').value,
+        telegram_chat_id: document.getElementById('cfgTgChat').value,
+        telegram_enabled: document.getElementById('cfgTgEnabled').checked,
+      };
+      try {
+        const res = await fetch("/api/config", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(payload)
+        });
+        const data = await res.json();
+        alert("Settings saved successfully!");
+      } catch (e) {
+        alert("Failed to save settings: " + e);
+      }
+    }
+
+    async function connectAccount() {
+      const email = document.getElementById('cfgEmail').value;
+      const pass = document.getElementById('cfgPassword').value;
+      const mode = document.getElementById('cfgAccountMode').value;
+      if (!email || !pass) {
+        alert("Please enter both email and password.");
+        return;
+      }
+      try {
+        const res = await fetch("/api/connect", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ email: email, password: pass, mode: mode })
+        });
+        const data = await res.json();
+        if (data.two_factor_required) {
+          const code = prompt("2-Factor Authentication required. Please enter 2FA code sent to your email or SMS:");
+          if (code) {
+            const res2fa = await fetch("/api/2fa", {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({ code: code })
+            });
+            const d2fa = await res2fa.json();
+            alert(d2fa.message);
+          }
+        } else if (data.success) {
+          alert(`Connected successfully! Balance: $${data.balance}`);
+        } else {
+          alert(`Connection failed: ${data.reason}`);
+        }
+      } catch (e) {
+        alert("Error connecting: " + e);
+      }
+    }
+
+    function clearLogs() {
+      document.getElementById('logsTerminal').innerHTML = '<div class="text-slate-500">[Logs cleared]</div>';
+    }
+
+    // Initialize on load
+    window.addEventListener('DOMContentLoaded', () => {
+      initWebSocket();
+    });
+  </script>
+</body>
+</html>
