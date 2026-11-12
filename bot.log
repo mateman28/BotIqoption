@@ -10820,3 +10820,235 @@
 [2026-11-12 14:43:48] [INFO] [Executor] Order #14443649396 placed. Waiting for expiration (5 min)...
 [2026-11-12 14:43:48] [INFO] [Executor] Expiration in approx 310s. Waiting...
 [2026-11-12 14:43:59] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-12 14:44:21] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-12 14:44:41] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-12 14:45:02] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-12 14:45:23] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-12 14:45:43] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-12 14:46:04] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-12 14:46:25] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-12 14:46:46] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-12 14:47:06] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-12 14:47:27] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-12 14:47:48] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-12 14:48:10] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-12 14:48:31] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-12 14:48:52] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-12 14:49:02] [WARNING] [MoneyManager] Max Martingale steps (5) reached! Safety Cut-Loss triggered. Resetting to step 1.
+[2026-11-12 14:49:02] [WARNING] [Executor] Risk Limit Hit: STOP_LOSS!
+[2026-11-12 14:49:02] [INFO] [Bot] Trade finished: LOSS | PnL: $-70.27 | Balance: $29082.69
+[2026-11-12 14:49:07] [WARNING] [Bot] Session halted: STOP_LOSS hit! (PnL: $-100.15)
+[2026-11-12 14:49:07] [INFO] [Bot] Stopping bot...
+[2026-11-12 14:49:07] [INFO] [Bot] Trading loop exited.
+[2026-11-12 14:49:12] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-12 14:49:34] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-12 14:49:54] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-12 14:50:14] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-12 14:50:34] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-12 14:50:55] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-12 14:51:16] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-12 14:51:39] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-12 14:51:57] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-12 14:52:17] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-12 14:52:39] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-12 14:52:58] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-12 14:53:19] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-12 14:53:40] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-12 14:54:01] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-12 14:54:23] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-12 14:54:42] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-12 14:55:04] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-12 14:55:25] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-12 14:55:46] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-12 14:56:07] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-12 14:56:28] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-12 14:56:49] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-12 14:57:10] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-12 14:57:31] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-12 14:57:51] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-12 14:58:11] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-12 14:58:32] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-12 14:58:53] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-12 14:59:14] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-12 14:59:36] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-12 14:59:56] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-12 15:00:16] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-12 15:00:37] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-12 15:00:57] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-12 15:01:18] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:01:39] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:02:00] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:02:21] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:02:41] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:03:02] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:03:23] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:03:45] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:04:06] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:04:27] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:04:48] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:05:09] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:05:30] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:05:52] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:06:13] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:06:34] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:06:54] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:07:15] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:07:36] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:07:56] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:08:16] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:08:36] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:08:57] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:09:19] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:09:40] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:10:01] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:10:22] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:10:43] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:11:04] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:11:25] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:11:47] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:12:08] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:12:29] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:12:50] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:13:11] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:13:32] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:13:53] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:14:14] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:14:35] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:14:56] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:15:17] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:15:37] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:15:58] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:16:19] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:16:40] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:17:00] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:17:21] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:17:42] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:18:03] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:18:24] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:18:45] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:19:06] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:19:28] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:19:48] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:20:08] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:20:08] [INFO] [Bot] Main trading loop active.
+[2026-11-12 15:20:08] [WARNING] [Bot] Session halted: STOP_LOSS hit! (PnL: $-100.15)
+[2026-11-12 15:20:08] [INFO] [Bot] Stopping bot...
+[2026-11-12 15:20:08] [INFO] [Bot] Started! Mode: PRACTICE | Balance: $29,082.69
+[2026-11-12 15:20:08] [INFO] [Bot] Trading loop exited.
+[2026-11-12 15:20:28] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:20:28] [INFO] [Bot] Main trading loop active.
+[2026-11-12 15:20:28] [WARNING] [Bot] Session halted: STOP_LOSS hit! (PnL: $-100.15)
+[2026-11-12 15:20:29] [INFO] [Bot] Stopping bot...
+[2026-11-12 15:20:29] [INFO] [Bot] Started! Mode: PRACTICE | Balance: $29,082.69
+[2026-11-12 15:20:29] [INFO] [Bot] Trading loop exited.
+[2026-11-12 15:21:02] [INFO] Starting IQ Option Web Dashboard on http://127.0.0.1:8000
+[2026-11-12 15:21:25] [INFO] [Web] Configuration updated via dashboard (Base Bet: $10.0, Ladder: [10.0, 22.0, 48.4, 106.48, 234.26], Min Payout: 87%, Top Pairs: 5).
+[2026-11-12 15:21:30] [INFO] [Client] Connecting to IQ Option as par_mate@hotmail.com...
+[2026-11-12 15:21:33] [INFO] [Client] Successfully connected to IQ Option WebSocket!
+[2026-11-12 15:21:33] [INFO] [Client] Switched balance mode to: PRACTICE
+[2026-11-12 15:21:33] [INFO] [Client] Account Mode: PRACTICE | Balance: $29,082.69
+[2026-11-12 15:21:36] [INFO] [Client] Synced 528 active instruments. Total OP_code.ACTIVES: 635
+[2026-11-12 15:21:36] [INFO] [Bot] Main trading loop active.
+[2026-11-12 15:21:36] [INFO] [Bot] Started! Mode: PRACTICE | Balance: $29,082.69
+[2026-11-12 15:21:39] [INFO] [Bot] Monitoring Top 5: [DXY: DOWN RSI:39.49, JXY: UP RSI:45.53, EURUSD-OTC: DOWN RSI:16.25, EURUSD: UP RSI:56.14, GBPUSD: UP RSI:64.77] - Waiting for pullback setup...
+[2026-11-12 15:21:51] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:21:54] [INFO] [Bot] 🎯 Signal TRIGGERED: PUT on SUIUSD-OTC (87%)! Reason: DOWN + Upper BB Touch + RSI Overbought (70.9) | Placing order $10.0 (Step 1)...
+[2026-11-12 15:21:54] [INFO] [Executor] Placing PUT order on SUIUSD-OTC ($10.0, step 1)...
+[2026-11-12 15:21:56] [INFO] [Executor] Order #14443703196 placed. Waiting for expiration (5 min)...
+[2026-11-12 15:21:56] [INFO] [Executor] Expiration in approx 302s. Waiting...
+[2026-11-12 15:22:11] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:22:32] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:22:53] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:23:14] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:23:35] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:23:55] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:24:15] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:24:37] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:24:56] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:25:18] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:25:38] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:25:58] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:26:18] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:26:38] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:26:59] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:27:02] [INFO] [MoneyManager] Win! Reset Martingale from step 1 back to 1.
+[2026-11-12 15:27:02] [INFO] [Bot] Trade finished: WIN | PnL: $8.7 | Balance: $29091.39
+[2026-11-12 15:27:10] [INFO] [Bot] Monitoring Top 5: [TAOUSD-OTC: DOWN RSI:59.42, HBARUSD-OTC: DOWN RSI:48.92, RENDERUSD-OTC: DOWN RSI:38.6, XAU/XAG: DOWN RSI:51.5, DYDXUSD-OTC: DOWN RSI:50.58] - Waiting for pullback setup...
+[2026-11-12 15:27:22] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:27:29] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:27:31] [INFO] [Bot] Monitoring Top 5: [HBARUSD-OTC: DOWN RSI:43.04, XAU/XAG: DOWN RSI:55.51, DYDXUSD-OTC: DOWN RSI:40.06, European AI: DOWN RSI:41.94, SUIUSD-OTC: DOWN RSI:49.72] - Waiting for pullback setup...
+[2026-11-12 15:27:43] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:27:47] [INFO] [Bot] Monitoring Top 5: [RAYDIUMUSD-OTC: DOWN RSI:42.31, SUIUSD-OTC: DOWN RSI:48.64, RENDERUSD-OTC: DOWN RSI:51.55, PENGUUSD-OTC: DOWN RSI:38.91, HBARUSD-OTC: DOWN RSI:48.92] - Waiting for pullback setup...
+[2026-11-12 15:28:11] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:28:11] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:28:15] [INFO] [Bot] Monitoring Top 5: [RAYDIUMUSD-OTC: DOWN RSI:45.39, PENGUUSD-OTC: DOWN RSI:37.95, SUIUSD-OTC: DOWN RSI:43.0, Luxury: UP RSI:42.68, European AI: DOWN RSI:39.66] - Waiting for pullback setup...
+[2026-11-12 15:28:27] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:28:36] [INFO] [Bot] Monitoring Top 5: [RAYDIUMUSD-OTC: DOWN RSI:44.39, Luxury: UP RSI:42.95, Bitcoin/Gold-op: UP RSI:75.09, RENDERUSD-OTC: DOWN RSI:61.71, ONDOUSD-OTC: DOWN RSI:51.26] - Waiting for pullback setup...
+[2026-11-12 15:28:51] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:28:51] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:28:55] [INFO] [Bot] Monitoring Top 5: [FETUSD-OTC: UP RSI:50.17, TAOUSD-OTC: DOWN RSI:66.53, Bitcoin/Gold-op: UP RSI:74.05, DYDXUSD-OTC: DOWN RSI:25.05, ONDOUSD-OTC: DOWN RSI:51.57] - Waiting for pullback setup...
+[2026-11-12 15:29:09] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:29:17] [INFO] [Bot] Monitoring Top 5: [HBARUSD-OTC: DOWN RSI:40.89, TAOUSD-OTC: DOWN RSI:59.3, XAU/XAG: DOWN RSI:55.68, PENGUUSD-OTC: DOWN RSI:36.21, FETUSD-OTC: UP RSI:43.84] - Waiting for pullback setup...
+[2026-11-12 15:29:33] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:29:33] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:29:38] [INFO] [Bot] Monitoring Top 5: [RAYDIUMUSD-OTC: DOWN RSI:54.06, RENDERUSD-OTC: DOWN RSI:66.61, HBARUSD-OTC: DOWN RSI:38.21, ONDOUSD-OTC: DOWN RSI:51.68, XAU/XAG: DOWN RSI:50.89] - Waiting for pullback setup...
+[2026-11-12 15:29:53] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:29:53] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:29:57] [INFO] [Bot] Monitoring Top 5: [Bitcoin/Gold-op: UP RSI:63.24, XAU/XAG: DOWN RSI:52.59, European AI: DOWN RSI:46.3, DYDXUSD-OTC: DOWN RSI:22.8, PENGUUSD-OTC: DOWN RSI:50.51] - Waiting for pullback setup...
+[2026-11-12 15:30:13] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:30:13] [INFO] [Bot] Monitoring Top 5: [Bitcoin/Gold-op: UP RSI:59.05, XAU/XAG: DOWN RSI:52.58, European AI: DOWN RSI:49.46, DYDXUSD-OTC: DOWN RSI:19.9, PENGUUSD-OTC: DOWN RSI:49.25] - Waiting for pullback setup...
+[2026-11-12 15:30:33] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:30:33] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:30:36] [INFO] [Bot] Monitoring Top 5: [SUIUSD-OTC: DOWN RSI:49.82, DYDXUSD-OTC: DOWN RSI:31.12, RAYDIUMUSD-OTC: DOWN RSI:45.22, XAU/XAG: DOWN RSI:50.87, Luxury: UP RSI:47.39] - Waiting for pullback setup...
+[2026-11-12 15:30:59] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:30:59] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:31:03] [INFO] [Bot] Monitoring Top 5: [RAYDIUMUSD-OTC: DOWN RSI:40.23, European AI: DOWN RSI:43.81, DYDXUSD-OTC: DOWN RSI:36.0, RENDERUSD-OTC: DOWN RSI:63.79, Luxury: UP RSI:50.39] - Waiting for pullback setup...
+[2026-11-12 15:31:16] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:31:25] [INFO] [Bot] 🎯 Signal TRIGGERED: CALL on FETUSD-OTC (87%)! Reason: UP + Lower BB Touch + RSI Oversold (39.5) | Placing order $10.0 (Step 1)...
+[2026-11-12 15:31:25] [INFO] [Executor] Placing CALL order on FETUSD-OTC ($10.0, step 1)...
+[2026-11-12 15:31:26] [INFO] [Executor] Order #14443717385 placed. Waiting for expiration (5 min)...
+[2026-11-12 15:31:26] [INFO] [Executor] Expiration in approx 272s. Waiting...
+[2026-11-12 15:31:35] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:31:54] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:32:15] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:32:36] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:32:56] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:33:16] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:33:36] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:33:57] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:34:17] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:34:38] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:34:58] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:35:20] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:35:40] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:36:01] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:36:02] [INFO] [Executor] Live balance increased by +$8.7. Resolved as WIN.
+[2026-11-12 15:36:02] [INFO] [MoneyManager] Win! Reset Martingale from step 1 back to 1.
+[2026-11-12 15:36:02] [INFO] [Bot] Trade finished: WIN | PnL: $8.7 | Balance: $29100.09
+[2026-11-12 15:36:10] [INFO] [Bot] 🎯 Signal TRIGGERED: PUT on European AI (87%)! Reason: DOWN + Upper BB Touch + RSI Overbought (63.2) | Placing order $10.0 (Step 1)...
+[2026-11-12 15:36:10] [INFO] [Executor] Placing PUT order on European AI ($10.0, step 1)...
+[2026-11-12 15:36:11] [INFO] [Executor] Order #14443724498 placed. Waiting for expiration (5 min)...
+[2026-11-12 15:36:11] [INFO] [Executor] Expiration in approx 287s. Waiting...
+[2026-11-12 15:36:21] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:36:41] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:37:02] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:37:23] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:37:43] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:38:05] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:38:25] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:38:45] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:39:05] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:39:27] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:39:46] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:40:06] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:40:26] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:40:47] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:41:02] [INFO] [MoneyManager] Loss on step 1. Advancing to step 2 ($22.0).
+[2026-11-12 15:41:02] [INFO] [Bot] Trade finished: LOSS | PnL: $-10.0 | Balance: $29090.09
+[2026-11-12 15:41:09] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:41:15] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:41:16] [INFO] [Bot] 🎯 Signal TRIGGERED: PUT on XAU/XAG (87%)! Reason: DOWN + Upper BB Touch + RSI Overbought (66.6) | Placing order $22.0 (Step 2)...
+[2026-11-12 15:41:17] [INFO] [Executor] Placing PUT order on XAU/XAG ($22.0, step 2)...
+[2026-11-12 15:41:18] [INFO] [Executor] Order #14443731530 placed. Waiting for expiration (5 min)...
+[2026-11-12 15:41:18] [INFO] [Executor] Expiration in approx 280s. Waiting...
+[2026-11-12 15:41:31] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
