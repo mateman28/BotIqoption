@@ -53,6 +53,9 @@ class OrderExecutor:
         if iq_client.is_connected and iq_client.api:
             logger.info(f"[Executor] Placing {direction.upper()} order on {asset} (${amount}, step {step})...")
             try:
+                # Capture balance BEFORE placing the order as authoritative reference
+                balance_before = iq_client.get_balance()
+
                 # 1. Place Order
                 status, order_id = iq_client.api.buy(amount, asset, direction_lower, duration)
                 if not status:
@@ -67,13 +70,33 @@ class OrderExecutor:
 
                 # 2. Wait for expiration and poll result
                 logger.info(f"[Executor] Order #{order_id} placed. Waiting for expiration ({duration} min)...")
-                # Wait for duration in seconds (minus small buffer)
-                wait_seconds = duration * 60
-                time.sleep(max(1, wait_seconds - 2))
+                try:
+                    from iqoptionapi.expiration import get_expiration_time
+                    server_time = int(iq_client.api.timesync.server_timestamp if (hasattr(iq_client.api, 'timesync') and iq_client.api.timesync) else time.time())
+                    exp_timestamp, _ = get_expiration_time(server_time, duration)
+                    wait_seconds = max(5, int(exp_timestamp - server_time) - 2)
+                except Exception:
+                    wait_seconds = max(5, (duration * 60) - 2)
+
+                logger.info(f"[Executor] Expiration in approx {wait_seconds}s. Waiting...")
+                time.sleep(wait_seconds)
 
                 # Check result
-                result_str, net_profit = self._poll_result(order_id, amount=amount)
+                result_str, net_profit = self._poll_result(order_id, amount=amount, balance_before=balance_before)
                 current_bal = iq_client.get_balance()
+
+                # Robust Balance Reconciliation Check:
+                # If outcome was marked as LOSS/EQUAL, but the real account balance increased by >= $0.05,
+                # then it was undeniably a WIN! Correct the misclassification.
+                if balance_before is not None and balance_before > 0:
+                    bal_diff = round(current_bal - balance_before, 2)
+                    if bal_diff > 0.05 and result_str != "WIN":
+                        logger.warning(
+                            f"[Executor] Reconciliation: Order was evaluated as {result_str}, "
+                            f"but balance increased by +${bal_diff} (${balance_before} -> ${current_bal}). Overriding to WIN!"
+                        )
+                        result_str = "WIN"
+                        net_profit = bal_diff
 
                 # 3. Update Risk & Money Manager
                 profit_for_stats = net_profit if result_str == "WIN" else 0.0
@@ -113,24 +136,27 @@ class OrderExecutor:
         else:
             return self._execute_mock_trade(trade_record, asset, direction, amount, step, payout, reason)
 
-    def _poll_result(self, order_id: int, amount: float = 1.0, timeout: int = 45) -> Tuple[str, float]:
+    def _poll_result(self, order_id: int, amount: float = 1.0, timeout: int = 45, balance_before: float = None) -> Tuple[str, float]:
         """
         Polls order result accurately from WebSocket order_async and portfolio history.
-        Handles both Turbo and Binary options correctly.
+        Handles Turbo, Binary, and Digital options, with balance delta verification.
         """
         start = time.time()
+        order_str = str(order_id)
         while time.time() - start < timeout:
             # 1. Fast check: order_async event from websocket
             try:
-                async_dict = iq_client.api.get_async_order(order_id)
+                oid_int = int(order_id)
+                async_dict = iq_client.api.get_async_order(oid_int)
                 if async_dict and "option-closed" in async_dict and async_dict["option-closed"]:
                     msg = async_dict["option-closed"].get("msg", {})
                     profit_amount = float(msg.get("profit_amount", 0.0))
                     bet_amount = float(msg.get("amount", amount))
                     net_profit = profit_amount - bet_amount
-                    if net_profit > 0:
-                        return "WIN", net_profit
-                    elif net_profit < 0:
+                    win_tag = str(msg.get("win", "")).lower()
+                    if net_profit > 0 or win_tag in ("win", "won"):
+                        return "WIN", round(net_profit if net_profit > 0 else (profit_amount or amount), 2)
+                    elif net_profit < 0 or win_tag in ("loose", "loss"):
                         return "LOSS", -bet_amount
                     else:
                         return "EQUAL", 0.0
@@ -139,17 +165,21 @@ class OrderExecutor:
 
             # 2. Authoritative check: get_position_history_v2
             try:
-                for inst_type in ["turbo-option", "binary-option"]:
-                    success, history = iq_client.api.get_position_history_v2(inst_type, 10, 0, 0, 0)
+                for inst_type in ["turbo-option", "binary-option", "digital-option"]:
+                    success, history = iq_client.api.get_position_history_v2(inst_type, 15, 0, 0, 0)
                     if success and history:
                         for p in history.get("positions", []):
-                            if p.get("external_id") == order_id:
+                            p_ext = str(p.get("external_id", ""))
+                            p_id = str(p.get("id", ""))
+                            raw_ids = [str(x) for x in p.get("raw_event", {}).get("order_ids", [])] if isinstance(p.get("raw_event"), dict) else []
+                            
+                            if order_str == p_ext or order_str == p_id or order_str in raw_ids:
                                 close_reason = str(p.get("close_reason", "")).lower()
                                 pnl = float(p.get("pnl_net", p.get("pnl_realized", 0.0)))
                                 close_profit = float(p.get("close_profit", 0.0))
                                 invest = float(p.get("invest", amount))
                                 
-                                if close_reason == "win" or pnl > 0 or close_profit > invest:
+                                if close_reason in ("win", "won") or pnl > 0 or close_profit > invest:
                                     net_win = pnl if pnl > 0 else (close_profit - invest)
                                     return "WIN", round(net_win, 2)
                                 elif close_reason in ("loose", "loss") or pnl < 0 or (close_profit == 0 and invest > 0):
@@ -159,9 +189,31 @@ class OrderExecutor:
             except Exception:
                 pass
 
+            # 3. Quick balance delta confirmation during polling
+            if balance_before is not None and balance_before > 0:
+                cur = iq_client.get_balance()
+                if cur > (balance_before + 0.05):
+                    net_win = round(cur - balance_before, 2)
+                    logger.info(f"[Executor] Live balance increased by +${net_win}. Resolved as WIN.")
+                    return "WIN", net_win
+
             time.sleep(2)
 
-        # Fallback if timeout: Loss safety default
+        # 4. Fallback if timeout: Check final balance delta before guessing LOSS
+        if balance_before is not None and balance_before > 0:
+            final_bal = iq_client.get_balance()
+            diff = round(final_bal - balance_before, 2)
+            if diff > 0.05:
+                logger.info(f"[Executor] Polling timeout fallback: Balance increased by +${diff}. Resolved as WIN.")
+                return "WIN", diff
+            elif abs(diff) < 0.05:
+                logger.info(f"[Executor] Polling timeout fallback: Balance unchanged. Resolved as EQUAL.")
+                return "EQUAL", 0.0
+            elif diff <= -(amount * 0.5):
+                logger.info(f"[Executor] Polling timeout fallback: Balance decreased by -${amount}. Resolved as LOSS.")
+                return "LOSS", -amount
+
+        # Fallback if timeout and no balance delta available
         logger.warning(f"[Executor] Polling result timed out for order #{order_id}. Defaulting to LOSS.")
         return "LOSS", -amount
 

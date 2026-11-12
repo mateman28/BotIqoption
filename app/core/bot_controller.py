@@ -90,15 +90,27 @@ class BotController:
                     payout = pair_info["payout"]
                     self.selected_pair = active_pair
 
-                    # Fetch Candles (M5 for Trend context, M1 for Entry)
-                    m5_candles = data_feed.get_candles(active_pair, timeframe_sec=300, count=60)
-                    m1_candles = data_feed.get_candles(active_pair, timeframe_sec=60, count=60)
+                    # Fetch Candles according to strategy timeframe:
+                    # For 5M Options: M1 for Entry, M5 for Macro Trend (fast and accurate pullback entries)
+                    # For 15M Options: M5 for Entry, M15 for Macro Trend
+                    if config.EXPIRY_MINUTES >= 15:
+                        entry_tf = 300   # 5M
+                        macro_tf = 900   # 15M
+                    elif config.EXPIRY_MINUTES >= 5:
+                        entry_tf = 60    # 1M
+                        macro_tf = 300   # 5M
+                    else:
+                        entry_tf = 60    # 1M
+                        macro_tf = 300   # 5M
 
-                    if m1_candles is None or m1_candles.empty:
+                    macro_candles = data_feed.get_candles(active_pair, timeframe_sec=macro_tf, count=60)
+                    entry_candles = data_feed.get_candles(active_pair, timeframe_sec=entry_tf, count=60)
+
+                    if entry_candles is None or entry_candles.empty:
                         continue
 
                     # Analyze Technical Signals
-                    signal, info = trend_strategy.analyze(m1_candles, m5_candles)
+                    signal, info = trend_strategy.analyze(entry_candles, macro_candles)
                     self.last_signal = signal
                     self.last_analysis_info = info
                     rsi_val = info.get("rsi", "-")

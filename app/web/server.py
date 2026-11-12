@@ -6,7 +6,7 @@ from fastapi.templating import Jinja2Templates
 from pydantic import BaseModel
 from typing import Optional
 
-from app.config import config
+from app.config import config, Config
 from app.core.client import iq_client
 from app.core.bot_controller import bot_controller
 from app.core.executor import get_recent_trades
@@ -103,36 +103,54 @@ async def update_config(payload: ConfigUpdateModel):
     if payload.account_mode:
         config.ACCOUNT_MODE = payload.account_mode.upper()
         iq_client.set_mode(payload.account_mode)
+        Config.save_setting("ACCOUNT_MODE", config.ACCOUNT_MODE)
     if payload.base_bet is not None:
-        config.BASE_BET = payload.base_bet
+        config.BASE_BET = float(payload.base_bet)
+        Config.save_setting("BASE_BET", str(config.BASE_BET))
     if payload.martingale_steps is not None:
-        config.MARTINGALE_STEPS = payload.martingale_steps
+        config.MARTINGALE_STEPS = int(payload.martingale_steps)
+        Config.save_setting("MARTINGALE_STEPS", str(config.MARTINGALE_STEPS))
     if payload.min_payout is not None:
         val = payload.min_payout
         config.MIN_PAYOUT = (val / 100.0) if val > 1 else val
         scanner.min_payout = config.MIN_PAYOUT
+        Config.save_setting("MIN_PAYOUT", str(int(round(config.MIN_PAYOUT * 100))))
     if payload.top_pairs_count is not None:
-        config.TOP_PAIRS_COUNT = payload.top_pairs_count
+        config.TOP_PAIRS_COUNT = int(payload.top_pairs_count)
+        Config.save_setting("TOP_PAIRS_COUNT", str(config.TOP_PAIRS_COUNT))
     if payload.rsi_period is not None:
-        config.RSI_PERIOD = payload.rsi_period
+        config.RSI_PERIOD = int(payload.rsi_period)
+        Config.save_setting("RSI_PERIOD", str(config.RSI_PERIOD))
     if payload.rsi_oversold is not None:
-        config.RSI_OVERSOLD = payload.rsi_oversold
+        config.RSI_OVERSOLD = float(payload.rsi_oversold)
+        Config.save_setting("RSI_OVERSOLD", str(config.RSI_OVERSOLD))
     if payload.rsi_overbought is not None:
-        config.RSI_OVERBOUGHT = payload.rsi_overbought
+        config.RSI_OVERBOUGHT = float(payload.rsi_overbought)
+        Config.save_setting("RSI_OVERBOUGHT", str(config.RSI_OVERBOUGHT))
     if payload.daily_stop_loss is not None:
-        config.DAILY_STOP_LOSS = payload.daily_stop_loss
+        config.DAILY_STOP_LOSS = float(payload.daily_stop_loss)
+        Config.save_setting("DAILY_STOP_LOSS", str(config.DAILY_STOP_LOSS))
     if payload.daily_take_profit is not None:
-        config.DAILY_TAKE_PROFIT = payload.daily_take_profit
+        config.DAILY_TAKE_PROFIT = float(payload.daily_take_profit)
+        Config.save_setting("DAILY_TAKE_PROFIT", str(config.DAILY_TAKE_PROFIT))
     if payload.telegram_bot_token is not None:
         config.TELEGRAM_BOT_TOKEN = payload.telegram_bot_token
+        Config.save_setting("TELEGRAM_BOT_TOKEN", config.TELEGRAM_BOT_TOKEN)
     if payload.telegram_chat_id is not None:
         config.TELEGRAM_CHAT_ID = payload.telegram_chat_id
+        Config.save_setting("TELEGRAM_CHAT_ID", config.TELEGRAM_CHAT_ID)
     if payload.telegram_enabled is not None:
         config.TELEGRAM_ENABLED = payload.telegram_enabled
+        Config.save_setting("TELEGRAM_ENABLED", str(config.TELEGRAM_ENABLED).lower())
+
+    # Keep custom steps synced with new ladder
+    new_ladder = config.get_martingale_ladder()
+    config.CUSTOM_STEPS_STR = ",".join(str(x) for x in new_ladder)
+    Config.save_setting("CUSTOM_STEPS", config.CUSTOM_STEPS_STR)
 
     money_manager.reload_config()
-    logger.info(f"[Web] Configuration updated via dashboard (Min Payout: {config.MIN_PAYOUT:.0%}, Top Pairs: {config.TOP_PAIRS_COUNT}).")
-    return {"status": "success", "message": "Settings updated"}
+    logger.info(f"[Web] Configuration updated via dashboard (Base Bet: ${config.BASE_BET}, Ladder: {new_ladder}, Min Payout: {config.MIN_PAYOUT:.0%}, Top Pairs: {config.TOP_PAIRS_COUNT}).")
+    return {"status": "success", "message": "Settings updated", "base_bet": config.BASE_BET, "ladder": new_ladder}
 
 @app.websocket("/ws")
 async def websocket_endpoint(websocket: WebSocket):

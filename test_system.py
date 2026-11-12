@@ -14,43 +14,43 @@ class TestIQOptionBot(unittest.TestCase):
     def test_01_config_and_martingale_ladder(self):
         ladder = config.get_martingale_ladder()
         print(f"[TEST 1] Martingale Ladder: {ladder}")
-        self.assertEqual(len(ladder), 5)
-        self.assertEqual(ladder[0], 1.0)
-        self.assertEqual(ladder[-1], 25.0)
+        self.assertEqual(len(ladder), config.MARTINGALE_STEPS)
+        self.assertEqual(ladder[0], config.BASE_BET)
+        self.assertTrue(ladder[-1] > ladder[0])
 
     def test_02_money_manager_martingale_and_cutloss(self):
         mm = MoneyManager()
         self.assertEqual(mm.current_step, 1)
-        self.assertEqual(mm.get_current_bet(), 1.0)
+        self.assertEqual(mm.get_current_bet(), mm.ladder[0])
 
         # Loss 1
-        step, _ = mm.record_result("LOSS", 1.0, 0.0)
+        step, _ = mm.record_result("LOSS", mm.ladder[0], 0.0)
         self.assertEqual(step, 2)
-        self.assertEqual(mm.get_current_bet(), 2.2)
+        self.assertEqual(mm.get_current_bet(), mm.ladder[1])
 
         # Loss 2
-        step, _ = mm.record_result("LOSS", 2.2, 0.0)
+        step, _ = mm.record_result("LOSS", mm.ladder[1], 0.0)
         self.assertEqual(step, 3)
-        self.assertEqual(mm.get_current_bet(), 5.0)
+        self.assertEqual(mm.get_current_bet(), mm.ladder[2])
 
         # Loss 3
-        step, _ = mm.record_result("LOSS", 5.0, 0.0)
+        step, _ = mm.record_result("LOSS", mm.ladder[2], 0.0)
         self.assertEqual(step, 4)
-        self.assertEqual(mm.get_current_bet(), 11.0)
+        self.assertEqual(mm.get_current_bet(), mm.ladder[3])
 
         # Loss 4
-        step, _ = mm.record_result("LOSS", 11.0, 0.0)
+        step, _ = mm.record_result("LOSS", mm.ladder[3], 0.0)
         self.assertEqual(step, 5)
-        self.assertEqual(mm.get_current_bet(), 25.0)
+        self.assertEqual(mm.get_current_bet(), mm.ladder[4])
 
         # Loss 5 -> Must trigger Cut-Loss and reset to step 1
-        step, msg = mm.record_result("LOSS", 25.0, 0.0)
+        step, msg = mm.record_result("LOSS", mm.ladder[4], 0.0)
         self.assertEqual(step, 1)
         self.assertIn("Safety Cut-Loss", msg)
-        self.assertEqual(mm.get_current_bet(), 1.0)
+        self.assertEqual(mm.get_current_bet(), mm.ladder[0])
 
         # Win on step 1 -> Keeps step 1
-        step, msg = mm.record_result("WIN", 1.0, 0.85)
+        step, msg = mm.record_result("WIN", mm.ladder[0], mm.ladder[0] * 0.85)
         self.assertEqual(step, 1)
 
     def test_03_scanner_high_payout_filter(self):

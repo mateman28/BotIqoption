@@ -40,10 +40,11 @@ class AssetScanner:
             init_v2 = iq_client.api.get_all_init_v2() or {}
             all_profit = iq_client.api.get_all_profit() or {}
 
-            # When EXPIRY_MINUTES <= 5, we only trade Turbo options
-            # Only scan the relevant category to prevent attempting turbo trades on binary-only suspended assets
-            is_turbo_mode = config.EXPIRY_MINUTES <= 5
-            category_keys = ["turbo"] if is_turbo_mode else ["binary", "turbo"]
+            # Support both Turbo (1-5 min) and Binary (>= 15 min) options based on EXPIRY_MINUTES
+            # When EXPIRY_MINUTES <= 5: scan Turbo category (which includes 5-minute expiry)
+            # When EXPIRY_MINUTES > 5: scan Binary category
+            target_category = "turbo" if config.EXPIRY_MINUTES <= 5 else "binary"
+            category_keys = [target_category]
 
             seen_pairs = set()
 
