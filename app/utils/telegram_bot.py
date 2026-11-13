@@ -38,26 +38,30 @@ class TelegramNotifier:
 
     def notify_bot_status(self, is_running: bool, mode: str, balance: float):
         status_text = "🟢 *BOT STARTED*" if is_running else "🛑 *BOT STOPPED*"
+        mm_title = "Compound (ทบกำไร)" if config.MM_MODE == "COMPOUND" else "Martingale (ทบเมื่อแพ้)"
+        max_s = config.get_max_steps()
         msg = (
             f"{status_text}\n"
             f"━━━━━━━━━━━━━━━━━━\n"
             f"💼 *Account Mode:* `{mode}`\n"
             f"💰 *Current Balance:* `${balance:,.2f}`\n"
             f"🎯 *Base Bet:* `${config.BASE_BET}`\n"
-            f"📈 *Strategy:* `Multi-Timeframe Trend-Pullback`\n"
-            f"🛡️ *Martingale:* Up to `{config.MARTINGALE_STEPS}` steps\n"
+            f"📈 *Strategy:* `Multi-Timeframe Price Action`\n"
+            f"🛡️ *Money Mgmt:* `{mm_title}` ({max_s} Steps)\n"
             f"━━━━━━━━━━━━━━━━━━"
         )
         self.send_async(msg)
 
     def notify_order_placed(self, asset: str, direction: str, amount: float, step: int, payout: float, reason: str = ""):
         emoji_dir = "🟢 CALL (UP)" if direction.upper() == "CALL" else "🔴 PUT (DOWN)"
+        step_label = "Compound Step" if config.MM_MODE == "COMPOUND" else "Martingale Step"
+        max_s = config.get_max_steps()
         msg = (
             f"⚡ *NEW ORDER PLACED*\n"
             f"━━━━━━━━━━━━━━━━━━\n"
             f"📊 *Asset:* `{asset}`\n"
             f"📈 *Direction:* {emoji_dir}\n"
-            f"💵 *Amount:* `${amount:,.2f}` (Step {step}/{config.MARTINGALE_STEPS})\n"
+            f"💵 *Amount:* `${amount:,.2f}` ({step_label} {step}/{max_s})\n"
             f"💎 *Payout:* `{payout:.0%}`\n"
             f"⏱️ *Expiry:* `{config.EXPIRY_MINUTES} min`\n"
             f"💡 *Signal:* {reason or 'Technical Confluence'}\n"
@@ -76,6 +80,8 @@ class TelegramNotifier:
             header = "⚖️ *TRADE RESULT: EQUAL* ⚪"
             profit_str = "$0.00"
 
+        step_label = "Compound Step" if config.MM_MODE == "COMPOUND" else "Martingale Step"
+        max_s = config.get_max_steps()
         msg = (
             f"{header}\n"
             f"━━━━━━━━━━━━━━━━━━\n"
@@ -83,7 +89,7 @@ class TelegramNotifier:
             f"💵 *Stake:* `${amount:,.2f}`\n"
             f"💰 *Net PnL:* `{profit_str}`\n"
             f"💼 *Current Balance:* `${current_balance:,.2f}`\n"
-            f"🔄 *Next Step:* `{next_step}/{config.MARTINGALE_STEPS}`\n"
+            f"🔄 *Next Step:* `{step_label} {next_step}/{max_s}`\n"
             f"━━━━━━━━━━━━━━━━━━"
         )
         self.send_async(msg)

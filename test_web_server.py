@@ -2,6 +2,7 @@ import unittest
 from fastapi.testclient import TestClient
 from app.web.server import app
 from app.core.bot_controller import bot_controller
+from app.config import config
 
 class TestWebEndpoints(unittest.TestCase):
     def setUp(self):
@@ -19,7 +20,7 @@ class TestWebEndpoints(unittest.TestCase):
         data = res.json()
         self.assertIn("is_running", data)
         self.assertIn("risk_summary", data)
-        self.assertEqual(data["risk_summary"]["max_steps"], 5)
+        self.assertEqual(data["risk_summary"]["max_steps"], config.get_max_steps())
 
     def test_03_scanner_api(self):
         res = self.client.get("/api/scanner")
@@ -46,7 +47,9 @@ class TestWebEndpoints(unittest.TestCase):
 
     def test_05_config_update(self):
         payload = {
+            "mm_mode": "COMPOUND",
             "base_bet": 2.0,
+            "compound_steps": 2,
             "martingale_steps": 5,
             "daily_stop_loss": 60.0,
             "daily_take_profit": 40.0

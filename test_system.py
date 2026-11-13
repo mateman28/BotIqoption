@@ -20,6 +20,9 @@ class TestIQOptionBot(unittest.TestCase):
 
     def test_02_money_manager_martingale_and_cutloss(self):
         mm = MoneyManager()
+        mm.mode = "MARTINGALE"
+        mm.max_steps = 5
+        mm.ladder = config.get_martingale_ladder()
         self.assertEqual(mm.current_step, 1)
         self.assertEqual(mm.get_current_bet(), mm.ladder[0])
 
@@ -52,6 +55,36 @@ class TestIQOptionBot(unittest.TestCase):
         # Win on step 1 -> Keeps step 1
         step, msg = mm.record_result("WIN", mm.ladder[0], mm.ladder[0] * 0.85)
         self.assertEqual(step, 1)
+
+    def test_02b_money_manager_compound_masaniello(self):
+        """Test Compound / Masaniello-lite (ทบกำไรแบบจำกัดขั้น)."""
+        mm = MoneyManager()
+        mm.mode = "COMPOUND"
+        mm.max_steps = 2
+        mm.base_bet = 2.0
+        mm.current_bet = 2.0
+        mm.current_step = 1
+
+        # Win 1: Compound profit
+        step, msg = mm.record_result("WIN", 2.0, 1.76)
+        self.assertEqual(step, 2)
+        self.assertEqual(mm.get_current_bet(), 3.76)
+        self.assertIn("Compounding profit", msg)
+
+        # Win 2: Completed 2-step compound target! Cycle Won & reset to base bet
+        step, msg = mm.record_result("WIN", 3.76, 3.31)
+        self.assertEqual(step, 1)
+        self.assertEqual(mm.get_current_bet(), 2.0)
+        self.assertIn("COMPLETED", msg)
+        self.assertEqual(mm.cycles_won, 1)
+
+        # Test Loss in Compound: Immediate reset to step 1 without increasing risk
+        step, _ = mm.record_result("WIN", 2.0, 1.76)
+        self.assertEqual(step, 2)
+        step, msg = mm.record_result("LOSS", 3.76, 0.0)
+        self.assertEqual(step, 1)
+        self.assertEqual(mm.get_current_bet(), 2.0)
+        self.assertIn("Capital Protected", msg)
 
     def test_03_scanner_high_payout_filter(self):
         sc = AssetScanner(min_payout=0.88)

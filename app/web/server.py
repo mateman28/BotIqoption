@@ -23,6 +23,8 @@ class ConfigUpdateModel(BaseModel):
     iq_email: Optional[str] = None
     iq_password: Optional[str] = None
     account_mode: Optional[str] = None
+    mm_mode: Optional[str] = None
+    compound_steps: Optional[int] = None
     base_bet: Optional[float] = None
     martingale_steps: Optional[int] = None
     min_payout: Optional[float] = None
@@ -104,6 +106,12 @@ async def update_config(payload: ConfigUpdateModel):
         config.ACCOUNT_MODE = payload.account_mode.upper()
         iq_client.set_mode(payload.account_mode)
         Config.save_setting("ACCOUNT_MODE", config.ACCOUNT_MODE)
+    if payload.mm_mode:
+        config.MM_MODE = payload.mm_mode.upper()
+        Config.save_setting("MM_MODE", config.MM_MODE)
+    if payload.compound_steps is not None:
+        config.COMPOUND_STEPS = int(payload.compound_steps)
+        Config.save_setting("COMPOUND_STEPS", str(config.COMPOUND_STEPS))
     if payload.base_bet is not None:
         config.BASE_BET = float(payload.base_bet)
         Config.save_setting("BASE_BET", str(config.BASE_BET))
@@ -144,13 +152,13 @@ async def update_config(payload: ConfigUpdateModel):
         Config.save_setting("TELEGRAM_ENABLED", str(config.TELEGRAM_ENABLED).lower())
 
     # Keep custom steps synced with new ladder
-    new_ladder = config.get_martingale_ladder()
+    new_ladder = config.get_ladder()
     config.CUSTOM_STEPS_STR = ",".join(str(x) for x in new_ladder)
     Config.save_setting("CUSTOM_STEPS", config.CUSTOM_STEPS_STR)
 
     money_manager.reload_config()
-    logger.info(f"[Web] Configuration updated via dashboard (Base Bet: ${config.BASE_BET}, Ladder: {new_ladder}, Min Payout: {config.MIN_PAYOUT:.0%}, Top Pairs: {config.TOP_PAIRS_COUNT}).")
-    return {"status": "success", "message": "Settings updated", "base_bet": config.BASE_BET, "ladder": new_ladder}
+    logger.info(f"[Web] Configuration updated via dashboard (MM Mode: {config.MM_MODE}, Base Bet: ${config.BASE_BET}, Ladder: {new_ladder}, Min Payout: {config.MIN_PAYOUT:.0%}, Top Pairs: {config.TOP_PAIRS_COUNT}).")
+    return {"status": "success", "message": "Settings updated", "mm_mode": config.MM_MODE, "base_bet": config.BASE_BET, "ladder": new_ladder}
 
 @app.websocket("/ws")
 async def websocket_endpoint(websocket: WebSocket):

@@ -11052,3 +11052,1393 @@
 [2026-11-12 15:41:18] [INFO] [Executor] Order #14443731530 placed. Waiting for expiration (5 min)...
 [2026-11-12 15:41:18] [INFO] [Executor] Expiration in approx 280s. Waiting...
 [2026-11-12 15:41:31] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:41:53] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:42:13] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:42:33] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:42:54] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:43:15] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:43:36] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:43:57] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:44:18] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:44:39] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:45:01] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:45:21] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:45:42] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:46:08] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:46:11] [INFO] [MoneyManager] Loss on step 2. Advancing to step 3 ($48.4).
+[2026-11-12 15:46:11] [INFO] [Bot] Trade finished: LOSS | PnL: $-22.0 | Balance: $29068.09
+[2026-11-12 15:46:18] [INFO] [Bot] 🎯 Signal TRIGGERED: PUT on HBARUSD-OTC (87%)! Reason: DOWN + Upper BB Touch + RSI Overbought (63.3) | Placing order $48.4 (Step 3)...
+[2026-11-12 15:46:18] [INFO] [Executor] Placing PUT order on HBARUSD-OTC ($48.4, step 3)...
+[2026-11-12 15:46:24] [INFO] [Executor] Order #14443738685 placed. Waiting for expiration (5 min)...
+[2026-11-12 15:46:24] [INFO] [Executor] Expiration in approx 274s. Waiting...
+[2026-11-12 15:46:25] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:46:44] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:47:05] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:47:25] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:47:46] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:48:07] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:48:27] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:48:48] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:49:09] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:49:30] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:49:51] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:50:12] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:50:33] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:50:54] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:51:01] [INFO] [MoneyManager] Win! Reset Martingale from step 3 back to 1.
+[2026-11-12 15:51:01] [INFO] [Bot] Trade finished: WIN | PnL: $42.11 | Balance: $29110.2
+[2026-11-12 15:51:09] [INFO] [Bot] Monitoring Top 5: [FETUSD-OTC: DOWN RSI:34.62, TAOUSD-OTC: DOWN RSI:31.87, HBARUSD-OTC: DOWN RSI:58.91, European AI: DOWN RSI:60.93, SUIUSD-OTC: DOWN RSI:25.49] - Waiting for pullback setup...
+[2026-11-12 15:51:16] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:51:22] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:51:25] [INFO] [Bot] Monitoring Top 5: [FETUSD-OTC: DOWN RSI:35.85, RAYDIUMUSD-OTC: DOWN RSI:29.24, Bitcoin/Gold-op: UP RSI:65.15, HBARUSD-OTC: DOWN RSI:58.91, European AI: DOWN RSI:61.79] - Waiting for pullback setup...
+[2026-11-12 15:51:41] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:51:47] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:51:50] [INFO] [Bot] Monitoring Top 5: [XAU/XAG: DOWN RSI:63.52, SUIUSD-OTC: DOWN RSI:33.73, RAYDIUMUSD-OTC: DOWN RSI:26.23, PENGUUSD-OTC: DOWN RSI:40.89, RENDERUSD-OTC: DOWN RSI:22.88] - Waiting for pullback setup...
+[2026-11-12 15:52:04] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:52:11] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:52:14] [INFO] [Bot] Monitoring Top 5: [DYDXUSD-OTC: DOWN RSI:31.46, XAU/XAG: DOWN RSI:58.42, Luxury: UP RSI:66.52, SUIUSD-OTC: DOWN RSI:29.4, ONDOUSD-OTC: DOWN RSI:38.04] - Waiting for pullback setup...
+[2026-11-12 15:52:36] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:52:36] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:52:41] [INFO] [Bot] Monitoring Top 5: [PENGUUSD-OTC: DOWN RSI:55.68, TAOUSD-OTC: DOWN RSI:47.87, Luxury: UP RSI:61.67, SUIUSD-OTC: DOWN RSI:28.78, RAYDIUMUSD-OTC: DOWN RSI:20.81] - Waiting for pullback setup...
+[2026-11-12 15:52:57] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:52:57] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:53:00] [INFO] [Bot] 🎯 Signal TRIGGERED: PUT on HBARUSD-OTC (87%)! Reason: DOWN + Upper BB Touch + RSI Overbought (72.5) | Placing order $10.0 (Step 1)...
+[2026-11-12 15:53:00] [INFO] [Executor] Placing PUT order on HBARUSD-OTC ($10.0, step 1)...
+[2026-11-12 15:53:00] [INFO] [Executor] Order #14443748612 placed. Waiting for expiration (5 min)...
+[2026-11-12 15:53:00] [INFO] [Executor] Expiration in approx 298s. Waiting...
+[2026-11-12 15:53:09] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:53:29] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:53:50] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:54:10] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:54:30] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:54:51] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:55:11] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:55:32] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:55:52] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:56:12] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:56:32] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:56:53] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:57:13] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:57:34] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:57:55] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:58:02] [INFO] [MoneyManager] Win! Reset Martingale from step 1 back to 1.
+[2026-11-12 15:58:02] [INFO] [Bot] Trade finished: WIN | PnL: $8.7 | Balance: $29118.9
+[2026-11-12 15:58:10] [INFO] [Bot] Monitoring Top 5: [TAOUSD-OTC: DOWN RSI:58.44, PENGUUSD-OTC: DOWN RSI:22.69, ONDOUSD-OTC: DOWN RSI:59.71, Bitcoin/Gold-op: UP RSI:81.04, FETUSD-OTC: DOWN RSI:36.2] - Waiting for pullback setup...
+[2026-11-12 15:58:16] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:58:22] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:58:23] [INFO] [Bot] 🎯 Signal TRIGGERED: PUT on ONDOUSD-OTC (87%)! Reason: DOWN + Upper BB Touch + RSI Overbought (65.4) | Placing order $10.0 (Step 1)...
+[2026-11-12 15:58:23] [INFO] [Executor] Placing PUT order on ONDOUSD-OTC ($10.0, step 1)...
+[2026-11-12 15:58:24] [INFO] [Executor] Order #14443757021 placed. Waiting for expiration (5 min)...
+[2026-11-12 15:58:24] [INFO] [Executor] Expiration in approx 274s. Waiting...
+[2026-11-12 15:58:40] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:59:01] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:59:22] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 15:59:43] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 16:00:04] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 16:00:25] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 16:00:46] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 16:01:07] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 16:01:28] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 16:01:49] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 16:02:09] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 16:02:29] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 16:02:49] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 16:03:01] [INFO] [MoneyManager] Loss on step 1. Advancing to step 2 ($22.0).
+[2026-11-12 16:03:01] [INFO] [Bot] Trade finished: LOSS | PnL: $-10.0 | Balance: $29108.9
+[2026-11-12 16:03:18] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 16:03:18] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 16:03:24] [INFO] [Bot] Monitoring Top 5: [ONDOUSD-OTC: DOWN RSI:67.54, FETUSD-OTC: DOWN RSI:44.38, HBARUSD-OTC: DOWN RSI:57.75, Luxury: UP RSI:68.82, PENGUUSD-OTC: UP RSI:68.76] - Waiting for pullback setup...
+[2026-11-12 16:03:32] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 16:03:39] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 16:03:42] [INFO] [Bot] Monitoring Top 5: [FETUSD-OTC: DOWN RSI:34.47, RAYDIUMUSD-OTC: DOWN RSI:8.26, ONDOUSD-OTC: DOWN RSI:68.63, Luxury: UP RSI:69.49, HBARUSD-OTC: DOWN RSI:59.37] - Waiting for pullback setup...
+[2026-11-12 16:03:55] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 16:04:00] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 16:04:02] [INFO] [Bot] Monitoring Top 5: [XAU/XAG: UP RSI:42.59, RAYDIUMUSD-OTC: DOWN RSI:7.73, Bitcoin/Gold-op: UP RSI:35.28, Luxury: UP RSI:66.9, SUIUSD-OTC: DOWN RSI:41.17] - Waiting for pullback setup...
+[2026-11-12 16:04:29] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 16:04:29] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 16:04:34] [INFO] [Bot] Monitoring Top 5: [European AI: DOWN RSI:49.76, Bitcoin/Gold-op: UP RSI:33.42, SUIUSD-OTC: DOWN RSI:34.35, FETUSD-OTC: DOWN RSI:26.24, XAU/XAG: DOWN RSI:35.22] - Waiting for pullback setup...
+[2026-11-12 16:04:42] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 16:04:48] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 16:04:51] [INFO] [Bot] Monitoring Top 5: [SUIUSD-OTC: DOWN RSI:36.93, RAYDIUMUSD-OTC: DOWN RSI:16.65, PENGUUSD-OTC: DOWN RSI:46.29, TAOUSD-OTC: DOWN RSI:58.23, Luxury: UP RSI:59.62] - Waiting for pullback setup...
+[2026-11-12 16:05:06] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 16:05:13] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 16:05:16] [INFO] [Bot] Monitoring Top 5: [TAOUSD-OTC: DOWN RSI:58.56, SUIUSD-OTC: DOWN RSI:42.0, FETUSD-OTC: DOWN RSI:24.21, Luxury: UP RSI:52.72, DYDXUSD-OTC: DOWN RSI:36.02] - Waiting for pullback setup...
+[2026-11-12 16:05:29] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 16:05:32] [INFO] [Bot] Monitoring Top 5: [TAOUSD-OTC: DOWN RSI:64.88, European AI: DOWN RSI:43.3, RAYDIUMUSD-OTC: DOWN RSI:14.43, DYDXUSD-OTC: DOWN RSI:38.29, Bitcoin/Gold-op: UP RSI:41.54] - Waiting for pullback setup...
+[2026-11-12 16:05:37] [INFO] [Bot] 🎯 Signal TRIGGERED: PUT on TAOUSD-OTC (87%)! Reason: DOWN + Upper BB Touch + RSI Overbought (74.1) | Placing order $22.0 (Step 2)...
+[2026-11-12 16:05:37] [INFO] [Executor] Placing PUT order on TAOUSD-OTC ($22.0, step 2)...
+[2026-11-12 16:05:38] [INFO] [Executor] Order #14443767387 placed. Waiting for expiration (5 min)...
+[2026-11-12 16:05:38] [INFO] [Executor] Expiration in approx 320s. Waiting...
+[2026-11-12 16:05:49] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 16:06:09] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 16:06:31] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 16:06:51] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 16:07:11] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 16:07:33] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 16:07:52] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 16:08:14] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 16:08:34] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 16:08:55] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 16:09:17] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 16:09:37] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 16:09:57] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 16:10:17] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 16:10:37] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 16:10:58] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 16:11:01] [INFO] [MoneyManager] Loss on step 2. Advancing to step 3 ($48.4).
+[2026-11-12 16:11:01] [INFO] [Bot] Trade finished: LOSS | PnL: $-22.0 | Balance: $29086.9
+[2026-11-12 16:11:09] [INFO] [Bot] Monitoring Top 5: [RAYDIUMUSD-OTC: DOWN RSI:37.76, DYDXUSD-OTC: DOWN RSI:59.34, TAOUSD-OTC: UP RSI:88.52, ONDOUSD-OTC: DOWN RSI:55.28, FETUSD-OTC: DOWN RSI:61.6] - Waiting for pullback setup...
+[2026-11-12 16:11:26] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 16:11:26] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 16:11:31] [INFO] [Bot] Monitoring Top 5: [TAOUSD-OTC: UP RSI:87.97, RAYDIUMUSD-OTC: DOWN RSI:43.44, Luxury: UP RSI:59.25, XAU/XAG: DOWN RSI:24.1, PENGUUSD-OTC: UP RSI:65.78] - Waiting for pullback setup...
+[2026-11-12 16:11:46] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 16:11:46] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 16:11:51] [INFO] [Bot] Monitoring Top 5: [RAYDIUMUSD-OTC: DOWN RSI:53.96, European AI: DOWN RSI:47.92, SUIUSD-OTC: DOWN RSI:60.18, PENGUUSD-OTC: UP RSI:64.21, HBARUSD-OTC: DOWN RSI:52.64] - Waiting for pullback setup...
+[2026-11-12 16:12:10] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 16:12:10] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 16:12:13] [INFO] [Bot] 🎯 Signal TRIGGERED: PUT on RENDERUSD-OTC (87%)! Reason: DOWN + Upper BB Touch + RSI Overbought (66.3) | Placing order $48.4 (Step 3)...
+[2026-11-12 16:12:13] [INFO] [Executor] Placing PUT order on RENDERUSD-OTC ($48.4, step 3)...
+[2026-11-12 16:12:14] [INFO] [Executor] Order #14443777275 placed. Waiting for expiration (5 min)...
+[2026-11-12 16:12:14] [INFO] [Executor] Expiration in approx 284s. Waiting...
+[2026-11-12 16:12:22] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 16:12:42] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 16:13:03] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 16:13:23] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 16:13:44] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 16:14:05] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 16:14:25] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 16:14:47] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 16:15:07] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 16:15:26] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 16:15:47] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 16:16:08] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 16:16:29] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 16:16:50] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 16:17:01] [INFO] [MoneyManager] Loss on step 3. Advancing to step 4 ($106.48).
+[2026-11-12 16:17:01] [INFO] [Bot] Trade finished: LOSS | PnL: $-48.4 | Balance: $29038.5
+[2026-11-12 16:17:17] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 16:17:17] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 16:17:21] [INFO] [Bot] Monitoring Top 5: [SUIUSD-OTC: DOWN RSI:45.36, Luxury: UP RSI:54.13, XAU/XAG: DOWN RSI:31.83, ONDOUSD-OTC: DOWN RSI:40.44, DYDXUSD-OTC: DOWN RSI:39.18] - Waiting for pullback setup...
+[2026-11-12 16:17:40] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 16:17:40] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 16:17:45] [INFO] [Bot] Monitoring Top 5: [SUIUSD-OTC: DOWN RSI:37.95, RENDERUSD-OTC: UP RSI:80.53, Bitcoin/Gold-op: UP RSI:64.27, TAOUSD-OTC: UP RSI:43.34, FETUSD-OTC: UP RSI:79.38] - Waiting for pullback setup...
+[2026-11-12 16:17:55] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 16:18:05] [INFO] [Bot] Monitoring Top 5: [DYDXUSD-OTC: DOWN RSI:30.38, XAU/XAG: DOWN RSI:34.58, SUIUSD-OTC: DOWN RSI:43.2, FETUSD-OTC: UP RSI:79.15, PENGUUSD-OTC: DOWN RSI:38.47] - Waiting for pullback setup...
+[2026-11-12 16:18:15] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 16:18:18] [INFO] [Bot] 🎯 Signal TRIGGERED: PUT on HBARUSD-OTC (87%)! Reason: DOWN + Upper BB Touch + RSI Overbought (71.6) | Placing order $106.48 (Step 4)...
+[2026-11-12 16:18:18] [INFO] [Executor] Placing PUT order on HBARUSD-OTC ($106.48, step 4)...
+[2026-11-12 16:18:18] [INFO] [Executor] Order #14443787135 placed. Waiting for expiration (5 min)...
+[2026-11-12 16:18:18] [INFO] [Executor] Expiration in approx 280s. Waiting...
+[2026-11-12 16:23:02] [INFO] [MoneyManager] Win! Reset Martingale from step 4 back to 1.
+[2026-11-12 16:23:02] [WARNING] [Executor] Risk Limit Hit: TAKE_PROFIT!
+[2026-11-12 16:23:02] [INFO] [Bot] Trade finished: WIN | PnL: $92.64 | Balance: $29131.14
+[2026-11-12 16:23:07] [WARNING] [Bot] Session halted: TAKE_PROFIT hit! (PnL: $48.45)
+[2026-11-12 16:23:07] [INFO] [Bot] Stopping bot...
+[2026-11-12 16:23:07] [INFO] [Bot] Trading loop exited.
+[2026-11-12 17:02:01] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 17:02:21] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 17:02:21] [INFO] [Bot] Main trading loop active.
+[2026-11-12 17:02:21] [WARNING] [Bot] Session halted: TAKE_PROFIT hit! (PnL: $48.45)
+[2026-11-12 17:02:21] [INFO] [Bot] Stopping bot...
+[2026-11-12 17:02:22] [INFO] [Bot] Started! Mode: PRACTICE | Balance: $29,131.14
+[2026-11-12 17:02:22] [INFO] [Bot] Trading loop exited.
+[2026-11-12 17:02:42] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 17:02:53] [INFO] Starting IQ Option Web Dashboard on http://127.0.0.1:8000
+[2026-11-12 17:03:34] [INFO] [Web] Configuration updated via dashboard (Base Bet: $2.0, Ladder: [2.0, 4.4], Min Payout: 87%, Top Pairs: 5).
+[2026-11-12 17:03:39] [INFO] [Client] Connecting to IQ Option as par_mate@hotmail.com...
+[2026-11-12 17:03:42] [INFO] [Client] Successfully connected to IQ Option WebSocket!
+[2026-11-12 17:03:42] [INFO] [Client] Switched balance mode to: REAL
+[2026-11-12 17:03:42] [INFO] [Client] Account Mode: REAL | Balance: $13.03
+[2026-11-12 17:03:45] [INFO] [Client] Synced 528 active instruments. Total OP_code.ACTIVES: 635
+[2026-11-12 17:03:45] [INFO] [Bot] Main trading loop active.
+[2026-11-12 17:03:45] [INFO] [Bot] Started! Mode: REAL | Balance: $13.03
+[2026-11-12 17:03:47] [INFO] [Bot] 🎯 Signal TRIGGERED: PUT on JXY (88%)! Reason: NEUTRAL + Upper BB Touch + RSI Overbought (67.6) | Placing order $2.0 (Step 1)...
+[2026-11-12 17:03:47] [INFO] [Executor] Placing PUT order on JXY ($2.0, step 1)...
+[2026-11-12 17:03:47] [ERROR] [Executor] Failed to place order on JXY. Response: Cannot purchase an option (active is suspended)
+[2026-11-12 17:03:53] [INFO] [Bot] 🎯 Signal TRIGGERED: PUT on JXY (88%)! Reason: NEUTRAL + Upper BB Touch + RSI Overbought (67.5) | Placing order $2.0 (Step 1)...
+[2026-11-12 17:03:53] [INFO] [Executor] Placing PUT order on JXY ($2.0, step 1)...
+[2026-11-12 17:03:54] [ERROR] [Executor] Failed to place order on JXY. Response: Cannot purchase an option (active is suspended)
+[2026-11-12 17:04:09] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 17:04:09] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 17:04:14] [INFO] [Bot] Monitoring Top 5: [Luxury: UP RSI:59.12, RENDERUSD-OTC: UP RSI:42.56, European AI: UP RSI:49.09, SUIUSD-OTC: DOWN RSI:50.44, XAU/XAG: DOWN RSI:45.36] - Waiting for pullback setup...
+[2026-11-12 17:04:16] [INFO] [Client] Switched balance mode to: REAL
+[2026-11-12 17:04:16] [INFO] [Web] Configuration updated via dashboard (Base Bet: $1.0, Ladder: [1.0, 2.2], Min Payout: 87%, Top Pairs: 5).
+[2026-11-12 17:04:27] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 17:04:36] [INFO] [Bot] 🎯 Signal TRIGGERED: PUT on FETUSD-OTC (87%)! Reason: DOWN + Upper BB Touch + RSI Overbought (69.6) | Placing order $1.0 (Step 1)...
+[2026-11-12 17:04:36] [INFO] [Executor] Placing PUT order on FETUSD-OTC ($1.0, step 1)...
+[2026-11-12 17:04:37] [INFO] [Executor] Order #14443859194 placed. Waiting for expiration (5 min)...
+[2026-11-12 17:04:37] [INFO] [Executor] Expiration in approx 321s. Waiting...
+[2026-11-12 17:04:45] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 17:05:06] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 17:05:26] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 17:05:47] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 17:06:08] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 17:06:29] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 17:06:50] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 17:07:11] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 17:07:31] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 17:07:52] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 17:08:13] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 17:08:34] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 17:08:54] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 17:09:15] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 17:09:36] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 17:09:56] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 17:10:01] [INFO] [MoneyManager] Loss on step 1. Advancing to step 2 ($2.2).
+[2026-11-12 17:10:01] [INFO] [Bot] Trade finished: LOSS | PnL: $-1.0 | Balance: $12.03
+[2026-11-12 17:10:07] [INFO] [Bot] 🎯 Signal TRIGGERED: CALL on TAOUSD-OTC (87%)! Reason: UP + Lower BB Touch + RSI Oversold (32.2) | Placing order $2.2 (Step 2)...
+[2026-11-12 17:10:07] [INFO] [Executor] Placing CALL order on TAOUSD-OTC ($2.2, step 2)...
+[2026-11-12 17:10:08] [INFO] [Executor] Order #14443868279 placed. Waiting for expiration (5 min)...
+[2026-11-12 17:10:08] [INFO] [Executor] Expiration in approx 290s. Waiting...
+[2026-11-12 17:10:16] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 17:10:37] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 17:10:58] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 17:11:19] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 17:11:40] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 17:12:01] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 17:12:22] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 17:12:40] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 17:13:02] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 17:13:23] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 17:13:43] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 17:14:04] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 17:14:24] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 17:14:45] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 17:14:59] [INFO] [Executor] Live balance increased by +$197.8. Resolved as WIN.
+[2026-11-12 17:14:59] [INFO] [MoneyManager] Win! Reset Martingale from step 2 back to 1.
+[2026-11-12 17:14:59] [WARNING] [Executor] Risk Limit Hit: TAKE_PROFIT!
+[2026-11-12 17:14:59] [INFO] [Bot] Trade finished: WIN | PnL: $197.8 | Balance: $209.83
+[2026-11-12 17:15:04] [WARNING] [Bot] Session halted: TAKE_PROFIT hit! (PnL: $196.80)
+[2026-11-12 17:15:04] [INFO] [Bot] Stopping bot...
+[2026-11-12 17:15:06] [INFO] [Bot] Trading loop exited.
+[2026-11-12 17:15:08] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-12 17:15:27] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 08:10:25] [INFO] Starting IQ Option Web Dashboard on http://127.0.0.1:8000
+[2026-11-13 08:11:05] [INFO] [Client] Connecting to IQ Option as par_mate@hotmail.com...
+[2026-11-13 08:11:07] [INFO] [Client] Successfully connected to IQ Option WebSocket!
+[2026-11-13 08:11:07] [INFO] [Client] Switched balance mode to: REAL
+[2026-11-13 08:11:08] [INFO] [Client] Account Mode: REAL | Balance: $19.83
+[2026-11-13 08:11:15] [INFO] [Client] Synced 528 active instruments. Total OP_code.ACTIVES: 635
+[2026-11-13 08:11:15] [INFO] [Bot] Main trading loop active.
+[2026-11-13 08:11:16] [INFO] [Bot] Started! Mode: REAL | Balance: $19.83
+[2026-11-13 08:11:24] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:11:31] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:11:33] [INFO] [Bot] Monitoring Top 5: [RENDERUSD-OTC: UP RSI:53.89, ONDOUSD-OTC: UP RSI:48.96, HBARUSD-OTC: UP RSI:71.29, XAU/XAG: UP RSI:75.31, TAOUSD-OTC: UP RSI:28.74] - Waiting for pullback setup...
+[2026-11-13 08:11:46] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:11:49] [INFO] [Bot] Monitoring Top 5: [XAU/XAG: UP RSI:81.9, FETUSD-OTC: DOWN RSI:54.51, TAOUSD-OTC: UP RSI:24.93, SUIUSD-OTC: DOWN RSI:61.4, Japanese AI: UP RSI:49.6] - Waiting for pullback setup...
+[2026-11-13 08:12:11] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:12:11] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:12:14] [INFO] [Bot] Monitoring Top 5: [SUIUSD-OTC: DOWN RSI:49.32, RAYDIUMUSD-OTC: DOWN RSI:48.25, PENGUUSD-OTC: UP RSI:86.45, Japanese AI: DOWN RSI:40.33, DYDXUSD-OTC: DOWN RSI:37.83] - Waiting for pullback setup...
+[2026-11-13 08:12:26] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:12:30] [INFO] [Bot] Monitoring Top 5: [SUIUSD-OTC: DOWN RSI:41.46, PENGUUSD-OTC: UP RSI:84.03, ONDOUSD-OTC: UP RSI:59.49, FETUSD-OTC: DOWN RSI:54.58, XAU/XAG: UP RSI:85.1] - Waiting for pullback setup...
+[2026-11-13 08:12:49] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:12:51] [INFO] [Bot] Monitoring Top 5: [SUIUSD-OTC: DOWN RSI:42.0, PENGUUSD-OTC: UP RSI:70.81, ONDOUSD-OTC: UP RSI:55.56, FETUSD-OTC: DOWN RSI:58.57, XAU/XAG: UP RSI:85.29] - Waiting for pullback setup...
+[2026-11-13 08:13:12] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:13:12] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:13:16] [INFO] [Bot] Monitoring Top 5: [FETUSD-OTC: DOWN RSI:59.15, Japanese AI: DOWN RSI:44.7, XAU/XAG: UP RSI:78.64, SUIUSD-OTC: DOWN RSI:36.53, RAYDIUMUSD-OTC: DOWN RSI:42.32] - Waiting for pullback setup...
+[2026-11-13 08:13:28] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:13:31] [INFO] [Bot] Monitoring Top 5: [RAYDIUMUSD-OTC: DOWN RSI:45.11, RENDERUSD-OTC: UP RSI:59.02, ONDOUSD-OTC: UP RSI:64.08, Japanese AI: DOWN RSI:47.01, FETUSD-OTC: DOWN RSI:64.85] - Waiting for pullback setup...
+[2026-11-13 08:13:51] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:13:52] [INFO] [Bot] Monitoring Top 5: [RAYDIUMUSD-OTC: DOWN RSI:42.58, RENDERUSD-OTC: UP RSI:58.8, ONDOUSD-OTC: UP RSI:61.54, Japanese AI: DOWN RSI:48.4, FETUSD-OTC: DOWN RSI:49.36] - Waiting for pullback setup...
+[2026-11-13 08:14:15] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:14:15] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:14:19] [INFO] [Bot] Monitoring Top 5: [Japanese AI: UP RSI:55.7, HBARUSD-OTC: UP RSI:57.56, DYDXUSD-OTC: DOWN RSI:39.79, ONDOUSD-OTC: UP RSI:62.24, PENGUUSD-OTC: UP RSI:74.42] - Waiting for pullback setup...
+[2026-11-13 08:14:35] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:14:35] [INFO] [Bot] Monitoring Top 5: [Japanese AI: UP RSI:55.42, HBARUSD-OTC: UP RSI:57.56, DYDXUSD-OTC: DOWN RSI:38.03, ONDOUSD-OTC: UP RSI:62.12, PENGUUSD-OTC: UP RSI:77.51] - Waiting for pullback setup...
+[2026-11-13 08:14:59] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:14:59] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:15:03] [INFO] [Bot] Monitoring Top 5: [FETUSD-OTC: DOWN RSI:59.52, RENDERUSD-OTC: UP RSI:57.35, PENGUUSD-OTC: UP RSI:70.11, RAYDIUMUSD-OTC: DOWN RSI:40.82, TAOUSD-OTC: DOWN RSI:19.54] - Waiting for pullback setup...
+[2026-11-13 08:15:24] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:15:24] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:15:29] [INFO] [Bot] Monitoring Top 5: [HBARUSD-OTC: UP RSI:45.58, PENGUUSD-OTC: UP RSI:72.13, RENDERUSD-OTC: UP RSI:58.28, ONDOUSD-OTC: UP RSI:69.47, DYDXUSD-OTC: DOWN RSI:46.8] - Waiting for pullback setup...
+[2026-11-13 08:15:34] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:15:44] [INFO] [Bot] Monitoring Top 5: [Japanese AI: UP RSI:64.83, DYDXUSD-OTC: DOWN RSI:44.63, HBARUSD-OTC: UP RSI:47.95, FETUSD-OTC: DOWN RSI:50.5, PENGUUSD-OTC: UP RSI:72.34] - Waiting for pullback setup...
+[2026-11-13 08:16:02] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:16:02] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:16:07] [INFO] [Bot] Monitoring Top 5: [FETUSD-OTC: DOWN RSI:49.59, RENDERUSD-OTC: UP RSI:65.47, HBARUSD-OTC: UP RSI:49.53, Japanese AI: UP RSI:64.91, PENGUUSD-OTC: UP RSI:76.71] - Waiting for pullback setup...
+[2026-11-13 08:16:21] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:16:21] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:16:26] [INFO] [Bot] Monitoring Top 5: [ONDOUSD-OTC: UP RSI:67.27, PENGUUSD-OTC: UP RSI:77.37, RAYDIUMUSD-OTC: DOWN RSI:51.84, TAOUSD-OTC: UP RSI:41.4, RENDERUSD-OTC: UP RSI:63.4] - Waiting for pullback setup...
+[2026-11-13 08:16:43] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:16:44] [INFO] [Bot] Monitoring Top 5: [ONDOUSD-OTC: UP RSI:64.9, PENGUUSD-OTC: UP RSI:78.19, RAYDIUMUSD-OTC: DOWN RSI:49.54, TAOUSD-OTC: UP RSI:37.18, RENDERUSD-OTC: UP RSI:62.17] - Waiting for pullback setup...
+[2026-11-13 08:16:58] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:17:04] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:17:07] [INFO] [Bot] Monitoring Top 5: [DYDXUSD-OTC: DOWN RSI:31.64, ONDOUSD-OTC: UP RSI:56.17, PENGUUSD-OTC: UP RSI:78.28, RAYDIUMUSD-OTC: DOWN RSI:54.27, TAOUSD-OTC: NEUTRAL RSI:35.93] - Waiting for pullback setup...
+[2026-11-13 08:17:29] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:17:29] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:17:34] [INFO] [Bot] Monitoring Top 5: [Japanese AI: UP RSI:60.77, ONDOUSD-OTC: UP RSI:52.85, TAOUSD-OTC: DOWN RSI:26.51, SUIUSD-OTC: DOWN RSI:34.35, FETUSD-OTC: DOWN RSI:35.79] - Waiting for pullback setup...
+[2026-11-13 08:17:50] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:17:50] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:17:51] [INFO] [Client] Switched balance mode to: REAL
+[2026-11-13 08:17:54] [INFO] [Web] Configuration updated via dashboard (Base Bet: $1.0, Ladder: [1.0, 2.2], Min Payout: 87%, Top Pairs: 5).
+[2026-11-13 08:17:55] [INFO] [Bot] Monitoring Top 5: [TAOUSD-OTC: DOWN RSI:22.1, PENGUUSD-OTC: UP RSI:78.02, Japanese AI: UP RSI:61.56, RAYDIUMUSD-OTC: DOWN RSI:52.7, FETUSD-OTC: DOWN RSI:47.18] - Waiting for pullback setup...
+[2026-11-13 08:18:10] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:18:10] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:18:15] [INFO] [Bot] Monitoring Top 5: [RAYDIUMUSD-OTC: DOWN RSI:51.87, RENDERUSD-OTC: UP RSI:63.53, PENGUUSD-OTC: UP RSI:79.33, DYDXUSD-OTC: DOWN RSI:17.25, ONDOUSD-OTC: UP RSI:56.18] - Waiting for pullback setup...
+[2026-11-13 08:18:29] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:18:37] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:18:39] [INFO] [Bot] Monitoring Top 5: [RAYDIUMUSD-OTC: DOWN RSI:49.74, DYDXUSD-OTC: DOWN RSI:17.21, PENGUUSD-OTC: UP RSI:80.27, TAOUSD-OTC: DOWN RSI:25.63, FETUSD-OTC: DOWN RSI:47.91] - Waiting for pullback setup...
+[2026-11-13 08:18:55] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:18:55] [INFO] [Bot] Monitoring Top 5: [TAOUSD-OTC: DOWN RSI:25.73, SUIUSD-OTC: DOWN RSI:52.09, RENDERUSD-OTC: UP RSI:58.46, Japanese AI: UP RSI:66.3, PENGUUSD-OTC: UP RSI:81.83] - Waiting for pullback setup...
+[2026-11-13 08:19:18] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:19:18] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:19:23] [INFO] [Bot] Monitoring Top 5: [RENDERUSD-OTC: UP RSI:49.83, XAU/XAG: UP RSI:47.33, PENGUUSD-OTC: UP RSI:79.03, ONDOUSD-OTC: UP RSI:70.61, Japanese AI: UP RSI:67.89] - Waiting for pullback setup...
+[2026-11-13 08:19:42] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:19:42] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:19:47] [INFO] [Bot] Monitoring Top 5: [RENDERUSD-OTC: UP RSI:44.87, HBARUSD-OTC: UP RSI:69.21, PENGUUSD-OTC: UP RSI:83.73, ONDOUSD-OTC: UP RSI:66.81, Japanese AI: UP RSI:70.01] - Waiting for pullback setup...
+[2026-11-13 08:20:00] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:20:00] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:20:05] [INFO] [Bot] Monitoring Top 5: [RAYDIUMUSD-OTC: DOWN RSI:53.06, TAOUSD-OTC: DOWN RSI:35.62, DYDXUSD-OTC: DOWN RSI:40.68, SUIUSD-OTC: DOWN RSI:47.14, FETUSD-OTC: DOWN RSI:47.21] - Waiting for pullback setup...
+[2026-11-13 08:20:23] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:20:23] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:20:28] [INFO] [Bot] Monitoring Top 5: [RENDERUSD-OTC: UP RSI:39.18, HBARUSD-OTC: UP RSI:67.73, PENGUUSD-OTC: UP RSI:70.87, DYDXUSD-OTC: DOWN RSI:40.41, Japanese AI: UP RSI:73.31] - Waiting for pullback setup...
+[2026-11-13 08:20:42] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:20:42] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:20:47] [INFO] [Bot] Monitoring Top 5: [Japanese AI: UP RSI:75.28, FETUSD-OTC: DOWN RSI:62.96, ONDOUSD-OTC: UP RSI:76.46, RAYDIUMUSD-OTC: DOWN RSI:50.5, RENDERUSD-OTC: UP RSI:38.16] - Waiting for pullback setup...
+[2026-11-13 08:21:04] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:21:04] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:21:10] [INFO] [Bot] Monitoring Top 5: [RENDERUSD-OTC: UP RSI:37.85, PENGUUSD-OTC: UP RSI:59.78, TAOUSD-OTC: DOWN RSI:41.11, ONDOUSD-OTC: UP RSI:75.15, Japanese AI: UP RSI:69.56] - Waiting for pullback setup...
+[2026-11-13 08:21:25] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:21:25] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:21:30] [INFO] [Bot] Monitoring Top 5: [TAOUSD-OTC: DOWN RSI:41.49, RAYDIUMUSD-OTC: DOWN RSI:46.44, SUIUSD-OTC: DOWN RSI:45.08, RENDERUSD-OTC: UP RSI:45.84, FETUSD-OTC: DOWN RSI:45.55] - Waiting for pullback setup...
+[2026-11-13 08:21:46] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:21:46] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:21:51] [INFO] [Bot] Monitoring Top 5: [XAU/XAG: DOWN RSI:24.59, FETUSD-OTC: DOWN RSI:43.09, DYDXUSD-OTC: DOWN RSI:63.59, RENDERUSD-OTC: UP RSI:46.45, TAOUSD-OTC: DOWN RSI:46.49] - Waiting for pullback setup...
+[2026-11-13 08:22:05] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:22:13] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:22:15] [INFO] [Bot] Monitoring Top 5: [FETUSD-OTC: DOWN RSI:49.63, SUIUSD-OTC: DOWN RSI:40.12, Japanese AI: UP RSI:76.97, DYDXUSD-OTC: DOWN RSI:60.83, PENGUUSD-OTC: UP RSI:52.17] - Waiting for pullback setup...
+[2026-11-13 08:22:31] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:22:31] [INFO] [Bot] Monitoring Top 5: [ONDOUSD-OTC: UP RSI:56.75, FETUSD-OTC: DOWN RSI:38.89, RAYDIUMUSD-OTC: DOWN RSI:42.49, TAOUSD-OTC: DOWN RSI:41.9, DYDXUSD-OTC: DOWN RSI:65.32] - Waiting for pullback setup...
+[2026-11-13 08:22:52] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:22:52] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:22:57] [INFO] [Bot] Monitoring Top 5: [DYDXUSD-OTC: DOWN RSI:62.2, TAOUSD-OTC: DOWN RSI:38.07, XAU/XAG: DOWN RSI:24.07, PENGUUSD-OTC: UP RSI:61.99, FETUSD-OTC: DOWN RSI:29.65] - Waiting for pullback setup...
+[2026-11-13 08:23:14] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:23:14] [INFO] [Bot] Monitoring Top 5: [DYDXUSD-OTC: DOWN RSI:60.04, TAOUSD-OTC: DOWN RSI:41.1, XAU/XAG: DOWN RSI:20.76, PENGUUSD-OTC: UP RSI:54.04, FETUSD-OTC: DOWN RSI:45.88] - Waiting for pullback setup...
+[2026-11-13 08:23:35] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:23:35] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:23:40] [INFO] [Bot] Monitoring Top 5: [HBARUSD-OTC: UP RSI:66.39, PENGUUSD-OTC: UP RSI:52.47, ONDOUSD-OTC: UP RSI:45.15, XAU/XAG: DOWN RSI:16.84, TAOUSD-OTC: DOWN RSI:49.5] - Waiting for pullback setup...
+[2026-11-13 08:23:53] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:23:56] [INFO] [Bot] Monitoring Top 5: [PENGUUSD-OTC: UP RSI:56.5, HBARUSD-OTC: UP RSI:64.78, SUIUSD-OTC: DOWN RSI:42.15, Japanese AI: UP RSI:78.78, RENDERUSD-OTC: UP RSI:46.89] - Waiting for pullback setup...
+[2026-11-13 08:24:21] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:24:21] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:24:26] [INFO] [Bot] Monitoring Top 5: [RAYDIUMUSD-OTC: DOWN RSI:35.52, Japanese AI: UP RSI:66.73, HBARUSD-OTC: UP RSI:64.35, SUIUSD-OTC: DOWN RSI:36.81, FETUSD-OTC: DOWN RSI:54.6] - Waiting for pullback setup...
+[2026-11-13 08:24:43] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:24:43] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:24:48] [INFO] [Bot] Monitoring Top 5: [RENDERUSD-OTC: UP RSI:50.74, XAU/XAG: DOWN RSI:24.9, PENGUUSD-OTC: UP RSI:45.2, FETUSD-OTC: DOWN RSI:63.69, TAOUSD-OTC: UP RSI:63.64] - Waiting for pullback setup...
+[2026-11-13 08:25:03] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:25:03] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:25:08] [INFO] [Bot] Monitoring Top 5: [FETUSD-OTC: DOWN RSI:64.41, TAOUSD-OTC: UP RSI:62.86, RENDERUSD-OTC: UP RSI:50.74, SUIUSD-OTC: DOWN RSI:28.29, RAYDIUMUSD-OTC: DOWN RSI:34.43] - Waiting for pullback setup...
+[2026-11-13 08:25:21] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:25:30] [INFO] [Bot] Monitoring Top 5: [PENGUUSD-OTC: UP RSI:40.64, HBARUSD-OTC: UP RSI:60.67, DYDXUSD-OTC: UP RSI:68.61, TAOUSD-OTC: UP RSI:63.98, FETUSD-OTC: DOWN RSI:61.2] - Waiting for pullback setup...
+[2026-11-13 08:25:45] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:25:45] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:25:49] [INFO] [Bot] Monitoring Top 5: [RAYDIUMUSD-OTC: DOWN RSI:43.36, Japanese AI: UP RSI:56.87, RENDERUSD-OTC: UP RSI:50.97, PENGUUSD-OTC: UP RSI:41.17, SUIUSD-OTC: DOWN RSI:33.53] - Waiting for pullback setup...
+[2026-11-13 08:26:04] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:26:04] [INFO] [Bot] Monitoring Top 5: [RAYDIUMUSD-OTC: DOWN RSI:45.73, Japanese AI: UP RSI:53.54, RENDERUSD-OTC: UP RSI:45.33, PENGUUSD-OTC: UP RSI:41.95, SUIUSD-OTC: DOWN RSI:39.77] - Waiting for pullback setup...
+[2026-11-13 08:26:30] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:26:30] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:26:34] [INFO] [Bot] Monitoring Top 5: [TAOUSD-OTC: UP RSI:52.1, RENDERUSD-OTC: UP RSI:52.74, HBARUSD-OTC: UP RSI:62.48, FETUSD-OTC: DOWN RSI:59.65, Japanese AI: UP RSI:52.86] - Waiting for pullback setup...
+[2026-11-13 08:26:48] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:26:48] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:26:52] [INFO] [Bot] Monitoring Top 5: [DYDXUSD-OTC: UP RSI:67.59, PENGUUSD-OTC: UP RSI:45.83, XAU/XAG: DOWN RSI:29.5, ONDOUSD-OTC: UP RSI:36.9, HBARUSD-OTC: UP RSI:60.37] - Waiting for pullback setup...
+[2026-11-13 08:27:05] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:27:13] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:27:15] [INFO] [Bot] Monitoring Top 5: [ONDOUSD-OTC: UP RSI:37.76, FETUSD-OTC: DOWN RSI:60.59, DYDXUSD-OTC: UP RSI:69.0, HBARUSD-OTC: UP RSI:63.43, SUIUSD-OTC: DOWN RSI:46.79] - Waiting for pullback setup...
+[2026-11-13 08:27:28] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:27:30] [INFO] [Bot] Monitoring Top 5: [RAYDIUMUSD-OTC: DOWN RSI:54.73, Japanese AI: UP RSI:46.27, TAOUSD-OTC: UP RSI:57.98, DYDXUSD-OTC: UP RSI:71.25, PENGUUSD-OTC: UP RSI:51.67] - Waiting for pullback setup...
+[2026-11-13 08:27:57] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:27:57] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:28:01] [INFO] [Bot] 🎯 Signal TRIGGERED: CALL on ONDOUSD-OTC (87%)! Reason: UP + Lower BB Touch + RSI Oversold (29.6) | Placing order $1.0 (Step 1)...
+[2026-11-13 08:28:01] [INFO] [Executor] Placing CALL order on ONDOUSD-OTC ($1.0, step 1)...
+[2026-11-13 08:28:01] [INFO] [Executor] Order #14446124133 placed. Waiting for expiration (5 min)...
+[2026-11-13 08:28:01] [INFO] [Executor] Expiration in approx 297s. Waiting...
+[2026-11-13 08:28:09] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:28:28] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:28:50] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:29:10] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:29:30] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:29:51] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:30:12] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:30:32] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:30:53] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:31:13] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:31:34] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:31:55] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:32:15] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:32:36] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:32:57] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:33:02] [INFO] [MoneyManager] Win! Reset Martingale from step 1 back to 1.
+[2026-11-13 08:33:02] [INFO] [Bot] Trade finished: WIN | PnL: $0.87 | Balance: $20.7
+[2026-11-13 08:33:09] [INFO] [Bot] 🎯 Signal TRIGGERED: CALL on PENGUUSD-OTC (87%)! Reason: UP + Lower BB Touch + RSI Oversold (25.3) | Placing order $1.0 (Step 1)...
+[2026-11-13 08:33:09] [INFO] [Executor] Placing CALL order on PENGUUSD-OTC ($1.0, step 1)...
+[2026-11-13 08:33:10] [INFO] [Executor] Order #14446136929 placed. Waiting for expiration (5 min)...
+[2026-11-13 08:33:10] [INFO] [Executor] Expiration in approx 288s. Waiting...
+[2026-11-13 08:33:18] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:33:38] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:33:59] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:34:19] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:34:40] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:35:01] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:35:21] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:35:42] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:36:03] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:36:24] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:36:45] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:37:06] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:37:27] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:37:47] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:38:01] [INFO] [MoneyManager] Loss on step 1. Advancing to step 2 ($2.2).
+[2026-11-13 08:38:01] [INFO] [Bot] Trade finished: LOSS | PnL: $-1.0 | Balance: $19.7
+[2026-11-13 08:38:15] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:38:15] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:38:19] [INFO] [Bot] Monitoring Top 5: [HBARUSD-OTC: UP RSI:53.11, RENDERUSD-OTC: UP RSI:59.22, ONDOUSD-OTC: UP RSI:38.35, PENGUUSD-OTC: DOWN RSI:11.02, DYDXUSD-OTC: DOWN RSI:39.88] - Waiting for pullback setup...
+[2026-11-13 08:38:35] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:38:35] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:38:40] [INFO] [Bot] Monitoring Top 5: [HBARUSD-OTC: UP RSI:58.19, PENGUUSD-OTC: DOWN RSI:11.49, Japanese AI: UP RSI:46.13, ONDOUSD-OTC: UP RSI:34.22, TAOUSD-OTC: DOWN RSI:27.84] - Waiting for pullback setup...
+[2026-11-13 08:38:56] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:38:56] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:39:00] [INFO] [Bot] 🎯 Signal TRIGGERED: PUT on FETUSD-OTC (87%)! Reason: DOWN + Upper BB Touch + RSI Overbought (75.9) | Placing order $2.2 (Step 2)...
+[2026-11-13 08:39:00] [INFO] [Executor] Placing PUT order on FETUSD-OTC ($2.2, step 2)...
+[2026-11-13 08:39:01] [INFO] [Executor] Order #14446150820 placed. Waiting for expiration (5 min)...
+[2026-11-13 08:39:01] [INFO] [Executor] Expiration in approx 297s. Waiting...
+[2026-11-13 08:39:11] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:39:32] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:39:53] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:40:14] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:40:35] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:40:56] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:41:17] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:41:37] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:41:58] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:42:19] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:42:40] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:43:01] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:43:22] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:43:43] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:44:06] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:44:06] [WARNING] [MoneyManager] Max Martingale steps (2) reached! Safety Cut-Loss triggered. Resetting to step 1.
+[2026-11-13 08:44:06] [INFO] [Bot] Trade finished: LOSS | PnL: $-2.2 | Balance: $17.5
+[2026-11-13 08:44:13] [INFO] [Bot] 🎯 Signal TRIGGERED: CALL on HBARUSD-OTC (87%)! Reason: UP + Lower BB Touch + RSI Oversold (31.5) | Placing order $1.0 (Step 1)...
+[2026-11-13 08:44:13] [INFO] [Executor] Placing CALL order on HBARUSD-OTC ($1.0, step 1)...
+[2026-11-13 08:44:14] [INFO] [Executor] Order #14446165059 placed. Waiting for expiration (5 min)...
+[2026-11-13 08:44:14] [INFO] [Executor] Expiration in approx 284s. Waiting...
+[2026-11-13 08:44:25] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:44:47] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:45:06] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:45:27] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:45:48] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:46:09] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:46:30] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:46:51] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:47:11] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:47:33] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:47:43] [INFO] [Bot] Stopping bot...
+[2026-11-13 08:47:54] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:48:15] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:48:36] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:48:57] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:49:02] [INFO] [MoneyManager] Win! Reset Martingale from step 1 back to 1.
+[2026-11-13 08:49:02] [INFO] [Bot] Trade finished: WIN | PnL: $0.87 | Balance: $18.37
+[2026-11-13 08:49:02] [INFO] [Bot] Trading loop exited.
+[2026-11-13 08:49:18] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:49:39] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:49:59] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:50:19] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:50:39] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:51:00] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:51:21] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:51:41] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:52:03] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:52:23] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:52:43] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:53:04] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:53:25] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:53:45] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:54:05] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:54:26] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:54:47] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:55:08] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:55:28] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:55:49] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:56:09] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:56:31] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:56:51] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:57:11] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:57:32] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:57:52] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:58:12] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:58:33] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:58:53] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:59:14] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:59:35] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 08:59:57] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 09:00:16] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 09:00:37] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 09:00:59] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 09:01:19] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 09:01:40] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 09:02:01] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 09:02:22] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 09:02:42] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 09:03:03] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 09:03:23] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 09:03:44] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 09:04:05] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 09:04:25] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 09:04:45] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 09:05:52] [INFO] Starting IQ Option Web Dashboard on http://127.0.0.1:8000
+[2026-11-13 09:06:16] [INFO] [Web] Configuration updated via dashboard (Base Bet: $1.0, Ladder: [1.0, 2.2, 4.84], Min Payout: 87%, Top Pairs: 5).
+[2026-11-13 09:06:22] [INFO] [Client] Connecting to IQ Option as par_mate@hotmail.com...
+[2026-11-13 09:06:25] [INFO] [Client] Successfully connected to IQ Option WebSocket!
+[2026-11-13 09:06:25] [INFO] [Client] Switched balance mode to: REAL
+[2026-11-13 09:06:25] [INFO] [Client] Account Mode: REAL | Balance: $18.37
+[2026-11-13 09:06:28] [INFO] [Client] Synced 528 active instruments. Total OP_code.ACTIVES: 635
+[2026-11-13 09:06:28] [INFO] [Bot] Main trading loop active.
+[2026-11-13 09:06:29] [INFO] [Bot] Started! Mode: REAL | Balance: $18.37
+[2026-11-13 09:06:31] [INFO] [Bot] Monitoring Top 5: [DXY: DOWN RSI:55.35, JXY: DOWN RSI:52.03, EURUSD-OTC: UP RSI:57.24, EURUSD: UP RSI:47.17, GBPUSD: NEUTRAL RSI:36.91] - Waiting for pullback setup...
+[2026-11-13 09:06:45] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 09:06:47] [INFO] [Bot] Monitoring Top 5: [DXY: DOWN RSI:58.55, JXY: DOWN RSI:53.96, EURUSD-OTC: UP RSI:60.38, EURUSD: UP RSI:44.2, GBPUSD: NEUTRAL RSI:36.91] - Waiting for pullback setup...
+[2026-11-13 09:06:55] [INFO] [Bot] 🎯 Signal TRIGGERED: PUT on XAU/XAG (87%)! Reason: DOWN + Upper BB Touch + RSI Overbought (83.2) | Placing order $1.0 (Step 1)...
+[2026-11-13 09:06:55] [INFO] [Executor] Placing PUT order on XAU/XAG ($1.0, step 1)...
+[2026-11-13 09:06:55] [INFO] [Executor] Order #14446228455 placed. Waiting for expiration (5 min)...
+[2026-11-13 09:06:55] [INFO] [Executor] Expiration in approx 303s. Waiting...
+[2026-11-13 09:07:02] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 09:07:23] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 09:07:44] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 09:08:04] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 09:08:25] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 09:08:46] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 09:09:07] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 09:09:29] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 09:09:48] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 09:10:08] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 09:10:29] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 09:10:49] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 09:11:10] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 09:11:30] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 09:11:51] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 09:12:02] [INFO] [MoneyManager] Loss on step 1. Advancing to step 2 ($2.2).
+[2026-11-13 09:12:02] [INFO] [Bot] Trade finished: LOSS | PnL: $-1.0 | Balance: $17.37
+[2026-11-13 09:12:16] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 09:12:24] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 09:12:27] [INFO] [Bot] Monitoring Top 5: [FETUSD-OTC: DOWN RSI:62.75, XAU/XAG: DOWN RSI:71.69, TAOUSD-OTC: DOWN RSI:59.46, DYDXUSD-OTC: DOWN RSI:60.71, RENDERUSD-OTC: UP RSI:25.27] - Waiting for pullback setup...
+[2026-11-13 09:12:42] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 09:12:42] [INFO] [Bot] Monitoring Top 5: [XAU/XAG: DOWN RSI:73.58, HBARUSD-OTC: UP RSI:37.18, SUIUSD-OTC: DOWN RSI:38.15, DYDXUSD-OTC: DOWN RSI:56.32, FETUSD-OTC: DOWN RSI:65.16] - Waiting for pullback setup...
+[2026-11-13 09:13:08] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 09:13:08] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 09:13:12] [INFO] [Bot] 🎯 Signal TRIGGERED: CALL on Japanese AI (87%)! Reason: UP + Lower BB Touch + RSI Oversold (29.4) | Placing order $2.2 (Step 2)...
+[2026-11-13 09:13:12] [INFO] [Executor] Placing CALL order on Japanese AI ($2.2, step 2)...
+[2026-11-13 09:13:12] [INFO] [Executor] Order #14446246981 placed. Waiting for expiration (5 min)...
+[2026-11-13 09:13:13] [INFO] [Executor] Expiration in approx 285s. Waiting...
+[2026-11-13 09:13:20] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 09:13:41] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 09:14:02] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 09:14:24] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 09:14:44] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 09:15:04] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 09:15:24] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 09:15:45] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 09:16:06] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 09:16:27] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 09:16:48] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 09:17:09] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 09:17:30] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 09:17:51] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 09:18:01] [INFO] [MoneyManager] Loss on step 2. Advancing to step 3 ($4.84).
+[2026-11-13 09:18:01] [INFO] [Bot] Trade finished: LOSS | PnL: $-2.2 | Balance: $15.17
+[2026-11-13 09:18:17] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 09:18:17] [INFO] [Bot] Monitoring Top 5: [TAOUSD-OTC: UP RSI:69.21, DYDXUSD-OTC: DOWN RSI:53.21, XAU/XAG: DOWN RSI:53.66, SUIUSD-OTC: DOWN RSI:50.03, Japanese AI: UP RSI:34.49] - Waiting for pullback setup...
+[2026-11-13 09:18:25] [INFO] [Bot] 🎯 Signal TRIGGERED: CALL on HBARUSD-OTC (87%)! Reason: UP + Lower BB Touch + RSI Oversold (24.6) | Placing order $4.84 (Step 3)...
+[2026-11-13 09:18:25] [INFO] [Executor] Placing CALL order on HBARUSD-OTC ($4.84, step 3)...
+[2026-11-13 09:18:25] [INFO] [Executor] Order #14446263357 placed. Waiting for expiration (5 min)...
+[2026-11-13 09:18:25] [INFO] [Executor] Expiration in approx 273s. Waiting...
+[2026-11-13 09:18:33] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 09:18:54] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 09:19:14] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 09:19:35] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 09:19:56] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 09:20:17] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 09:20:37] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 09:20:58] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 09:21:19] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 09:21:40] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 09:22:01] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 09:22:22] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 09:22:43] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 09:23:06] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 09:23:06] [WARNING] [MoneyManager] Max Martingale steps (3) reached! Safety Cut-Loss triggered. Resetting to step 1.
+[2026-11-13 09:23:06] [INFO] [Bot] Trade finished: LOSS | PnL: $-4.84 | Balance: $10.33
+[2026-11-13 09:23:14] [INFO] [Bot] Monitoring Top 5: [XAU/XAG: DOWN RSI:42.39, RENDERUSD-OTC: UP RSI:41.06, TAOUSD-OTC: UP RSI:79.24, FETUSD-OTC: DOWN RSI:51.59, ONDOUSD-OTC: UP RSI:67.06] - Waiting for pullback setup...
+[2026-11-13 09:23:29] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 09:23:29] [INFO] [Bot] Monitoring Top 5: [XAU/XAG: DOWN RSI:47.14, RENDERUSD-OTC: UP RSI:42.36, TAOUSD-OTC: UP RSI:80.86, FETUSD-OTC: DOWN RSI:60.46, ONDOUSD-OTC: UP RSI:69.59] - Waiting for pullback setup...
+[2026-11-13 09:23:51] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 09:23:51] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 09:23:57] [INFO] [Bot] Monitoring Top 5: [TAOUSD-OTC: UP RSI:83.68, XAU/XAG: DOWN RSI:42.88, SUIUSD-OTC: DOWN RSI:46.83, RAYDIUMUSD-OTC: DOWN RSI:52.97, HBARUSD-OTC: UP RSI:35.9] - Waiting for pullback setup...
+[2026-11-13 09:24:14] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 09:24:14] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 09:24:19] [INFO] [Bot] Monitoring Top 5: [RENDERUSD-OTC: UP RSI:51.4, FETUSD-OTC: UP RSI:69.58, ONDOUSD-OTC: UP RSI:71.18, RAYDIUMUSD-OTC: DOWN RSI:51.61, TAOUSD-OTC: UP RSI:70.0] - Waiting for pullback setup...
+[2026-11-13 09:24:33] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 09:24:33] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 09:24:38] [INFO] [Bot] Monitoring Top 5: [PENGUUSD-OTC: DOWN RSI:47.11, RAYDIUMUSD-OTC: DOWN RSI:46.44, XAU/XAG: DOWN RSI:59.29, RENDERUSD-OTC: UP RSI:59.14, TAOUSD-OTC: UP RSI:71.16] - Waiting for pullback setup...
+[2026-11-13 09:24:53] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 09:24:54] [INFO] [Bot] Monitoring Top 5: [PENGUUSD-OTC: DOWN RSI:43.67, RAYDIUMUSD-OTC: DOWN RSI:46.16, XAU/XAG: DOWN RSI:57.63, RENDERUSD-OTC: UP RSI:51.4, TAOUSD-OTC: UP RSI:68.9] - Waiting for pullback setup...
+[2026-11-13 09:25:16] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 09:25:16] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 09:25:22] [INFO] [Bot] Monitoring Top 5: [XAU/XAG: DOWN RSI:53.67, DYDXUSD-OTC: DOWN RSI:29.22, RAYDIUMUSD-OTC: DOWN RSI:50.34, RENDERUSD-OTC: UP RSI:51.78, Japanese AI: UP RSI:40.53] - Waiting for pullback setup...
+[2026-11-13 09:25:38] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 09:25:38] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 09:25:43] [INFO] [Bot] Monitoring Top 5: [TAOUSD-OTC: UP RSI:77.14, DYDXUSD-OTC: DOWN RSI:28.85, XAU/XAG: DOWN RSI:54.3, SUIUSD-OTC: DOWN RSI:57.6, RAYDIUMUSD-OTC: DOWN RSI:41.42] - Waiting for pullback setup...
+[2026-11-13 09:26:00] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 09:26:00] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 09:26:05] [INFO] [Bot] Monitoring Top 5: [FETUSD-OTC: UP RSI:70.69, TAOUSD-OTC: UP RSI:65.44, DYDXUSD-OTC: DOWN RSI:31.42, SUIUSD-OTC: DOWN RSI:61.74, ONDOUSD-OTC: UP RSI:75.03] - Waiting for pullback setup...
+[2026-11-13 09:26:22] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 09:26:22] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 09:26:27] [INFO] [Bot] Monitoring Top 5: [TAOUSD-OTC: UP RSI:61.1, ONDOUSD-OTC: UP RSI:73.3, PENGUUSD-OTC: DOWN RSI:39.03, HBARUSD-OTC: UP RSI:57.62, RAYDIUMUSD-OTC: DOWN RSI:39.01] - Waiting for pullback setup...
+[2026-11-13 09:26:41] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 09:26:41] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 09:26:46] [INFO] [Bot] Monitoring Top 5: [PENGUUSD-OTC: DOWN RSI:32.25, XAU/XAG: DOWN RSI:55.08, HBARUSD-OTC: UP RSI:54.22, TAOUSD-OTC: UP RSI:49.92, Japanese AI: UP RSI:50.49] - Waiting for pullback setup...
+[2026-11-13 09:27:03] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 09:27:03] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 09:27:08] [INFO] [Bot] Monitoring Top 5: [RAYDIUMUSD-OTC: DOWN RSI:36.14, RENDERUSD-OTC: UP RSI:41.86, SUIUSD-OTC: DOWN RSI:71.13, HBARUSD-OTC: UP RSI:40.39, Japanese AI: UP RSI:42.64] - Waiting for pullback setup...
+[2026-11-13 09:27:22] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 09:27:22] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 09:27:27] [INFO] [Bot] Monitoring Top 5: [RENDERUSD-OTC: UP RSI:37.07, FETUSD-OTC: UP RSI:77.0, HBARUSD-OTC: UP RSI:32.46, ONDOUSD-OTC: UP RSI:73.18, PENGUUSD-OTC: DOWN RSI:33.93] - Waiting for pullback setup...
+[2026-11-13 09:27:44] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 09:27:44] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 09:27:48] [INFO] [Bot] 🎯 Signal TRIGGERED: PUT on SUIUSD-OTC (87%)! Reason: DOWN + Upper BB Touch + RSI Overbought (75.5) | Placing order $1.0 (Step 1)...
+[2026-11-13 09:27:48] [INFO] [Executor] Placing PUT order on SUIUSD-OTC ($1.0, step 1)...
+[2026-11-13 09:27:49] [INFO] [Executor] Order #14446291369 placed. Waiting for expiration (5 min)...
+[2026-11-13 09:27:49] [INFO] [Executor] Expiration in approx 309s. Waiting...
+[2026-11-13 09:27:57] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 09:28:18] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 09:28:39] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 09:28:59] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 09:29:20] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 09:29:40] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 09:30:02] [INFO] [Scanner] Found 11 open pairs with payout >= 87%
+[2026-11-13 09:30:23] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 09:30:43] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 09:31:04] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 09:31:25] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 09:31:46] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 09:32:07] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 09:32:27] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 09:32:48] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 09:33:01] [INFO] [MoneyManager] Win! Reset Martingale from step 1 back to 1.
+[2026-11-13 09:33:01] [INFO] [Bot] Trade finished: WIN | PnL: $0.87 | Balance: $11.2
+[2026-11-13 09:33:17] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 09:33:17] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 09:33:22] [INFO] [Bot] Monitoring Top 5: [SUIUSD-OTC: DOWN RSI:49.1, HBARUSD-OTC: UP RSI:64.84, PENGUUSD-OTC: DOWN RSI:57.47, RAYDIUMUSD-OTC: DOWN RSI:48.08, RENDERUSD-OTC: UP RSI:41.86] - Waiting for pullback setup...
+[2026-11-13 09:33:38] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 09:33:38] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 09:33:44] [INFO] [Bot] Monitoring Top 5: [HBARUSD-OTC: UP RSI:60.26, DYDXUSD-OTC: DOWN RSI:58.53, FETUSD-OTC: DOWN RSI:48.59, XAU/XAG: DOWN RSI:38.28, ONDOUSD-OTC: UP RSI:40.61] - Waiting for pullback setup...
+[2026-11-13 09:34:02] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 09:34:02] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 09:34:07] [INFO] [Bot] Monitoring Top 5: [HBARUSD-OTC: UP RSI:76.34, ONDOUSD-OTC: UP RSI:32.53, RENDERUSD-OTC: UP RSI:33.46, PENGUUSD-OTC: DOWN RSI:39.91, XAU/XAG: DOWN RSI:32.08] - Waiting for pullback setup...
+[2026-11-13 09:34:15] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 09:34:23] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 09:34:24] [INFO] [Bot] 🎯 Signal TRIGGERED: CALL on RENDERUSD-OTC (87%)! Reason: UP + Lower BB Touch + RSI Oversold (33.8) | Placing order $1.0 (Step 1)...
+[2026-11-13 09:34:24] [INFO] [Executor] Placing CALL order on RENDERUSD-OTC ($1.0, step 1)...
+[2026-11-13 09:34:25] [INFO] [Executor] Order #14446310560 placed. Waiting for expiration (5 min)...
+[2026-11-13 09:34:25] [INFO] [Executor] Expiration in approx 273s. Waiting...
+[2026-11-13 09:34:38] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 09:34:59] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 09:35:20] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 09:35:40] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 09:36:01] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 09:36:22] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 09:36:43] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 09:37:05] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 09:37:25] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 09:37:46] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 09:38:07] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 09:38:27] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 09:38:48] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 09:39:01] [INFO] [MoneyManager] Loss on step 1. Advancing to step 2 ($2.2).
+[2026-11-13 09:39:01] [INFO] [Bot] Trade finished: LOSS | PnL: $-1.0 | Balance: $10.2
+[2026-11-13 09:39:16] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 09:39:16] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 09:39:22] [INFO] [Bot] Monitoring Top 5: [DYDXUSD-OTC: DOWN RSI:55.06, FETUSD-OTC: DOWN RSI:48.39, PENGUUSD-OTC: DOWN RSI:56.93, SUIUSD-OTC: DOWN RSI:55.2, ONDOUSD-OTC: UP RSI:40.95] - Waiting for pullback setup...
+[2026-11-13 09:39:36] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 09:39:45] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 09:39:47] [INFO] [Bot] Monitoring Top 5: [RENDERUSD-OTC: UP RSI:37.05, SUIUSD-OTC: DOWN RSI:53.97, ONDOUSD-OTC: UP RSI:39.56, XAU/XAG: DOWN RSI:28.44, TAOUSD-OTC: UP RSI:59.98] - Waiting for pullback setup...
+[2026-11-13 09:40:02] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 09:40:02] [INFO] [Bot] Monitoring Top 5: [TAOUSD-OTC: UP RSI:60.98, HBARUSD-OTC: UP RSI:53.49, RENDERUSD-OTC: UP RSI:34.05, XAU/XAG: DOWN RSI:27.67, RAYDIUMUSD-OTC: DOWN RSI:44.17] - Waiting for pullback setup...
+[2026-11-13 09:40:28] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 09:40:28] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 09:40:31] [INFO] [Bot] 🎯 Signal TRIGGERED: CALL on RENDERUSD-OTC (87%)! Reason: UP + Lower BB Touch + RSI Oversold (45.9) | Placing order $2.2 (Step 2)...
+[2026-11-13 09:40:31] [INFO] [Executor] Placing CALL order on RENDERUSD-OTC ($2.2, step 2)...
+[2026-11-13 09:40:32] [INFO] [Executor] Order #14446327803 placed. Waiting for expiration (5 min)...
+[2026-11-13 09:40:32] [INFO] [Executor] Expiration in approx 326s. Waiting...
+[2026-11-13 09:40:40] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 09:41:00] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 09:41:22] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 09:41:43] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 09:42:03] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 09:42:24] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 09:42:45] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 09:43:05] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 09:43:25] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 09:43:46] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 09:44:06] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 09:44:26] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 09:44:47] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 09:45:08] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 09:45:29] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 09:45:50] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 09:46:01] [INFO] [MoneyManager] Loss on step 2. Advancing to step 3 ($4.84).
+[2026-11-13 09:46:01] [INFO] [Bot] Trade finished: LOSS | PnL: $-2.2 | Balance: $8.0
+[2026-11-13 09:46:20] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 09:46:20] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 09:46:25] [INFO] [Bot] Monitoring Top 5: [XAU/XAG: DOWN RSI:60.92, RENDERUSD-OTC: DOWN RSI:33.57, SUIUSD-OTC: DOWN RSI:42.4, DYDXUSD-OTC: DOWN RSI:50.47, HBARUSD-OTC: UP RSI:57.34] - Waiting for pullback setup...
+[2026-11-13 09:46:33] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 09:46:39] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 09:46:42] [INFO] [Bot] Monitoring Top 5: [ONDOUSD-OTC: DOWN RSI:28.05, SUIUSD-OTC: DOWN RSI:42.53, RENDERUSD-OTC: UP RSI:37.1, TAOUSD-OTC: UP RSI:67.39, XAU/XAG: DOWN RSI:61.93] - Waiting for pullback setup...
+[2026-11-13 09:46:57] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 09:47:03] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 09:47:05] [INFO] [Bot] Monitoring Top 5: [ONDOUSD-OTC: DOWN RSI:33.58, DYDXUSD-OTC: DOWN RSI:40.26, FETUSD-OTC: NEUTRAL RSI:53.6, SUIUSD-OTC: DOWN RSI:39.24, HBARUSD-OTC: UP RSI:50.77] - Waiting for pullback setup...
+[2026-11-13 09:47:27] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 09:47:27] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 09:47:33] [INFO] [Bot] Monitoring Top 5: [RAYDIUMUSD-OTC: DOWN RSI:31.18, DYDXUSD-OTC: DOWN RSI:49.62, TAOUSD-OTC: UP RSI:47.75, HBARUSD-OTC: UP RSI:52.45, FETUSD-OTC: UP RSI:56.02] - Waiting for pullback setup...
+[2026-11-13 09:47:47] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 09:47:47] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 09:47:52] [INFO] [Bot] Monitoring Top 5: [RAYDIUMUSD-OTC: DOWN RSI:29.13, SUIUSD-OTC: DOWN RSI:51.57, XAU/XAG: DOWN RSI:59.25, FETUSD-OTC: UP RSI:57.4, PENGUUSD-OTC: DOWN RSI:44.23] - Waiting for pullback setup...
+[2026-11-13 09:48:08] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 09:48:08] [INFO] [Bot] Monitoring Top 5: [RAYDIUMUSD-OTC: DOWN RSI:30.24, SUIUSD-OTC: DOWN RSI:51.17, XAU/XAG: DOWN RSI:60.41, FETUSD-OTC: UP RSI:59.5, PENGUUSD-OTC: DOWN RSI:36.43] - Waiting for pullback setup...
+[2026-11-13 09:48:31] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 09:48:31] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 09:48:36] [INFO] [Bot] Monitoring Top 5: [SUIUSD-OTC: DOWN RSI:57.71, PENGUUSD-OTC: DOWN RSI:48.01, TAOUSD-OTC: UP RSI:46.44, ONDOUSD-OTC: DOWN RSI:33.22, RAYDIUMUSD-OTC: DOWN RSI:44.3] - Waiting for pullback setup...
+[2026-11-13 09:48:52] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 09:48:52] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 09:48:57] [INFO] [Bot] Monitoring Top 5: [DYDXUSD-OTC: DOWN RSI:51.95, TAOUSD-OTC: UP RSI:54.97, PENGUUSD-OTC: DOWN RSI:57.79, RENDERUSD-OTC: UP RSI:45.28, SUIUSD-OTC: DOWN RSI:55.75] - Waiting for pullback setup...
+[2026-11-13 09:49:14] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 09:49:14] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 09:49:18] [INFO] [Bot] Monitoring Top 5: [FETUSD-OTC: DOWN RSI:51.28, TAOUSD-OTC: UP RSI:57.2, RAYDIUMUSD-OTC: DOWN RSI:32.45, XAU/XAG: DOWN RSI:49.19, DYDXUSD-OTC: DOWN RSI:56.82] - Waiting for pullback setup...
+[2026-11-13 09:49:36] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 09:49:36] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 09:49:41] [INFO] [Bot] Monitoring Top 5: [PENGUUSD-OTC: DOWN RSI:57.35, TAOUSD-OTC: UP RSI:55.12, RAYDIUMUSD-OTC: DOWN RSI:25.28, FETUSD-OTC: DOWN RSI:42.11, DYDXUSD-OTC: DOWN RSI:59.34] - Waiting for pullback setup...
+[2026-11-13 09:49:55] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 09:49:55] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 09:50:01] [INFO] [Bot] Monitoring Top 5: [XAU/XAG: DOWN RSI:43.01, DYDXUSD-OTC: DOWN RSI:63.99, FETUSD-OTC: DOWN RSI:41.61, PENGUUSD-OTC: DOWN RSI:53.91, ONDOUSD-OTC: DOWN RSI:45.15] - Waiting for pullback setup...
+[2026-11-13 09:50:18] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 09:50:18] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 09:50:23] [INFO] [Bot] Monitoring Top 5: [PENGUUSD-OTC: DOWN RSI:55.88, RENDERUSD-OTC: UP RSI:54.57, XAU/XAG: DOWN RSI:56.12, TAOUSD-OTC: UP RSI:55.69, HBARUSD-OTC: UP RSI:63.58] - Waiting for pullback setup...
+[2026-11-13 09:50:36] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 09:50:36] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 09:50:41] [INFO] [Bot] Monitoring Top 5: [SUIUSD-OTC: DOWN RSI:44.61, ONDOUSD-OTC: DOWN RSI:49.9, XAU/XAG: DOWN RSI:56.48, FETUSD-OTC: DOWN RSI:41.99, HBARUSD-OTC: UP RSI:59.07] - Waiting for pullback setup...
+[2026-11-13 09:50:56] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 09:51:04] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 09:51:07] [INFO] [Bot] Monitoring Top 5: [RENDERUSD-OTC: UP RSI:50.78, FETUSD-OTC: DOWN RSI:52.1, SUIUSD-OTC: DOWN RSI:39.91, TAOUSD-OTC: UP RSI:56.43, DYDXUSD-OTC: DOWN RSI:66.61] - Waiting for pullback setup...
+[2026-11-13 09:51:21] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 09:51:23] [INFO] [Bot] Monitoring Top 5: [RAYDIUMUSD-OTC: DOWN RSI:32.95, RENDERUSD-OTC: UP RSI:50.58, SUIUSD-OTC: DOWN RSI:37.02, HBARUSD-OTC: UP RSI:63.25, XAU/XAG: DOWN RSI:58.91] - Waiting for pullback setup...
+[2026-11-13 09:51:39] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 09:51:45] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 09:51:47] [INFO] [Bot] Monitoring Top 5: [FETUSD-OTC: UP RSI:51.83, RENDERUSD-OTC: UP RSI:53.29, SUIUSD-OTC: DOWN RSI:35.47, DYDXUSD-OTC: DOWN RSI:64.22, XAU/XAG: DOWN RSI:61.0] - Waiting for pullback setup...
+[2026-11-13 09:52:03] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 09:52:08] [INFO] [Bot] Stopping bot...
+[2026-11-13 09:52:11] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 09:52:11] [INFO] [Bot] Monitoring Top 0: [] - Waiting for pullback setup...
+[2026-11-13 09:52:11] [INFO] [Bot] Trading loop exited.
+[2026-11-13 09:52:26] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 09:52:46] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 09:53:07] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 09:53:28] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 09:53:49] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 09:54:11] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 09:54:30] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 09:54:52] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 09:55:13] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 09:55:33] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 09:55:55] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 09:56:15] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 09:56:36] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 09:56:56] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 09:57:17] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 09:57:38] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 09:57:59] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 09:58:20] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 09:58:41] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 09:59:01] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 09:59:23] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 09:59:43] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 10:00:04] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 10:00:24] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 10:00:45] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 10:01:06] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 10:01:27] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 10:01:48] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 10:02:08] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 10:02:29] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 10:02:50] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 10:03:11] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 10:03:31] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 10:03:52] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 10:04:13] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 10:04:33] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 10:04:54] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 10:05:15] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 10:05:36] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 10:05:57] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 10:06:18] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 10:06:38] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 10:06:59] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 10:07:20] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 10:07:40] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 10:08:01] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 10:08:22] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 10:08:43] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 10:09:04] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 10:09:25] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 10:09:45] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 10:10:06] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 10:10:27] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 10:10:48] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 10:11:08] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 10:11:29] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 10:11:50] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 10:12:11] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 10:12:32] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 10:12:53] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 10:13:13] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 10:13:33] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 10:13:55] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 10:14:16] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 10:14:37] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 10:14:57] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 10:15:18] [INFO] [Scanner] Found 10 open pairs with payout >= 87%
+[2026-11-13 14:55:25] [INFO] [MoneyManager] Loss on step 1. Advancing to step 2 ($2.2).
+[2026-11-13 14:55:25] [INFO] [MoneyManager] Loss on step 2. Advancing to step 3 ($4.84).
+[2026-11-13 14:55:25] [WARNING] [MoneyManager] Max Martingale steps (3) reached! Safety Cut-Loss triggered. Resetting to step 1.
+[2026-11-13 14:55:25] [INFO] [Client] Connecting to IQ Option as par_mate@hotmail.com...
+[2026-11-13 14:55:27] [INFO] [Client] Successfully connected to IQ Option WebSocket!
+[2026-11-13 14:55:27] [INFO] [Client] Switched balance mode to: REAL
+[2026-11-13 14:55:28] [INFO] [Client] Account Mode: REAL | Balance: $8.00
+[2026-11-13 14:55:32] [INFO] [Client] Synced 528 active instruments. Total OP_code.ACTIVES: 635
+[2026-11-13 14:55:32] [INFO] [Bot] Main trading loop active.
+[2026-11-13 14:55:32] [INFO] [Bot] Started! Mode: REAL | Balance: $8.00
+[2026-11-13 14:55:33] [INFO] [Bot] Stopping bot...
+[2026-11-13 14:55:34] [INFO] [Bot] Monitoring Top 4: [DXY: NEUTRAL RSI:57.85, JXY: UP RSI:50.01, EURUSD-OTC: DOWN RSI:41.5, EURUSD: CHOPPY_BLACKLIST RSI:50.0] - Waiting for pullback setup...
+[2026-11-13 14:55:34] [INFO] [Bot] Trading loop exited.
+[2026-11-13 14:55:34] [INFO] [Web] Configuration updated via dashboard (Base Bet: $2.0, Ladder: [2.0, 4.4, 9.68, 21.3, 46.86], Min Payout: 87%, Top Pairs: 5).
+[2026-11-13 15:03:00] [INFO] [MoneyManager] Loss on step 1. Advancing to step 2 ($4.4).
+[2026-11-13 15:03:00] [INFO] [MoneyManager] Loss on step 2. Advancing to step 3 ($9.68).
+[2026-11-13 15:03:00] [INFO] [MoneyManager] Loss on step 3. Advancing to step 4 ($21.3).
+[2026-11-13 15:03:00] [INFO] [MoneyManager] Loss on step 4. Advancing to step 5 ($46.86).
+[2026-11-13 15:03:00] [WARNING] [MoneyManager] Max Martingale steps (5) reached! Safety Cut-Loss triggered. Resetting to step 1.
+[2026-11-13 15:03:00] [INFO] [MoneyManager] Win! Reset Martingale from step 1 back to 1.
+[2026-11-13 15:04:21] [INFO] [Client] Connecting to IQ Option as par_mate@hotmail.com...
+[2026-11-13 15:04:23] [INFO] [Client] Successfully connected to IQ Option WebSocket!
+[2026-11-13 15:04:23] [INFO] [Client] Switched balance mode to: REAL
+[2026-11-13 15:04:24] [INFO] [Client] Account Mode: REAL | Balance: $8.00
+[2026-11-13 15:04:27] [INFO] [Client] Synced 528 active instruments. Total OP_code.ACTIVES: 635
+[2026-11-13 15:04:27] [INFO] [Bot] Main trading loop active.
+[2026-11-13 15:04:27] [INFO] [Bot] Started! Mode: REAL | Balance: $8.00
+[2026-11-13 15:04:29] [INFO] [Bot] Stopping bot...
+[2026-11-13 15:04:29] [INFO] [Bot] Monitoring Top 4: [DXY: NEUTRAL RSI:58.62, JXY: NEUTRAL RSI:37.69, EURUSD-OTC: CHOPPY_BLACKLIST RSI:50.0, EURUSD: NEUTRAL RSI:44.0] - Waiting for pullback setup...
+[2026-11-13 15:04:29] [INFO] [Bot] Trading loop exited.
+[2026-11-13 15:04:30] [INFO] [Web] Configuration updated via dashboard (Base Bet: $2.0, Ladder: [2.0, 4.4, 9.68, 21.3, 46.86], Min Payout: 87%, Top Pairs: 5).
+[2026-11-13 15:12:57] [INFO] [MoneyManager] Loss on step 1. Advancing to step 2 ($4.4).
+[2026-11-13 15:12:57] [INFO] [MoneyManager] Loss on step 2. Advancing to step 3 ($9.68).
+[2026-11-13 15:12:57] [INFO] [MoneyManager] Loss on step 3. Advancing to step 4 ($21.3).
+[2026-11-13 15:12:57] [INFO] [MoneyManager] Loss on step 4. Advancing to step 5 ($46.86).
+[2026-11-13 15:12:57] [WARNING] [MoneyManager] Max Martingale steps (5) reached! Safety Cut-Loss triggered. Resetting to step 1.
+[2026-11-13 15:12:57] [INFO] [MoneyManager] Win! Reset Martingale from step 1 back to 1.
+[2026-11-13 15:12:57] [INFO] [Client] Connecting to IQ Option as par_mate@hotmail.com...
+[2026-11-13 15:13:00] [INFO] [Client] Successfully connected to IQ Option WebSocket!
+[2026-11-13 15:13:00] [INFO] [Client] Switched balance mode to: REAL
+[2026-11-13 15:13:01] [INFO] [Client] Account Mode: REAL | Balance: $8.00
+[2026-11-13 15:13:04] [INFO] [Client] Synced 528 active instruments. Total OP_code.ACTIVES: 635
+[2026-11-13 15:13:04] [INFO] [Bot] Main trading loop active.
+[2026-11-13 15:13:04] [INFO] [Bot] Started! Mode: REAL | Balance: $8.00
+[2026-11-13 15:13:06] [INFO] [Bot] Stopping bot...
+[2026-11-13 15:13:06] [INFO] [Bot] Monitoring Top 3: [DXY: NEUTRAL RSI:46.2, JXY: NEUTRAL RSI:43.05, EURUSD-OTC: DOWN RSI:7.55] - Waiting for pullback setup...
+[2026-11-13 15:13:06] [INFO] [Bot] Trading loop exited.
+[2026-11-13 15:13:06] [INFO] [Web] Configuration updated via dashboard (Base Bet: $2.0, Ladder: [2.0, 4.4, 9.68, 21.3, 46.86], Min Payout: 87%, Top Pairs: 5).
+[2026-11-13 16:11:25] [INFO] [MoneyManager] Loss on step 1. Advancing to step 2 ($4.4).
+[2026-11-13 16:11:25] [INFO] [MoneyManager] Loss on step 2. Advancing to step 3 ($9.68).
+[2026-11-13 16:11:25] [INFO] [MoneyManager] Loss on step 3. Advancing to step 4 ($21.3).
+[2026-11-13 16:11:25] [INFO] [MoneyManager] Loss on step 4. Advancing to step 5 ($46.86).
+[2026-11-13 16:11:25] [WARNING] [MoneyManager] Max Martingale steps (5) reached! Safety Cut-Loss triggered. Resetting to step 1.
+[2026-11-13 16:11:25] [INFO] [MoneyManager] Win! Reset Martingale from step 1 back to 1.
+[2026-11-13 16:11:25] [INFO] [MoneyManager] 🏆 [Compound] WIN on Step 1! Compounding profit into Step 2/2 ($3.76).
+[2026-11-13 16:11:25] [INFO] [MoneyManager] 🎉 [Compound / Masaniello-lite] Target 2 Steps COMPLETED! Cycle Won (+$5.07)! Resetting to Base Bet ($2.00).
+[2026-11-13 16:11:25] [INFO] [MoneyManager] 🏆 [Compound] WIN on Step 1! Compounding profit into Step 2/2 ($3.76).
+[2026-11-13 16:11:25] [INFO] [MoneyManager] ❌ [Compound] Loss on Step 2. Capital Protected: Resetting cycle to Base Bet ($2.00).
+[2026-11-13 16:11:25] [INFO] [Client] Connecting to IQ Option as par_mate@hotmail.com...
+[2026-11-13 16:11:28] [INFO] [Client] Successfully connected to IQ Option WebSocket!
+[2026-11-13 16:11:28] [INFO] [Client] Switched balance mode to: REAL
+[2026-11-13 16:11:28] [INFO] [Client] Account Mode: REAL | Balance: $8.00
+[2026-11-13 16:11:32] [INFO] [Client] Synced 528 active instruments. Total OP_code.ACTIVES: 635
+[2026-11-13 16:11:32] [INFO] [Bot] Main trading loop active.
+[2026-11-13 16:11:32] [INFO] [Bot] Started! Mode: REAL | Balance: $8.00
+[2026-11-13 16:11:34] [INFO] [Bot] Stopping bot...
+[2026-11-13 16:11:35] [INFO] [Bot] Monitoring Top 4: [DXY: NEUTRAL RSI:42.54, JXY: NEUTRAL RSI:45.98, EURUSD-OTC: DOWN RSI:60.67, EURUSD: NEUTRAL RSI:57.29] - Waiting for pullback setup...
+[2026-11-13 16:11:35] [INFO] [Bot] Trading loop exited.
+[2026-11-13 16:11:35] [INFO] [Web] Configuration updated via dashboard (MM Mode: COMPOUND, Base Bet: $2.0, Ladder: [2.0, 3.74], Min Payout: 87%, Top Pairs: 5).
+[2026-11-13 16:14:38] [INFO] [MoneyManager] Loss on step 1. Advancing to step 2 ($3.74).
+[2026-11-13 16:14:38] [INFO] [MoneyManager] Loss on step 2. Advancing to step 3 ($8.23).
+[2026-11-13 16:14:38] [INFO] [MoneyManager] Loss on step 3. Advancing to step 4 ($18.11).
+[2026-11-13 16:14:38] [INFO] [MoneyManager] Loss on step 4. Advancing to step 5 ($39.84).
+[2026-11-13 16:14:38] [WARNING] [MoneyManager] Max Martingale steps (5) reached! Safety Cut-Loss triggered. Resetting to step 1.
+[2026-11-13 16:14:38] [INFO] [MoneyManager] Win! Reset Martingale from step 1 back to 1.
+[2026-11-13 16:14:38] [INFO] [MoneyManager] 🏆 [Compound] WIN on Step 1! Compounding profit into Step 2/2 ($3.76).
+[2026-11-13 16:14:38] [INFO] [MoneyManager] 🎉 [Compound / Masaniello-lite] Target 2 Steps COMPLETED! Cycle Won (+$5.07)! Resetting to Base Bet ($2.00).
+[2026-11-13 16:14:38] [INFO] [MoneyManager] 🏆 [Compound] WIN on Step 1! Compounding profit into Step 2/2 ($3.76).
+[2026-11-13 16:14:38] [INFO] [MoneyManager] ❌ [Compound] Loss on Step 2. Capital Protected: Resetting cycle to Base Bet ($2.00).
+[2026-11-13 16:14:38] [INFO] [Client] Connecting to IQ Option as par_mate@hotmail.com...
+[2026-11-13 16:14:40] [INFO] [Client] Successfully connected to IQ Option WebSocket!
+[2026-11-13 16:14:40] [INFO] [Client] Switched balance mode to: REAL
+[2026-11-13 16:14:41] [INFO] [Client] Account Mode: REAL | Balance: $8.00
+[2026-11-13 16:14:44] [INFO] [Client] Synced 528 active instruments. Total OP_code.ACTIVES: 635
+[2026-11-13 16:14:44] [INFO] [Bot] Main trading loop active.
+[2026-11-13 16:14:44] [INFO] [Bot] Started! Mode: REAL | Balance: $8.00
+[2026-11-13 16:14:46] [INFO] [Bot] Stopping bot...
+[2026-11-13 16:14:47] [INFO] [Bot] Monitoring Top 4: [DXY: NEUTRAL RSI:53.02, JXY: NEUTRAL RSI:46.92, EURUSD-OTC: DOWN RSI:51.09, EURUSD: NEUTRAL RSI:45.96] - Waiting for pullback setup...
+[2026-11-13 16:14:47] [INFO] [Bot] Trading loop exited.
+[2026-11-13 16:14:47] [INFO] [Web] Configuration updated via dashboard (MM Mode: COMPOUND, Base Bet: $2.0, Ladder: [2.0, 3.74], Min Payout: 87%, Top Pairs: 5).
+[2026-11-13 16:28:36] [INFO] Starting IQ Option Web Dashboard on http://127.0.0.1:8000
+[2026-11-13 16:29:22] [INFO] [Web] Configuration updated via dashboard (MM Mode: COMPOUND, Base Bet: $2.0, Ladder: [2.0, 3.74], Min Payout: 87%, Top Pairs: 5).
+[2026-11-13 16:29:39] [INFO] [Client] Connecting to IQ Option as par_mate@hotmail.com...
+[2026-11-13 16:29:42] [INFO] [Client] Successfully connected to IQ Option WebSocket!
+[2026-11-13 16:29:42] [INFO] [Client] Switched balance mode to: PRACTICE
+[2026-11-13 16:29:42] [INFO] [Client] Account Mode: PRACTICE | Balance: $29,131.14
+[2026-11-13 16:29:45] [INFO] [Client] Synced 528 active instruments. Total OP_code.ACTIVES: 635
+[2026-11-13 16:29:45] [INFO] [Bot] Main trading loop active.
+[2026-11-13 16:29:45] [INFO] [Bot] Started! Mode: PRACTICE | Balance: $29,131.14
+[2026-11-13 16:29:52] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 16:29:59] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 16:30:01] [INFO] [Bot] Monitoring Top 5: [RAYDIUMUSD-OTC: UP RSI:47.48, Bitcoin/Gold-op: UP RSI:68.83, RENDERUSD-OTC: CHOPPY_BLACKLIST RSI:50.0, XAU/XAG: NEUTRAL RSI:40.01, European AI: NEUTRAL RSI:59.79] - Waiting for pullback setup...
+[2026-11-13 16:30:13] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 16:30:17] [INFO] [Bot] 🎯 Signal TRIGGERED: CALL on FETUSD-OTC (87%)! Reason: High-WinRate CALL: NEUTRAL + Support Zone + Lower Wick Rejection (52%) + RSI Oversold Hook (34.5) | Placing order $2.0 (Step 1)...
+[2026-11-13 16:30:17] [INFO] [Executor] Placing CALL order on FETUSD-OTC ($2.0, step 1)...
+[2026-11-13 16:30:18] [INFO] [Executor] Order #14447118046 placed. Waiting for expiration (5 min)...
+[2026-11-13 16:30:18] [INFO] [Executor] Expiration in approx 280s. Waiting...
+[2026-11-13 16:30:33] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 16:30:55] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 16:31:15] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 16:31:36] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 16:31:57] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 16:32:17] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 16:32:38] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 16:32:58] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 16:33:21] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 16:33:42] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 16:34:02] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 16:34:22] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 16:34:43] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 16:35:05] [INFO] [MoneyManager] 🏆 [Compound] WIN on Step 1! Compounding profit into Step 2/2 ($3.74).
+[2026-11-13 16:35:05] [INFO] [Bot] Trade finished: WIN | PnL: $1.74 | Balance: $29132.88
+[2026-11-13 16:35:06] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 16:35:13] [INFO] [Bot] Monitoring Top 5: [ONDOUSD-OTC: NEUTRAL RSI:51.91, European AI: NEUTRAL RSI:56.96, DYDXUSD-OTC: UP RSI:55.29, FETUSD-OTC: NEUTRAL RSI:52.77, Luxury: NEUTRAL RSI:43.9] - Waiting for pullback setup...
+[2026-11-13 16:35:26] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 16:35:33] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 16:35:36] [INFO] [Bot] Monitoring Top 5: [HBARUSD-OTC: NEUTRAL RSI:49.75, RENDERUSD-OTC: UP RSI:43.56, ONDOUSD-OTC: NEUTRAL RSI:50.63, TAOUSD-OTC: CHOPPY_BLACKLIST RSI:50.0, FETUSD-OTC: NEUTRAL RSI:48.75] - Waiting for pullback setup...
+[2026-11-13 16:35:58] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 16:35:58] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 16:36:04] [INFO] [Bot] Monitoring Top 5: [RENDERUSD-OTC: UP RSI:46.81, SUIUSD-OTC: NEUTRAL RSI:49.36, TAOUSD-OTC: UP RSI:67.98, European AI: CHOPPY_BLACKLIST RSI:50.0, XAU/XAG: NEUTRAL RSI:28.67] - Waiting for pullback setup...
+[2026-11-13 16:36:19] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 16:36:19] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 16:36:23] [INFO] [Bot] Monitoring Top 5: [TAOUSD-OTC: UP RSI:66.15, SUIUSD-OTC: NEUTRAL RSI:52.82, DYDXUSD-OTC: UP RSI:59.0, Luxury: DOWN RSI:42.05, Bitcoin/Gold-op: UP RSI:66.55] - Waiting for pullback setup...
+[2026-11-13 16:36:41] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 16:36:41] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 16:36:47] [INFO] [Bot] Monitoring Top 5: [RENDERUSD-OTC: UP RSI:51.36, Bitcoin/Gold-op: UP RSI:66.57, HBARUSD-OTC: UP RSI:58.19, European AI: NEUTRAL RSI:61.18, SUIUSD-OTC: NEUTRAL RSI:54.75] - Waiting for pullback setup...
+[2026-11-13 16:36:52] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 16:36:59] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 16:37:02] [INFO] [Bot] Monitoring Top 5: [Bitcoin/Gold-op: UP RSI:66.48, PENGUUSD-OTC: DOWN RSI:48.95, SUIUSD-OTC: NEUTRAL RSI:55.77, Luxury: NEUTRAL RSI:43.68, DYDXUSD-OTC: UP RSI:61.14] - Waiting for pullback setup...
+[2026-11-13 16:37:24] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 16:37:24] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 16:37:29] [INFO] [Bot] Monitoring Top 5: [FETUSD-OTC: NEUTRAL RSI:49.99, ONDOUSD-OTC: NEUTRAL RSI:51.38, Bitcoin/Gold-op: UP RSI:61.06, DYDXUSD-OTC: UP RSI:61.5, Luxury: DOWN RSI:42.33] - Waiting for pullback setup...
+[2026-11-13 16:37:45] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 16:37:45] [INFO] [Bot] Monitoring Top 5: [FETUSD-OTC: NEUTRAL RSI:44.91, ONDOUSD-OTC: CHOPPY_BLACKLIST RSI:50.0, Bitcoin/Gold-op: UP RSI:61.4, DYDXUSD-OTC: UP RSI:61.63, Luxury: DOWN RSI:42.36] - Waiting for pullback setup...
+[2026-11-13 16:38:10] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 16:38:10] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 16:38:15] [INFO] [Bot] Monitoring Top 5: [PENGUUSD-OTC: DOWN RSI:50.84, European AI: NEUTRAL RSI:53.76, XAU/XAG: NEUTRAL RSI:43.04, Bitcoin/Gold-op: UP RSI:61.12, ONDOUSD-OTC: NEUTRAL RSI:46.18] - Waiting for pullback setup...
+[2026-11-13 16:38:32] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 16:38:32] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 16:38:38] [INFO] [Bot] Monitoring Top 5: [RENDERUSD-OTC: UP RSI:59.64, RAYDIUMUSD-OTC: UP RSI:47.68, XAU/XAG: NEUTRAL RSI:45.0, DYDXUSD-OTC: UP RSI:69.36, Bitcoin/Gold-op: UP RSI:61.76] - Waiting for pullback setup...
+[2026-11-13 16:38:46] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 16:38:53] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 16:38:56] [INFO] [Bot] Monitoring Top 5: [European AI: NEUTRAL RSI:58.04, ONDOUSD-OTC: NEUTRAL RSI:52.6, TAOUSD-OTC: UP RSI:64.02, PENGUUSD-OTC: NEUTRAL RSI:52.87, Bitcoin/Gold-op: UP RSI:62.47] - Waiting for pullback setup...
+[2026-11-13 16:39:08] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 16:39:11] [INFO] [Bot] Monitoring Top 5: [RAYDIUMUSD-OTC: UP RSI:59.73, RENDERUSD-OTC: UP RSI:58.47, TAOUSD-OTC: UP RSI:63.5, Luxury: NEUTRAL RSI:47.58, ONDOUSD-OTC: NEUTRAL RSI:54.71] - Waiting for pullback setup...
+[2026-11-13 16:39:38] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 16:39:38] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 16:39:43] [INFO] [Bot] Monitoring Top 5: [Bitcoin/Gold-op: CHOPPY_BLACKLIST RSI:50.0, European AI: NEUTRAL RSI:59.84, RENDERUSD-OTC: UP RSI:58.84, FETUSD-OTC: NEUTRAL RSI:49.9, Luxury: NEUTRAL RSI:44.77] - Waiting for pullback setup...
+[2026-11-13 16:39:51] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 16:39:57] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 16:40:00] [INFO] [Bot] Monitoring Top 5: [Bitcoin/Gold-op: CHOPPY_BLACKLIST RSI:50.0, SUIUSD-OTC: NEUTRAL RSI:51.97, RAYDIUMUSD-OTC: UP RSI:57.37, FETUSD-OTC: NEUTRAL RSI:51.04, DYDXUSD-OTC: UP RSI:62.88] - Waiting for pullback setup...
+[2026-11-13 16:40:15] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 16:40:21] [INFO] [Bot] Monitoring Top 5: [RAYDIUMUSD-OTC: UP RSI:55.85, XAU/XAG: NEUTRAL RSI:55.19, HBARUSD-OTC: UP RSI:56.67, Luxury: DOWN RSI:44.71, European AI: CHOPPY_BLACKLIST RSI:50.0] - Waiting for pullback setup...
+[2026-11-13 16:40:38] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 16:40:38] [INFO] [Bot] Monitoring Top 5: [RAYDIUMUSD-OTC: UP RSI:53.76, XAU/XAG: NEUTRAL RSI:55.76, HBARUSD-OTC: CHOPPY_BLACKLIST RSI:50.0, Luxury: DOWN RSI:43.96, European AI: CHOPPY_BLACKLIST RSI:50.0] - Waiting for pullback setup...
+[2026-11-13 16:41:01] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 16:41:01] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 16:41:06] [INFO] [Bot] Monitoring Top 5: [SUIUSD-OTC: NEUTRAL RSI:54.09, TAOUSD-OTC: CHOPPY_BLACKLIST RSI:50.0, DYDXUSD-OTC: UP RSI:65.98, Bitcoin/Gold-op: UP RSI:54.9, FETUSD-OTC: NEUTRAL RSI:45.14] - Waiting for pullback setup...
+[2026-11-13 16:41:23] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 16:41:23] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 16:41:28] [INFO] [Bot] Monitoring Top 5: [European AI: CHOPPY_BLACKLIST RSI:50.0, TAOUSD-OTC: UP RSI:66.23, RENDERUSD-OTC: UP RSI:63.65, XAU/XAG: NEUTRAL RSI:57.47, ONDOUSD-OTC: NEUTRAL RSI:54.8] - Waiting for pullback setup...
+[2026-11-13 16:41:45] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 16:41:45] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 16:41:51] [INFO] [Bot] Monitoring Top 5: [Luxury: DOWN RSI:43.76, TAOUSD-OTC: UP RSI:58.06, RAYDIUMUSD-OTC: UP RSI:45.73, European AI: CHOPPY_BLACKLIST RSI:50.0, RENDERUSD-OTC: UP RSI:60.96] - Waiting for pullback setup...
+[2026-11-13 16:42:06] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 16:42:06] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 16:42:11] [INFO] [Bot] Monitoring Top 5: [FETUSD-OTC: NEUTRAL RSI:49.03, TAOUSD-OTC: UP RSI:55.42, Bitcoin/Gold-op: UP RSI:53.81, RAYDIUMUSD-OTC: UP RSI:46.78, European AI: NEUTRAL RSI:56.33] - Waiting for pullback setup...
+[2026-11-13 16:42:30] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 16:42:30] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 16:42:35] [INFO] [Bot] Monitoring Top 5: [ONDOUSD-OTC: UP RSI:58.9, FETUSD-OTC: NEUTRAL RSI:49.1, Bitcoin/Gold-op: UP RSI:55.45, RAYDIUMUSD-OTC: UP RSI:50.61, RENDERUSD-OTC: UP RSI:55.54] - Waiting for pullback setup...
+[2026-11-13 16:42:43] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 16:42:50] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 16:42:52] [INFO] [Bot] Monitoring Top 5: [European AI: CHOPPY_BLACKLIST RSI:50.0, TAOUSD-OTC: UP RSI:53.76, Bitcoin/Gold-op: CHOPPY_BLACKLIST RSI:50.0, SUIUSD-OTC: NEUTRAL RSI:48.27, RENDERUSD-OTC: UP RSI:53.91] - Waiting for pullback setup...
+[2026-11-13 16:43:05] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 16:43:08] [INFO] [Bot] Monitoring Top 5: [RAYDIUMUSD-OTC: UP RSI:49.94, Luxury: NEUTRAL RSI:45.69, XAU/XAG: NEUTRAL RSI:44.97, RENDERUSD-OTC: CHOPPY_BLACKLIST RSI:50.0, Bitcoin/Gold-op: UP RSI:53.1] - Waiting for pullback setup...
+[2026-11-13 16:43:34] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 16:43:34] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 16:43:40] [INFO] [Bot] Monitoring Top 5: [PENGUUSD-OTC: NEUTRAL RSI:55.33, European AI: NEUTRAL RSI:57.49, XAU/XAG: NEUTRAL RSI:46.98, DYDXUSD-OTC: UP RSI:58.77, SUIUSD-OTC: NEUTRAL RSI:43.75] - Waiting for pullback setup...
+[2026-11-13 16:43:47] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 16:43:54] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 16:43:57] [INFO] [Bot] Monitoring Top 5: [SUIUSD-OTC: NEUTRAL RSI:45.09, RAYDIUMUSD-OTC: UP RSI:55.84, FETUSD-OTC: UP RSI:55.0, Bitcoin/Gold-op: UP RSI:54.49, ONDOUSD-OTC: UP RSI:60.78] - Waiting for pullback setup...
+[2026-11-13 16:44:13] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 16:44:21] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 16:44:23] [INFO] [Bot] Monitoring Top 5: [European AI: NEUTRAL RSI:57.5, Luxury: CHOPPY_BLACKLIST RSI:50.0, ONDOUSD-OTC: UP RSI:56.62, HBARUSD-OTC: NEUTRAL RSI:50.22, XAU/XAG: NEUTRAL RSI:47.69] - Waiting for pullback setup...
+[2026-11-13 16:44:39] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 16:44:39] [INFO] [Bot] Monitoring Top 5: [European AI: NEUTRAL RSI:56.46, Luxury: CHOPPY_BLACKLIST RSI:50.0, ONDOUSD-OTC: UP RSI:57.0, HBARUSD-OTC: NEUTRAL RSI:48.16, XAU/XAG: NEUTRAL RSI:46.48] - Waiting for pullback setup...
+[2026-11-13 16:45:02] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 16:45:02] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 16:45:08] [INFO] [Bot] Monitoring Top 5: [RAYDIUMUSD-OTC: UP RSI:48.96, Bitcoin/Gold-op: UP RSI:60.16, RENDERUSD-OTC: UP RSI:59.05, European AI: NEUTRAL RSI:60.19, FETUSD-OTC: UP RSI:58.51] - Waiting for pullback setup...
+[2026-11-13 16:45:27] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 16:45:27] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 16:45:32] [INFO] [Bot] Monitoring Top 5: [DYDXUSD-OTC: UP RSI:50.12, ONDOUSD-OTC: UP RSI:60.02, XAU/XAG: NEUTRAL RSI:54.25, PENGUUSD-OTC: NEUTRAL RSI:52.28, Luxury: DOWN RSI:30.26] - Waiting for pullback setup...
+[2026-11-13 16:45:39] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 16:45:46] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 16:45:49] [INFO] [Bot] Monitoring Top 5: [RENDERUSD-OTC: CHOPPY_BLACKLIST RSI:50.0, DYDXUSD-OTC: UP RSI:49.56, European AI: NEUTRAL RSI:65.86, XAU/XAG: NEUTRAL RSI:55.13, ONDOUSD-OTC: UP RSI:60.64] - Waiting for pullback setup...
+[2026-11-13 16:46:04] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 16:46:11] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 16:46:13] [INFO] [Bot] Monitoring Top 5: [RENDERUSD-OTC: UP RSI:66.15, DYDXUSD-OTC: UP RSI:47.47, TAOUSD-OTC: UP RSI:60.89, XAU/XAG: NEUTRAL RSI:59.69, European AI: NEUTRAL RSI:63.13] - Waiting for pullback setup...
+[2026-11-13 16:46:28] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 16:46:35] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 16:46:37] [INFO] [Bot] Monitoring Top 5: [PENGUUSD-OTC: DOWN RSI:44.01, XAU/XAG: NEUTRAL RSI:63.41, FETUSD-OTC: UP RSI:62.81, ONDOUSD-OTC: UP RSI:61.42, SUIUSD-OTC: DOWN RSI:40.0] - Waiting for pullback setup...
+[2026-11-13 16:46:52] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 16:46:58] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 16:47:01] [INFO] [Bot] Monitoring Top 5: [RAYDIUMUSD-OTC: UP RSI:53.96, DYDXUSD-OTC: UP RSI:46.19, RENDERUSD-OTC: UP RSI:67.13, ONDOUSD-OTC: UP RSI:64.19, Bitcoin/Gold-op: UP RSI:57.84] - Waiting for pullback setup...
+[2026-11-13 16:47:22] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 16:47:22] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 16:47:28] [INFO] [Bot] Monitoring Top 5: [FETUSD-OTC: UP RSI:61.99, European AI: NEUTRAL RSI:57.82, PENGUUSD-OTC: DOWN RSI:46.94, TAOUSD-OTC: UP RSI:64.07, DYDXUSD-OTC: UP RSI:45.52] - Waiting for pullback setup...
+[2026-11-13 16:47:43] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 16:47:49] [INFO] [Bot] Monitoring Top 5: [Bitcoin/Gold-op: UP RSI:51.0, ONDOUSD-OTC: UP RSI:60.26, Luxury: DOWN RSI:39.14, European AI: NEUTRAL RSI:58.59, TAOUSD-OTC: UP RSI:57.65] - Waiting for pullback setup...
+[2026-11-13 16:48:04] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 16:48:05] [INFO] [Bot] Monitoring Top 5: [Bitcoin/Gold-op: UP RSI:53.63, ONDOUSD-OTC: UP RSI:55.37, Luxury: DOWN RSI:37.53, European AI: NEUTRAL RSI:56.94, TAOUSD-OTC: CHOPPY_BLACKLIST RSI:50.0] - Waiting for pullback setup...
+[2026-11-13 16:48:28] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 16:48:28] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 16:48:33] [INFO] [Bot] Monitoring Top 5: [European AI: NEUTRAL RSI:58.49, TAOUSD-OTC: UP RSI:55.87, RENDERUSD-OTC: UP RSI:62.53, HBARUSD-OTC: NEUTRAL RSI:40.19, PENGUUSD-OTC: DOWN RSI:48.35] - Waiting for pullback setup...
+[2026-11-13 16:48:50] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 16:48:50] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 16:48:55] [INFO] [Bot] Monitoring Top 5: [PENGUUSD-OTC: DOWN RSI:50.8, FETUSD-OTC: UP RSI:61.27, DYDXUSD-OTC: UP RSI:49.39, RENDERUSD-OTC: UP RSI:61.41, Luxury: DOWN RSI:39.56] - Waiting for pullback setup...
+[2026-11-13 16:49:09] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 16:49:09] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 16:49:14] [INFO] [Bot] Monitoring Top 5: [PENGUUSD-OTC: DOWN RSI:50.37, XAU/XAG: NEUTRAL RSI:65.17, RAYDIUMUSD-OTC: UP RSI:47.02, TAOUSD-OTC: UP RSI:62.88, European AI: NEUTRAL RSI:54.31] - Waiting for pullback setup...
+[2026-11-13 16:49:32] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 16:49:32] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 16:49:37] [INFO] [Bot] Monitoring Top 5: [DYDXUSD-OTC: UP RSI:46.67, Bitcoin/Gold-op: UP RSI:55.64, SUIUSD-OTC: NEUTRAL RSI:47.39, RENDERUSD-OTC: UP RSI:64.85, RAYDIUMUSD-OTC: UP RSI:46.28] - Waiting for pullback setup...
+[2026-11-13 16:49:51] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 16:49:51] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 16:49:56] [INFO] [Bot] Monitoring Top 5: [ONDOUSD-OTC: UP RSI:61.03, HBARUSD-OTC: NEUTRAL RSI:44.59, RENDERUSD-OTC: UP RSI:66.91, RAYDIUMUSD-OTC: UP RSI:45.98, TAOUSD-OTC: UP RSI:66.52] - Waiting for pullback setup...
+[2026-11-13 16:50:11] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 16:50:13] [INFO] [Bot] Monitoring Top 5: [ONDOUSD-OTC: UP RSI:58.81, HBARUSD-OTC: NEUTRAL RSI:47.99, RENDERUSD-OTC: UP RSI:66.88, RAYDIUMUSD-OTC: CHOPPY_BLACKLIST RSI:50.0, TAOUSD-OTC: UP RSI:67.57] - Waiting for pullback setup...
+[2026-11-13 16:50:34] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 16:50:34] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 16:50:40] [INFO] [Bot] Monitoring Top 5: [RAYDIUMUSD-OTC: CHOPPY_BLACKLIST RSI:50.0, ONDOUSD-OTC: UP RSI:61.9, RENDERUSD-OTC: UP RSI:65.7, FETUSD-OTC: UP RSI:63.47, TAOUSD-OTC: UP RSI:59.4] - Waiting for pullback setup...
+[2026-11-13 16:50:57] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 16:50:57] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 16:51:02] [INFO] [Bot] Monitoring Top 5: [HBARUSD-OTC: NEUTRAL RSI:49.8, RAYDIUMUSD-OTC: CHOPPY_BLACKLIST RSI:50.0, European AI: NEUTRAL RSI:47.7, Luxury: DOWN RSI:40.65, ONDOUSD-OTC: UP RSI:62.18] - Waiting for pullback setup...
+[2026-11-13 16:51:16] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 16:51:16] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 16:51:21] [INFO] [Bot] Monitoring Top 5: [RENDERUSD-OTC: UP RSI:69.1, ONDOUSD-OTC: UP RSI:62.57, European AI: NEUTRAL RSI:54.1, RAYDIUMUSD-OTC: UP RSI:44.59, FETUSD-OTC: UP RSI:53.55] - Waiting for pullback setup...
+[2026-11-13 16:51:36] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 16:51:37] [INFO] [Bot] Monitoring Top 5: [RENDERUSD-OTC: UP RSI:67.95, ONDOUSD-OTC: UP RSI:62.87, European AI: NEUTRAL RSI:55.64, RAYDIUMUSD-OTC: UP RSI:43.72, FETUSD-OTC: UP RSI:55.1] - Waiting for pullback setup...
+[2026-11-13 16:52:00] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 16:52:00] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 16:52:05] [INFO] [Bot] Monitoring Top 5: [ONDOUSD-OTC: UP RSI:61.87, FETUSD-OTC: UP RSI:57.66, XAU/XAG: NEUTRAL RSI:61.57, RENDERUSD-OTC: UP RSI:70.05, Bitcoin/Gold-op: UP RSI:52.79] - Waiting for pullback setup...
+[2026-11-13 16:52:20] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 16:52:20] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 16:52:25] [INFO] [Bot] Monitoring Top 5: [DYDXUSD-OTC: UP RSI:35.63, TAOUSD-OTC: UP RSI:58.37, ONDOUSD-OTC: UP RSI:61.39, XAU/XAG: NEUTRAL RSI:53.63, Luxury: DOWN RSI:44.57] - Waiting for pullback setup...
+[2026-11-13 16:52:44] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 16:52:44] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 16:52:49] [INFO] [Bot] Monitoring Top 5: [HBARUSD-OTC: UP RSI:54.72, RAYDIUMUSD-OTC: NEUTRAL RSI:37.66, XAU/XAG: NEUTRAL RSI:53.46, RENDERUSD-OTC: UP RSI:67.61, FETUSD-OTC: UP RSI:60.74] - Waiting for pullback setup...
+[2026-11-13 16:52:57] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 16:53:04] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 16:53:06] [INFO] [Bot] Monitoring Top 5: [PENGUUSD-OTC: DOWN RSI:43.93, RENDERUSD-OTC: UP RSI:70.65, RAYDIUMUSD-OTC: UP RSI:41.79, Bitcoin/Gold-op: UP RSI:58.35, TAOUSD-OTC: UP RSI:52.21] - Waiting for pullback setup...
+[2026-11-13 16:53:19] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 16:53:22] [INFO] [Bot] Monitoring Top 5: [Luxury: DOWN RSI:43.89, RENDERUSD-OTC: UP RSI:64.34, HBARUSD-OTC: UP RSI:59.38, FETUSD-OTC: UP RSI:53.87, Bitcoin/Gold-op: UP RSI:55.37] - Waiting for pullback setup...
+[2026-11-13 16:53:44] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 16:53:53] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 16:53:55] [INFO] [Bot] Monitoring Top 5: [SUIUSD-OTC: NEUTRAL RSI:53.11, Bitcoin/Gold-op: UP RSI:54.6, ONDOUSD-OTC: UP RSI:52.05, PENGUUSD-OTC: DOWN RSI:49.32, XAU/XAG: NEUTRAL RSI:53.95] - Waiting for pullback setup...
+[2026-11-13 16:54:12] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 16:54:12] [INFO] [Bot] Monitoring Top 5: [XAU/XAG: NEUTRAL RSI:54.02, Bitcoin/Gold-op: UP RSI:53.76, RAYDIUMUSD-OTC: CHOPPY_BLACKLIST RSI:50.0, TAOUSD-OTC: UP RSI:48.78, Luxury: DOWN RSI:44.83] - Waiting for pullback setup...
+[2026-11-13 16:54:34] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 16:54:34] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 16:54:39] [INFO] [Bot] Monitoring Top 5: [DYDXUSD-OTC: NEUTRAL RSI:36.42, FETUSD-OTC: UP RSI:48.54, RENDERUSD-OTC: UP RSI:59.9, Luxury: DOWN RSI:44.11, XAU/XAG: NEUTRAL RSI:50.54] - Waiting for pullback setup...
+[2026-11-13 16:54:55] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 16:54:55] [INFO] [Bot] Monitoring Top 5: [DYDXUSD-OTC: NEUTRAL RSI:35.87, FETUSD-OTC: UP RSI:48.72, RENDERUSD-OTC: UP RSI:61.83, Luxury: DOWN RSI:45.81, XAU/XAG: NEUTRAL RSI:50.02] - Waiting for pullback setup...
+[2026-11-13 16:55:18] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 16:55:18] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 16:55:23] [INFO] [Bot] Monitoring Top 5: [SUIUSD-OTC: DOWN RSI:44.49, Luxury: DOWN RSI:40.37, PENGUUSD-OTC: DOWN RSI:51.44, DYDXUSD-OTC: NEUTRAL RSI:36.12, Bitcoin/Gold-op: UP RSI:51.09] - Waiting for pullback setup...
+[2026-11-13 16:55:38] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 16:55:39] [INFO] [Bot] Monitoring Top 5: [SUIUSD-OTC: DOWN RSI:41.68, Luxury: DOWN RSI:39.27, PENGUUSD-OTC: DOWN RSI:51.97, DYDXUSD-OTC: NEUTRAL RSI:34.39, Bitcoin/Gold-op: UP RSI:49.79] - Waiting for pullback setup...
+[2026-11-13 16:56:02] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 16:56:02] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 16:56:07] [INFO] [Bot] Monitoring Top 5: [PENGUUSD-OTC: DOWN RSI:49.18, European AI: NEUTRAL RSI:45.89, FETUSD-OTC: NEUTRAL RSI:42.53, Luxury: CHOPPY_BLACKLIST RSI:50.0, RENDERUSD-OTC: CHOPPY_BLACKLIST RSI:50.0] - Waiting for pullback setup...
+[2026-11-13 16:56:24] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 16:56:24] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 16:56:30] [INFO] [Bot] Monitoring Top 5: [Bitcoin/Gold-op: UP RSI:52.96, FETUSD-OTC: NEUTRAL RSI:45.73, RAYDIUMUSD-OTC: UP RSI:47.37, HBARUSD-OTC: UP RSI:55.56, Luxury: CHOPPY_BLACKLIST RSI:50.0] - Waiting for pullback setup...
+[2026-11-13 16:56:44] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 16:56:44] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 16:56:49] [INFO] [Bot] Monitoring Top 5: [DYDXUSD-OTC: NEUTRAL RSI:31.23, RAYDIUMUSD-OTC: UP RSI:46.03, Luxury: CHOPPY_BLACKLIST RSI:50.0, European AI: NEUTRAL RSI:43.86, PENGUUSD-OTC: NEUTRAL RSI:51.2] - Waiting for pullback setup...
+[2026-11-13 16:57:06] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 16:57:06] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 16:57:11] [INFO] [Bot] Monitoring Top 5: [ONDOUSD-OTC: UP RSI:66.05, Luxury: CHOPPY_BLACKLIST RSI:50.0, European AI: DOWN RSI:36.65, TAOUSD-OTC: UP RSI:64.56, RENDERUSD-OTC: CHOPPY_BLACKLIST RSI:50.0] - Waiting for pullback setup...
+[2026-11-13 16:57:29] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 16:57:29] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 16:57:34] [INFO] [Bot] Monitoring Top 5: [RENDERUSD-OTC: CHOPPY_BLACKLIST RSI:50.0, Bitcoin/Gold-op: UP RSI:53.59, Luxury: CHOPPY_BLACKLIST RSI:50.0, SUIUSD-OTC: DOWN RSI:42.51, PENGUUSD-OTC: NEUTRAL RSI:55.58] - Waiting for pullback setup...
+[2026-11-13 16:57:42] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 16:57:48] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 16:57:52] [INFO] [Bot] Monitoring Top 5: [RAYDIUMUSD-OTC: UP RSI:41.76, PENGUUSD-OTC: NEUTRAL RSI:55.88, ONDOUSD-OTC: UP RSI:66.57, European AI: DOWN RSI:40.87, RENDERUSD-OTC: CHOPPY_BLACKLIST RSI:50.0] - Waiting for pullback setup...
+[2026-11-13 16:58:06] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 16:58:12] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 16:58:14] [INFO] [Bot] Monitoring Top 5: [FETUSD-OTC: UP RSI:47.23, HBARUSD-OTC: CHOPPY_BLACKLIST RSI:50.0, XAU/XAG: NEUTRAL RSI:45.39, DYDXUSD-OTC: NEUTRAL RSI:29.66, RENDERUSD-OTC: UP RSI:52.06] - Waiting for pullback setup...
+[2026-11-13 16:58:36] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 16:58:36] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 16:58:41] [INFO] [Bot] Monitoring Top 5: [FETUSD-OTC: UP RSI:47.02, Luxury: DOWN RSI:52.05, PENGUUSD-OTC: DOWN RSI:51.04, ONDOUSD-OTC: UP RSI:68.95, TAOUSD-OTC: UP RSI:57.66] - Waiting for pullback setup...
+[2026-11-13 16:58:57] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 16:58:57] [INFO] [Bot] Monitoring Top 5: [FETUSD-OTC: UP RSI:46.89, Luxury: CHOPPY_BLACKLIST RSI:50.0, PENGUUSD-OTC: NEUTRAL RSI:53.32, ONDOUSD-OTC: UP RSI:69.59, TAOUSD-OTC: UP RSI:57.14] - Waiting for pullback setup...
+[2026-11-13 16:59:21] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 16:59:21] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 16:59:26] [INFO] [Bot] Monitoring Top 5: [XAU/XAG: NEUTRAL RSI:43.1, TAOUSD-OTC: CHOPPY_BLACKLIST RSI:50.0, FETUSD-OTC: NEUTRAL RSI:43.5, RAYDIUMUSD-OTC: UP RSI:52.32, Luxury: DOWN RSI:53.11] - Waiting for pullback setup...
+[2026-11-13 16:59:41] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 16:59:41] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 16:59:46] [INFO] [Bot] Monitoring Top 5: [TAOUSD-OTC: UP RSI:56.36, European AI: NEUTRAL RSI:50.95, PENGUUSD-OTC: NEUTRAL RSI:57.81, XAU/XAG: NEUTRAL RSI:44.0, Luxury: CHOPPY_BLACKLIST RSI:50.0] - Waiting for pullback setup...
+[2026-11-13 17:00:03] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:00:03] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:00:09] [INFO] [Bot] Monitoring Top 5: [SUIUSD-OTC: NEUTRAL RSI:47.87, Luxury: CHOPPY_BLACKLIST RSI:50.0, PENGUUSD-OTC: NEUTRAL RSI:59.49, FETUSD-OTC: NEUTRAL RSI:46.61, ONDOUSD-OTC: UP RSI:69.26] - Waiting for pullback setup...
+[2026-11-13 17:00:17] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:00:24] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:00:27] [INFO] [Bot] Monitoring Top 5: [SUIUSD-OTC: NEUTRAL RSI:47.44, DYDXUSD-OTC: UP RSI:45.34, TAOUSD-OTC: UP RSI:50.17, European AI: NEUTRAL RSI:47.77, HBARUSD-OTC: UP RSI:65.0] - Waiting for pullback setup...
+[2026-11-13 17:00:43] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:00:43] [INFO] [Bot] Monitoring Top 5: [SUIUSD-OTC: DOWN RSI:45.52, DYDXUSD-OTC: UP RSI:44.52, TAOUSD-OTC: UP RSI:50.48, European AI: NEUTRAL RSI:47.08, HBARUSD-OTC: UP RSI:63.89] - Waiting for pullback setup...
+[2026-11-13 17:01:07] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:01:07] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:01:12] [INFO] [Bot] Monitoring Top 5: [PENGUUSD-OTC: NEUTRAL RSI:62.93, DYDXUSD-OTC: UP RSI:46.87, RENDERUSD-OTC: UP RSI:46.73, HBARUSD-OTC: UP RSI:59.73, FETUSD-OTC: UP RSI:49.92] - Waiting for pullback setup...
+[2026-11-13 17:01:30] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:01:30] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:01:34] [INFO] [Bot] Monitoring Top 5: [SUIUSD-OTC: NEUTRAL RSI:51.09, XAU/XAG: NEUTRAL RSI:46.94, Luxury: CHOPPY_BLACKLIST RSI:50.0, RAYDIUMUSD-OTC: UP RSI:57.21, European AI: NEUTRAL RSI:51.14] - Waiting for pullback setup...
+[2026-11-13 17:01:52] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:01:52] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:01:57] [INFO] [Bot] Monitoring Top 5: [PENGUUSD-OTC: NEUTRAL RSI:62.01, RAYDIUMUSD-OTC: UP RSI:59.95, SUIUSD-OTC: NEUTRAL RSI:56.14, ONDOUSD-OTC: UP RSI:71.74, HBARUSD-OTC: UP RSI:59.41] - Waiting for pullback setup...
+[2026-11-13 17:02:05] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:02:12] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:02:14] [INFO] [Bot] Monitoring Top 5: [DYDXUSD-OTC: UP RSI:46.9, FETUSD-OTC: CHOPPY_BLACKLIST RSI:50.0, PENGUUSD-OTC: NEUTRAL RSI:62.46, ONDOUSD-OTC: UP RSI:69.32, European AI: CHOPPY_BLACKLIST RSI:50.0] - Waiting for pullback setup...
+[2026-11-13 17:02:27] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:02:31] [INFO] [Bot] Monitoring Top 5: [European AI: NEUTRAL RSI:56.36, HBARUSD-OTC: UP RSI:59.48, TAOUSD-OTC: UP RSI:53.76, ONDOUSD-OTC: UP RSI:65.78, RAYDIUMUSD-OTC: UP RSI:61.22] - Waiting for pullback setup...
+[2026-11-13 17:02:56] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:02:56] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:03:01] [INFO] [Bot] Monitoring Top 5: [European AI: NEUTRAL RSI:53.2, TAOUSD-OTC: UP RSI:50.86, PENGUUSD-OTC: DOWN RSI:49.12, RENDERUSD-OTC: UP RSI:46.21, Bitcoin/Gold-op: UP RSI:50.67] - Waiting for pullback setup...
+[2026-11-13 17:03:15] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:03:15] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:03:21] [INFO] [Bot] Monitoring Top 5: [RAYDIUMUSD-OTC: UP RSI:64.71, Bitcoin/Gold-op: UP RSI:55.15, DYDXUSD-OTC: UP RSI:45.58, ONDOUSD-OTC: UP RSI:64.22, RENDERUSD-OTC: UP RSI:46.7] - Waiting for pullback setup...
+[2026-11-13 17:03:37] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:03:37] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:03:42] [INFO] [Bot] Monitoring Top 5: [Bitcoin/Gold-op: UP RSI:56.22, RENDERUSD-OTC: UP RSI:47.59, RAYDIUMUSD-OTC: UP RSI:63.46, SUIUSD-OTC: NEUTRAL RSI:51.81, TAOUSD-OTC: UP RSI:52.21] - Waiting for pullback setup...
+[2026-11-13 17:03:59] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:03:59] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:04:04] [INFO] [Bot] Monitoring Top 5: [HBARUSD-OTC: UP RSI:69.33, XAU/XAG: CHOPPY_BLACKLIST RSI:50.0, FETUSD-OTC: CHOPPY_BLACKLIST RSI:50.0, RAYDIUMUSD-OTC: UP RSI:63.61, TAOUSD-OTC: UP RSI:52.96] - Waiting for pullback setup...
+[2026-11-13 17:04:20] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:04:20] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:04:26] [INFO] [Bot] Monitoring Top 5: [HBARUSD-OTC: UP RSI:69.57, RENDERUSD-OTC: UP RSI:48.58, Luxury: NEUTRAL RSI:64.41, RAYDIUMUSD-OTC: UP RSI:64.95, Bitcoin/Gold-op: UP RSI:59.97] - Waiting for pullback setup...
+[2026-11-13 17:04:42] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:04:42] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:04:47] [INFO] [Bot] Monitoring Top 5: [XAU/XAG: NEUTRAL RSI:41.4, Luxury: NEUTRAL RSI:63.42, European AI: NEUTRAL RSI:57.7, FETUSD-OTC: CHOPPY_BLACKLIST RSI:50.0, HBARUSD-OTC: UP RSI:71.32] - Waiting for pullback setup...
+[2026-11-13 17:05:05] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:05:05] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:05:10] [INFO] [Bot] Monitoring Top 5: [ONDOUSD-OTC: UP RSI:56.1, RAYDIUMUSD-OTC: UP RSI:57.05, HBARUSD-OTC: UP RSI:70.73, Luxury: NEUTRAL RSI:60.99, DYDXUSD-OTC: UP RSI:52.55] - Waiting for pullback setup...
+[2026-11-13 17:05:18] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:05:25] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:05:28] [INFO] [Bot] Monitoring Top 5: [XAU/XAG: NEUTRAL RSI:41.02, ONDOUSD-OTC: UP RSI:58.44, FETUSD-OTC: NEUTRAL RSI:41.53, European AI: NEUTRAL RSI:56.61, TAOUSD-OTC: UP RSI:56.35] - Waiting for pullback setup...
+[2026-11-13 17:05:41] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:05:44] [INFO] [Bot] Monitoring Top 5: [ONDOUSD-OTC: UP RSI:59.75, TAOUSD-OTC: UP RSI:54.88, PENGUUSD-OTC: DOWN RSI:48.99, RAYDIUMUSD-OTC: UP RSI:56.58, DYDXUSD-OTC: UP RSI:51.67] - Waiting for pullback setup...
+[2026-11-13 17:06:09] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:06:09] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:06:14] [INFO] [Bot] Monitoring Top 5: [Luxury: NEUTRAL RSI:53.53, TAOUSD-OTC: UP RSI:51.42, HBARUSD-OTC: UP RSI:71.88, Bitcoin/Gold-op: UP RSI:55.83, European AI: NEUTRAL RSI:59.45] - Waiting for pullback setup...
+[2026-11-13 17:06:22] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:06:30] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:06:32] [INFO] [Bot] Monitoring Top 5: [TAOUSD-OTC: UP RSI:51.61, SUIUSD-OTC: DOWN RSI:41.36, XAU/XAG: NEUTRAL RSI:48.26, HBARUSD-OTC: UP RSI:68.07, PENGUUSD-OTC: NEUTRAL RSI:51.36] - Waiting for pullback setup...
+[2026-11-13 17:06:45] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:06:48] [INFO] [Bot] Monitoring Top 5: [Bitcoin/Gold-op: UP RSI:52.95, XAU/XAG: NEUTRAL RSI:49.65, ONDOUSD-OTC: UP RSI:64.77, FETUSD-OTC: CHOPPY_BLACKLIST RSI:50.0, RAYDIUMUSD-OTC: UP RSI:61.47] - Waiting for pullback setup...
+[2026-11-13 17:07:14] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:07:14] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:07:19] [INFO] [Bot] Monitoring Top 5: [HBARUSD-OTC: UP RSI:60.44, RENDERUSD-OTC: UP RSI:52.2, ONDOUSD-OTC: UP RSI:64.27, RAYDIUMUSD-OTC: UP RSI:64.33, Luxury: NEUTRAL RSI:52.14] - Waiting for pullback setup...
+[2026-11-13 17:07:34] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:07:34] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:07:39] [INFO] [Bot] Monitoring Top 5: [SUIUSD-OTC: CHOPPY_BLACKLIST RSI:50.0, Luxury: NEUTRAL RSI:52.76, HBARUSD-OTC: UP RSI:60.01, RENDERUSD-OTC: UP RSI:53.74, TAOUSD-OTC: UP RSI:52.99] - Waiting for pullback setup...
+[2026-11-13 17:07:56] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:07:56] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:08:01] [INFO] [Bot] Monitoring Top 5: [HBARUSD-OTC: UP RSI:61.3, ONDOUSD-OTC: UP RSI:65.31, TAOUSD-OTC: UP RSI:51.0, XAU/XAG: NEUTRAL RSI:50.61, RAYDIUMUSD-OTC: UP RSI:63.4] - Waiting for pullback setup...
+[2026-11-13 17:08:19] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:08:19] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:08:24] [INFO] [Bot] Monitoring Top 5: [European AI: NEUTRAL RSI:51.76, TAOUSD-OTC: UP RSI:48.52, XAU/XAG: NEUTRAL RSI:53.58, RENDERUSD-OTC: UP RSI:48.07, Bitcoin/Gold-op: UP RSI:58.96] - Waiting for pullback setup...
+[2026-11-13 17:08:33] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:08:39] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:08:42] [INFO] [Bot] Monitoring Top 5: [XAU/XAG: NEUTRAL RSI:53.01, RENDERUSD-OTC: UP RSI:47.01, FETUSD-OTC: NEUTRAL RSI:36.49, HBARUSD-OTC: UP RSI:57.77, SUIUSD-OTC: NEUTRAL RSI:52.62] - Waiting for pullback setup...
+[2026-11-13 17:08:55] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:08:58] [INFO] [Bot] Monitoring Top 5: [TAOUSD-OTC: UP RSI:47.8, FETUSD-OTC: NEUTRAL RSI:37.3, RAYDIUMUSD-OTC: UP RSI:68.84, ONDOUSD-OTC: UP RSI:69.48, Luxury: NEUTRAL RSI:56.08] - Waiting for pullback setup...
+[2026-11-13 17:09:24] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:09:24] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:09:29] [INFO] [Bot] Monitoring Top 5: [RAYDIUMUSD-OTC: UP RSI:68.9, FETUSD-OTC: NEUTRAL RSI:40.43, HBARUSD-OTC: UP RSI:56.97, ONDOUSD-OTC: UP RSI:66.49, TAOUSD-OTC: UP RSI:51.45] - Waiting for pullback setup...
+[2026-11-13 17:09:35] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:09:43] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:09:45] [INFO] [Bot] Monitoring Top 5: [TAOUSD-OTC: UP RSI:52.1, PENGUUSD-OTC: DOWN RSI:45.52, RAYDIUMUSD-OTC: UP RSI:69.5, DYDXUSD-OTC: UP RSI:48.26, Bitcoin/Gold-op: UP RSI:62.61] - Waiting for pullback setup...
+[2026-11-13 17:10:00] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:10:07] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:10:11] [INFO] [Bot] Monitoring Top 5: [SUIUSD-OTC: NEUTRAL RSI:49.94, HBARUSD-OTC: UP RSI:56.19, ONDOUSD-OTC: UP RSI:63.62, TAOUSD-OTC: UP RSI:56.1, European AI: NEUTRAL RSI:51.88] - Waiting for pullback setup...
+[2026-11-13 17:10:25] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:10:31] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:10:34] [INFO] [Bot] Monitoring Top 5: [European AI: NEUTRAL RSI:55.74, Bitcoin/Gold-op: UP RSI:62.16, Luxury: NEUTRAL RSI:55.96, PENGUUSD-OTC: DOWN RSI:45.38, RENDERUSD-OTC: UP RSI:42.93] - Waiting for pullback setup...
+[2026-11-13 17:10:50] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:10:56] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:10:59] [INFO] [Bot] Monitoring Top 5: [Bitcoin/Gold-op: UP RSI:64.31, HBARUSD-OTC: UP RSI:50.3, XAU/XAG: NEUTRAL RSI:57.49, RAYDIUMUSD-OTC: UP RSI:74.53, PENGUUSD-OTC: NEUTRAL RSI:50.11] - Waiting for pullback setup...
+[2026-11-13 17:11:13] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:11:20] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:11:23] [INFO] [Bot] Monitoring Top 5: [SUIUSD-OTC: NEUTRAL RSI:52.62, DYDXUSD-OTC: NEUTRAL RSI:45.09, RAYDIUMUSD-OTC: UP RSI:71.6, PENGUUSD-OTC: NEUTRAL RSI:51.93, European AI: NEUTRAL RSI:60.71] - Waiting for pullback setup...
+[2026-11-13 17:11:38] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:11:44] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:11:46] [INFO] [Bot] Monitoring Top 5: [European AI: NEUTRAL RSI:62.7, Bitcoin/Gold-op: UP RSI:69.91, DYDXUSD-OTC: NEUTRAL RSI:45.25, ONDOUSD-OTC: UP RSI:65.12, Luxury: NEUTRAL RSI:53.54] - Waiting for pullback setup...
+[2026-11-13 17:12:09] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:12:09] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:12:14] [INFO] [Bot] Monitoring Top 5: [FETUSD-OTC: NEUTRAL RSI:32.23, DYDXUSD-OTC: UP RSI:47.01, Luxury: NEUTRAL RSI:57.62, RAYDIUMUSD-OTC: UP RSI:72.19, SUIUSD-OTC: NEUTRAL RSI:51.68] - Waiting for pullback setup...
+[2026-11-13 17:12:28] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:12:28] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:12:33] [INFO] [Bot] Monitoring Top 5: [HBARUSD-OTC: CHOPPY_BLACKLIST RSI:50.0, PENGUUSD-OTC: DOWN RSI:48.63, TAOUSD-OTC: UP RSI:63.85, Bitcoin/Gold-op: UP RSI:69.29, RENDERUSD-OTC: UP RSI:35.9] - Waiting for pullback setup...
+[2026-11-13 17:12:49] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:12:50] [INFO] [Bot] Monitoring Top 5: [HBARUSD-OTC: CHOPPY_BLACKLIST RSI:50.0, PENGUUSD-OTC: DOWN RSI:49.48, TAOUSD-OTC: UP RSI:63.26, Bitcoin/Gold-op: UP RSI:70.69, RENDERUSD-OTC: NEUTRAL RSI:35.13] - Waiting for pullback setup...
+[2026-11-13 17:13:12] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:13:12] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:13:17] [INFO] [Bot] Monitoring Top 5: [European AI: NEUTRAL RSI:63.06, RAYDIUMUSD-OTC: UP RSI:72.18, Luxury: NEUTRAL RSI:59.45, TAOUSD-OTC: CHOPPY_BLACKLIST RSI:50.0, RENDERUSD-OTC: CHOPPY_BLACKLIST RSI:50.0] - Waiting for pullback setup...
+[2026-11-13 17:13:35] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:13:35] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:13:40] [INFO] [Bot] Monitoring Top 5: [RAYDIUMUSD-OTC: UP RSI:74.1, DYDXUSD-OTC: UP RSI:49.15, XAU/XAG: NEUTRAL RSI:60.24, HBARUSD-OTC: UP RSI:59.84, RENDERUSD-OTC: CHOPPY_BLACKLIST RSI:50.0] - Waiting for pullback setup...
+[2026-11-13 17:13:55] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:13:55] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:14:00] [INFO] [Bot] Monitoring Top 5: [ONDOUSD-OTC: UP RSI:56.69, Luxury: NEUTRAL RSI:54.96, DYDXUSD-OTC: UP RSI:53.08, SUIUSD-OTC: DOWN RSI:46.81, Bitcoin/Gold-op: UP RSI:64.44] - Waiting for pullback setup...
+[2026-11-13 17:14:17] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:14:17] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:14:22] [INFO] [Bot] Monitoring Top 5: [RENDERUSD-OTC: CHOPPY_BLACKLIST RSI:50.0, ONDOUSD-OTC: UP RSI:57.77, HBARUSD-OTC: CHOPPY_BLACKLIST RSI:50.0, TAOUSD-OTC: UP RSI:54.0, RAYDIUMUSD-OTC: UP RSI:74.74] - Waiting for pullback setup...
+[2026-11-13 17:14:40] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:14:40] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:14:45] [INFO] [Bot] Monitoring Top 5: [European AI: NEUTRAL RSI:60.99, ONDOUSD-OTC: UP RSI:55.71, DYDXUSD-OTC: UP RSI:47.0, SUIUSD-OTC: DOWN RSI:46.1, RAYDIUMUSD-OTC: UP RSI:70.8] - Waiting for pullback setup...
+[2026-11-13 17:15:00] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:15:00] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:15:06] [INFO] [Bot] Monitoring Top 5: [TAOUSD-OTC: UP RSI:53.47, FETUSD-OTC: NEUTRAL RSI:27.06, PENGUUSD-OTC: CHOPPY_BLACKLIST RSI:50.0, HBARUSD-OTC: UP RSI:62.34, ONDOUSD-OTC: UP RSI:56.8] - Waiting for pullback setup...
+[2026-11-13 17:15:20] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:15:20] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:15:25] [INFO] [Bot] 🎯 Signal TRIGGERED: CALL on FETUSD-OTC (87%)! Reason: High-WinRate CALL: NEUTRAL + Support Zone + Lower Wick Rejection (39%) + RSI Oversold Hook (25.5) | Placing order $3.74 (Step 2)...
+[2026-11-13 17:15:25] [INFO] [Executor] Placing CALL order on FETUSD-OTC ($3.74, step 2)...
+[2026-11-13 17:15:26] [INFO] [Executor] Order #14447190153 placed. Waiting for expiration (5 min)...
+[2026-11-13 17:15:26] [INFO] [Executor] Expiration in approx 272s. Waiting...
+[2026-11-13 17:15:36] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:15:57] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:16:18] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:16:39] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:17:00] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:17:21] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:17:42] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:18:03] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:18:24] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:18:45] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:19:06] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:19:25] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:19:47] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:20:01] [INFO] [MoneyManager] ❌ [Compound] Loss on Step 2. Capital Protected: Resetting cycle to Base Bet ($2.00).
+[2026-11-13 17:20:01] [INFO] [Bot] Trade finished: LOSS | PnL: $-3.74 | Balance: $29129.14
+[2026-11-13 17:20:09] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:20:15] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:20:18] [INFO] [Bot] Monitoring Top 5: [PENGUUSD-OTC: NEUTRAL RSI:63.98, XAU/XAG: NEUTRAL RSI:54.7, European AI: CHOPPY_BLACKLIST RSI:50.0, RENDERUSD-OTC: UP RSI:50.7, Bitcoin/Gold-op: UP RSI:60.19] - Waiting for pullback setup...
+[2026-11-13 17:20:33] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:20:40] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:20:43] [INFO] [Bot] Monitoring Top 5: [DYDXUSD-OTC: CHOPPY_BLACKLIST RSI:50.0, Luxury: NEUTRAL RSI:53.14, FETUSD-OTC: NEUTRAL RSI:27.38, European AI: CHOPPY_BLACKLIST RSI:50.0, XAU/XAG: NEUTRAL RSI:51.05] - Waiting for pullback setup...
+[2026-11-13 17:20:56] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:21:03] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:21:06] [INFO] [Bot] Monitoring Top 5: [HBARUSD-OTC: UP RSI:45.55, DYDXUSD-OTC: NEUTRAL RSI:42.45, Bitcoin/Gold-op: UP RSI:58.57, SUIUSD-OTC: NEUTRAL RSI:63.9, PENGUUSD-OTC: NEUTRAL RSI:59.83] - Waiting for pullback setup...
+[2026-11-13 17:21:28] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:21:28] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:21:32] [INFO] [Bot] Monitoring Top 5: [FETUSD-OTC: NEUTRAL RSI:30.28, RENDERUSD-OTC: UP RSI:50.24, RAYDIUMUSD-OTC: UP RSI:77.0, TAOUSD-OTC: UP RSI:44.32, DYDXUSD-OTC: NEUTRAL RSI:40.91] - Waiting for pullback setup...
+[2026-11-13 17:21:48] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:21:48] [INFO] [Bot] Monitoring Top 5: [FETUSD-OTC: CHOPPY_BLACKLIST RSI:50.0, RENDERUSD-OTC: UP RSI:52.05, RAYDIUMUSD-OTC: UP RSI:72.17, TAOUSD-OTC: UP RSI:46.39, DYDXUSD-OTC: CHOPPY_BLACKLIST RSI:50.0] - Waiting for pullback setup...
+[2026-11-13 17:22:11] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:22:12] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:22:16] [INFO] [Bot] Monitoring Top 5: [FETUSD-OTC: NEUTRAL RSI:36.37, XAU/XAG: NEUTRAL RSI:52.97, HBARUSD-OTC: NEUTRAL RSI:37.02, Luxury: NEUTRAL RSI:53.33, PENGUUSD-OTC: NEUTRAL RSI:57.19] - Waiting for pullback setup...
+[2026-11-13 17:22:34] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:22:34] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:22:39] [INFO] [Bot] Monitoring Top 5: [European AI: NEUTRAL RSI:47.33, HBARUSD-OTC: NEUTRAL RSI:40.22, Luxury: NEUTRAL RSI:51.89, PENGUUSD-OTC: NEUTRAL RSI:56.04, DYDXUSD-OTC: NEUTRAL RSI:35.56] - Waiting for pullback setup...
+[2026-11-13 17:22:53] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:22:53] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:22:58] [INFO] [Bot] Monitoring Top 5: [RENDERUSD-OTC: UP RSI:59.53, SUIUSD-OTC: CHOPPY_BLACKLIST RSI:50.0, TAOUSD-OTC: UP RSI:53.98, Bitcoin/Gold-op: UP RSI:57.96, HBARUSD-OTC: NEUTRAL RSI:39.02] - Waiting for pullback setup...
+[2026-11-13 17:23:13] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:23:14] [INFO] [Bot] Monitoring Top 5: [RENDERUSD-OTC: UP RSI:59.03, SUIUSD-OTC: CHOPPY_BLACKLIST RSI:50.0, TAOUSD-OTC: UP RSI:55.96, Bitcoin/Gold-op: UP RSI:57.5, HBARUSD-OTC: NEUTRAL RSI:41.07] - Waiting for pullback setup...
+[2026-11-13 17:23:36] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:23:36] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:23:42] [INFO] [Bot] Monitoring Top 5: [ONDOUSD-OTC: UP RSI:50.12, Bitcoin/Gold-op: UP RSI:55.06, TAOUSD-OTC: UP RSI:55.89, PENGUUSD-OTC: NEUTRAL RSI:55.48, XAU/XAG: NEUTRAL RSI:50.06] - Waiting for pullback setup...
+[2026-11-13 17:23:59] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:23:59] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:24:05] [INFO] [Bot] Monitoring Top 5: [Luxury: NEUTRAL RSI:53.95, Bitcoin/Gold-op: UP RSI:54.44, FETUSD-OTC: NEUTRAL RSI:39.19, XAU/XAG: CHOPPY_BLACKLIST RSI:50.0, HBARUSD-OTC: NEUTRAL RSI:37.51] - Waiting for pullback setup...
+[2026-11-13 17:24:18] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:24:18] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:24:23] [INFO] [Bot] Monitoring Top 5: [RAYDIUMUSD-OTC: CHOPPY_BLACKLIST RSI:50.0, PENGUUSD-OTC: NEUTRAL RSI:54.6, FETUSD-OTC: NEUTRAL RSI:39.26, DYDXUSD-OTC: NEUTRAL RSI:29.97, Bitcoin/Gold-op: UP RSI:55.57] - Waiting for pullback setup...
+[2026-11-13 17:24:40] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:24:40] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:24:46] [INFO] [Bot] Monitoring Top 5: [DYDXUSD-OTC: NEUTRAL RSI:30.96, Bitcoin/Gold-op: UP RSI:54.83, TAOUSD-OTC: UP RSI:58.95, SUIUSD-OTC: CHOPPY_BLACKLIST RSI:50.0, HBARUSD-OTC: NEUTRAL RSI:43.52] - Waiting for pullback setup...
+[2026-11-13 17:25:02] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:25:02] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:25:08] [INFO] [Bot] Monitoring Top 5: [DYDXUSD-OTC: NEUTRAL RSI:35.93, FETUSD-OTC: NEUTRAL RSI:42.54, European AI: UP RSI:58.7, XAU/XAG: CHOPPY_BLACKLIST RSI:50.0, SUIUSD-OTC: NEUTRAL RSI:67.25] - Waiting for pullback setup...
+[2026-11-13 17:25:22] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:25:22] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:25:28] [INFO] [Bot] Monitoring Top 5: [RENDERUSD-OTC: UP RSI:51.53, HBARUSD-OTC: NEUTRAL RSI:44.9, ONDOUSD-OTC: UP RSI:49.25, SUIUSD-OTC: NEUTRAL RSI:61.7, Bitcoin/Gold-op: CHOPPY_BLACKLIST RSI:50.0] - Waiting for pullback setup...
+[2026-11-13 17:25:42] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:25:42] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:25:47] [INFO] [Bot] Monitoring Top 5: [SUIUSD-OTC: NEUTRAL RSI:61.89, RENDERUSD-OTC: UP RSI:55.75, HBARUSD-OTC: NEUTRAL RSI:42.93, European AI: UP RSI:54.91, FETUSD-OTC: NEUTRAL RSI:46.54] - Waiting for pullback setup...
+[2026-11-13 17:26:04] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:26:04] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:26:09] [INFO] [Bot] Monitoring Top 5: [European AI: UP RSI:54.15, RENDERUSD-OTC: CHOPPY_BLACKLIST RSI:50.0, Luxury: NEUTRAL RSI:62.32, PENGUUSD-OTC: NEUTRAL RSI:57.55, DYDXUSD-OTC: NEUTRAL RSI:28.2] - Waiting for pullback setup...
+[2026-11-13 17:26:24] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:26:24] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:26:29] [INFO] [Bot] Monitoring Top 5: [Bitcoin/Gold-op: UP RSI:50.79, DYDXUSD-OTC: NEUTRAL RSI:30.9, PENGUUSD-OTC: NEUTRAL RSI:59.01, HBARUSD-OTC: NEUTRAL RSI:38.73, ONDOUSD-OTC: UP RSI:45.97] - Waiting for pullback setup...
+[2026-11-13 17:26:43] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:26:45] [INFO] [Bot] Monitoring Top 5: [Bitcoin/Gold-op: UP RSI:49.79, DYDXUSD-OTC: NEUTRAL RSI:34.02, PENGUUSD-OTC: NEUTRAL RSI:60.02, HBARUSD-OTC: NEUTRAL RSI:37.96, ONDOUSD-OTC: UP RSI:46.67] - Waiting for pullback setup...
+[2026-11-13 17:27:06] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:27:06] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:27:11] [INFO] [Bot] Monitoring Top 5: [HBARUSD-OTC: NEUTRAL RSI:37.26, DYDXUSD-OTC: NEUTRAL RSI:36.91, FETUSD-OTC: NEUTRAL RSI:48.3, Luxury: NEUTRAL RSI:54.66, PENGUUSD-OTC: NEUTRAL RSI:56.41] - Waiting for pullback setup...
+[2026-11-13 17:27:27] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:27:27] [INFO] [Bot] Monitoring Top 5: [HBARUSD-OTC: NEUTRAL RSI:36.46, DYDXUSD-OTC: NEUTRAL RSI:38.49, FETUSD-OTC: NEUTRAL RSI:49.02, Luxury: NEUTRAL RSI:50.46, PENGUUSD-OTC: NEUTRAL RSI:54.01] - Waiting for pullback setup...
+[2026-11-13 17:27:51] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:27:51] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:27:56] [INFO] [Bot] Monitoring Top 5: [Bitcoin/Gold-op: UP RSI:51.36, European AI: UP RSI:56.26, PENGUUSD-OTC: NEUTRAL RSI:47.79, HBARUSD-OTC: NEUTRAL RSI:35.19, TAOUSD-OTC: UP RSI:50.1] - Waiting for pullback setup...
+[2026-11-13 17:28:15] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:28:15] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:28:20] [INFO] [Bot] Monitoring Top 5: [Bitcoin/Gold-op: UP RSI:53.99, DYDXUSD-OTC: NEUTRAL RSI:42.59, RAYDIUMUSD-OTC: UP RSI:61.21, FETUSD-OTC: NEUTRAL RSI:46.77, TAOUSD-OTC: UP RSI:51.75] - Waiting for pullback setup...
+[2026-11-13 17:28:28] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:28:35] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:28:37] [INFO] [Bot] Monitoring Top 5: [Bitcoin/Gold-op: UP RSI:53.7, XAU/XAG: NEUTRAL RSI:51.66, SUIUSD-OTC: DOWN RSI:43.92, ONDOUSD-OTC: CHOPPY_BLACKLIST RSI:50.0, European AI: UP RSI:64.39] - Waiting for pullback setup...
+[2026-11-13 17:28:52] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:28:58] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:29:01] [INFO] [Bot] Monitoring Top 5: [DYDXUSD-OTC: NEUTRAL RSI:42.48, XAU/XAG: NEUTRAL RSI:56.11, RENDERUSD-OTC: CHOPPY_BLACKLIST RSI:50.0, ONDOUSD-OTC: CHOPPY_BLACKLIST RSI:50.0, European AI: UP RSI:63.09] - Waiting for pullback setup...
+[2026-11-13 17:29:17] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:29:24] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:29:27] [INFO] [Bot] Monitoring Top 5: [SUIUSD-OTC: DOWN RSI:42.53, XAU/XAG: NEUTRAL RSI:58.96, TAOUSD-OTC: UP RSI:47.74, ONDOUSD-OTC: UP RSI:44.78, European AI: UP RSI:54.65] - Waiting for pullback setup...
+[2026-11-13 17:29:39] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:29:42] [INFO] [Bot] Monitoring Top 5: [HBARUSD-OTC: NEUTRAL RSI:42.04, PENGUUSD-OTC: NEUTRAL RSI:48.96, RENDERUSD-OTC: UP RSI:47.22, Luxury: NEUTRAL RSI:54.0, SUIUSD-OTC: NEUTRAL RSI:45.52] - Waiting for pullback setup...
+[2026-11-13 17:30:10] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:30:10] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:30:16] [INFO] [Bot] Monitoring Top 5: [DYDXUSD-OTC: NEUTRAL RSI:51.69, TAOUSD-OTC: UP RSI:47.39, European AI: CHOPPY_BLACKLIST RSI:50.0, PENGUUSD-OTC: NEUTRAL RSI:45.99, ONDOUSD-OTC: UP RSI:45.29] - Waiting for pullback setup...
+[2026-11-13 17:30:21] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:30:28] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:30:31] [INFO] [Bot] Monitoring Top 5: [PENGUUSD-OTC: NEUTRAL RSI:45.98, ONDOUSD-OTC: UP RSI:46.36, Luxury: NEUTRAL RSI:63.18, XAU/XAG: CHOPPY_BLACKLIST RSI:50.0, HBARUSD-OTC: NEUTRAL RSI:37.36] - Waiting for pullback setup...
+[2026-11-13 17:30:46] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:30:53] [INFO] [Scanner] Found 13 open pairs with payout >= 87%
+[2026-11-13 17:30:56] [INFO] [Bot] Monitoring Top 5: [European AI: UP RSI:52.66, FETUSD-OTC: NEUTRAL RSI:55.55, DYDXUSD-OTC: NEUTRAL RSI:50.81, HBARUSD-OTC: NEUTRAL RSI:39.04, ONDOUSD-OTC: UP RSI:48.35] - Waiting for pullback setup...
